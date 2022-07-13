@@ -21,4 +21,9 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 - [Web Application Exploits](https://nbviewer.org/github/SeanOhAileasa/cap-practice-labs/blob/main/rc/attack-types/cap-Exercise1WebApplicationExploits.ipynb) <br/>
 - [Database Attack Types and Exploits](https://nbviewer.org/github/SeanOhAileasa/cap-practice-labs/blob/main/rc/attack-types/cap-Exercise2DatabaseAttackTypesandExploits.ipynb) <br/>
 - [Additional Cybersecurity Attack Types](https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/attack-types/cap-Exercise3AdditionalCybersecurityAttackTypes.pdf) <br/>
+
+###### ``Information Gathering and Sharing``
+
+- [Information Gathering and Sharing](https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/information-gathering-and-sharing/cap-Information-Gathering-and-Sharing.pdf) <br/>
+
 ## END
