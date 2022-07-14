@@ -26,4 +26,8 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 
 - [Information Gathering and Sharing](https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/information-gathering-and-sharing/cap-Information-Gathering-and-Sharing.pdf) <br/>
 
+###### ``Supporting Organizational Security``
+
+- [Attack Frameworks](https://nbviewer.org/github/SeanOhAileasa/cap-practice-labs/blob/main/rc/supporting-organizational-security/cap-attack-frameworks.ipynb) <br/>
+
 ## END
