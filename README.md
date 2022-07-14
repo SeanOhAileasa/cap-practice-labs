@@ -29,5 +29,6 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 ###### ``Supporting Organizational Security``
 
 - [Attack Frameworks](https://nbviewer.org/github/SeanOhAileasa/cap-practice-labs/blob/main/rc/supporting-organizational-security/cap-attack-frameworks.ipynb) <br/>
+- [Threat Research](https://nbviewer.org/github/SeanOhAileasa/cap-practice-labs/blob/main/rc/supporting-organizational-security/cap-threat-research.ipynb) <br/>
 
 ## END
