@@ -78,7 +78,7 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 
 ###### ``Vulnerabilities in Specialized Technology``
 
-- [Vulnerabilities in Specialized Technology](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/vulnerabilities-in-specialized-technology/VulnerabilitiesinSpecializedTechnology.html#) &#x274C; <br/>
+- [Vulnerabilities in Specialized Technology](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/vulnerabilities-in-specialized-technology/VulnerabilitiesinSpecializedTechnology.html#VulnerabilitiesinSpecializedTechnology) &#x274C; <br/>
 
 ###### ``Log Monitoring and Review``
 
