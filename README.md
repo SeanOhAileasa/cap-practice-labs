@@ -74,7 +74,7 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 
 - [Wireless Assessment Tools](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/wireless-and-cloud-assessment-tools/WirelessandCloudAssessmentTools.html#WirelessAssessmentTools) &#x274C; <br/>
 - [Cloud Models](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/wireless-and-cloud-assessment-tools/WirelessandCloudAssessmentTools.html#CloudModels) &#x274C; <br/>
-- [Cloud Infrastructure Assessment Tools](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/wireless-and-cloud-assessment-tools/WirelessandCloudAssessmentTools.html#CloudInfrastructureAssessmentTools) &#x274C; <br/>
+- [Cloud Infrastructure Assessment Tools](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/wireless-and-cloud-assessment-tools/WirelessandCloudAssessmentTools.html#CloudAssessmentTools) &#x274C; <br/>
 
 ###### ``Vulnerabilities in Specialized Technology``
 
