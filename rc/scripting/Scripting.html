@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="Scripting_files/print-styles.css" rel="stylesheet">
+    <script src="Scripting_files/jquery.min.js"></script>
+    <script src="Scripting_files/jspdf.js"></script>
+    <script src="Scripting_files/from_html.js"></script>
+    <script src="Scripting_files/addimage.js"></script>
+    <script src="Scripting_files/filesaver.js"></script>
+    <script src="Scripting_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="yT0my6K99mlQPWFlst4x2G1taQkgAXXslacOE8pweLb6z5NsVHJ/nsdeecD3xLuauP1hjDld0GeKvGV0C15G2wj7ENJsy0HQ9yuucPJ2idc=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Cybersecurity Analyst (CySA+)</h1>
+                <h2>Scripting</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Perform Search</li><li>Exercise 2 - Scripting</li><li>Exercise 3 - Piping</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m4-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Scripting</div>
+
+<div>Shell Scripts</div>
+
+<div>Strings</div>
+
+<div>Search</div>
+
+<div>Piping</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m4-8">Welcome to the <b>Scripting </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-12">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m4-13">
+
+<li id="cn-m4-13">Exercise 1 - Perform Search</li>
+
+<li id="cn-m4-14">Exercise 2 - Scripting</li>
+
+<li id="cn-m4-15">Exercise 3 - Piping</li>
+
+</ul>
+
+<p id="cn-m4-16">After completing this module, you will be able to:</p>
+
+<ul id="cn-m4-17">
+
+<li id="cn-m4-17">Use the Find Command</li>
+
+<li id="cn-m4-18">Find Files and Commands on a Linux System</li>
+
+<li id="cn-m4-19">Search for a Specific Text in a File</li>
+
+<li id="cn-m4-20">Search for Specific Criteria Through a File Content or a Filesystem</li>
+
+<li id="cn-m4-21">Write a Simple Bash Script</li>
+
+<li id="cn-m4-22">Use Commenting</li>
+
+<li id="cn-m4-23">Use Parameters</li>
+
+<li id="cn-m4-24">Capture User Inputs in Scripts</li>
+
+<li id="cn-m4-25">Pipe the Output of one Command to the Input of Another Command</li>
+
+<li id="cn-m4-26">Use the Output of one Command as Argument to Another Command</li>
+
+<li id="cn-m4-27">Send Output to Both Stdout and a File</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m4-29">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m4-30">
+
+<li id="cn-m4-30">3.1 Given a scenario, analyze data as part of security monitoring activities.</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m4-31"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m4-33">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">7ca097e1-3b9c-4203-a9a2-3215787353ca</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m4-37">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m4-38">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-40"><b>Lab Topology</b></h2>
+
+<p id="cn-m4-41">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m4-42"><img class="cn-img" id="cn-image-m4-c-0" src="Scripting_files/image-m4-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m4-43">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m4-44">
+
+<li id="cn-m4-44"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m4-45"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m4-46"><b>PLABKALI01 </b>- (Kali Linux 2019 - Linux Kali)</li>
+
+<li id="cn-m4-47"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m4-48"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+<li id="cn-m4-49"><b>PLABALIENVAULT </b>- (Alien Vault Linux Security Management Platform)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m4-50">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="PerformSearch">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-51"><b>Exercise 1 - Perform Search</span></h2>
+
+<p id="cn-m4-52">Normally a system has a large number of text files. 
+Searching for a specific text file can be a tedious task. You can search
+ text files based on criteria specified using regular expressions.</p>
+
+<p id="cn-m4-53">In this exercise, you will learn to perform various types of search operations.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-55">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m4-56">
+
+<li id="cn-m4-56">Use the Find Command</li>
+
+<li id="cn-m4-57">Find Files and Commands on a Linux System</li>
+
+<li id="cn-m4-58">Search for a Specific Text in a File</li>
+
+<li id="cn-m4-59">Search for Specific Criteria Through a File Content or a Filesystem</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-61">You will be using the following devices in this lab. Please power this on now.</p>
+
+<p id="cn-m4-62"><img class="cn-img" id="cn-image-m4-c-1" src="Scripting_files/image-m4-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m4-63">
+
+<li id="cn-m4-63"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+</ul>
+
+<h3 id="cn-m4-64"><b>Task 1 - Use the Find Command</b></h3>
+
+<p id="cn-m4-65">Linux provides a <b>find </b>command that you can use 
+to locate and manipulate multiple files supporting common values for 
+criteria such as name, type, size, or timestamp.</p>
+
+<p id="cn-m4-66">In this task, you will use the <b>find </b>command.</p>
+
+<h4 id="cn-m4-67"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-68">Ensure that you have powered on the required devices.</p>
+
+<p id="cn-m4-69">Connect to <b>PLABCENTOS</b>.</p>
+
+<p id="cn-m4-70">On the upper left corner, click <b>Activities</b>.</p>
+
+<p id="cn-m4-71"></p><figure><img class="cn-img" id="cn-image-m4-c-2" src="Scripting_files/image-m4-c-2.jpg" alt="Figure 1.1 Screenshot of PLABCENTOS"><figcaption>Figure 1.1 Screenshot of PLABCENTOS: Clicking on the Activities menu on the desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-72"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-73">Click the <b>Terminal </b>icon in the application bar.</p>
+
+<p id="cn-m4-74"></p><figure><img class="cn-img" id="cn-image-m4-c-3" src="Scripting_files/image-m4-c-3.jpg" alt="Figure 1.2 Screenshot of PLABCENTOS"><figcaption>Figure 1.2 Screenshot of PLABCENTOS: Clicking the Terminal icon in the application bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-76"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-77">You can use the <b>find </b>command to find files based on specific criteria. Some of these criteria are listed below:</p>
+
+<ul id="cn-m4-78">
+
+<li id="cn-m4-78"><b>-type</b>: specify the type of file</li>
+
+<li id="cn-m4-79"><b>-name</b>: name of the file (can include wildcards)</li>
+
+<li id="cn-m4-80"><b>-user</b>: &nbsp;&nbsp;user owner</li>
+
+<li id="cn-m4-81"><b>-atime, ctime, mtime</b>: access, creation and modified times (multiples of 24 hrs)</li>
+
+<li id="cn-m4-82"><b>-amin, cmin, mmin</b>: access, creation and modified times (multiples of 1 min)</li>
+
+<li id="cn-m4-83"><b>-newer FILE</b>: files newer than FILE</li>
+
+</ul>
+
+<p id="cn-m4-84">In the command below, you will find files starting with <b>gnome </b>for a user named <b>root</b>. To find these files, type the following command:</p>
+
+<pre id="cn-m4-85"><code>sudo find / -user root -name “gnome*”
+
+</code></pre>
+
+<p id="cn-m4-86">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-87"></p><figure><img class="cn-img" id="cn-image-m4-c-4" src="Scripting_files/image-m4-c-4.jpg" alt="Figure 1.3 Screenshot of PLABCENTOS"><figcaption>Figure 1.3 Screenshot of PLABCENTOS: Entering the command to find files starting with gnome for a user named root.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-88"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-89">When prompted for a password, type the following for <b>plabadmin</b>:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m4-91">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-92"><b><i>Note: </i></b><i>When you are
+ entering commands with sudo, frequently, you will be prompted to 
+provide the password, not necessarily that it would appear in the same 
+places as the lab steps. </i></span>
+
+<p id="cn-m4-93"></p><figure><img class="cn-img" id="cn-image-m4-c-5" src="Scripting_files/image-m4-c-5.jpg" alt="Figure 1.4 Screenshot of PLABCENTOS"><figcaption>Figure 1.4 Screenshot of PLABCENTOS: Entering the user credentials for sudo.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-95"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-96">A series of files with gnome in their names will be listed.</p>
+
+<p id="cn-m4-97"></p><figure><img class="cn-img" id="cn-image-m4-c-6" src="Scripting_files/image-m4-c-6.jpg" alt="Figure 1.5 Screenshot of PLABCENTOS"><figcaption>Figure 1.5 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-98"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-99">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-100"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-101">To find files for a user, type the following command:</p>
+
+<pre id="cn-m4-102"><code>sudo find / -user root -type f
+
+</code></pre>
+
+<p id="cn-m4-103">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-104"><b><i>Note: </i></b><i>The </i><b><i>clear </i></b><i>command
+ is used before every step to enable learners to get a clear view of the
+ output of each command. Otherwise, it is not mandatory to use the clear
+ command before every command.</i></span>
+
+<p id="cn-m4-105"></p><figure><img class="cn-img" id="cn-image-m4-c-7" src="Scripting_files/image-m4-c-7.jpg" alt="Figure 1.6 Screenshot of PLABCENTOS"><figcaption>Figure 1.6 Screenshot of PLABCENTOS: Entering a command to find files for a user.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-107"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-108">All files for the user named <b>root </b>are listed as the output of the command.</p>
+
+<p id="cn-m4-109"></p><figure><img class="cn-img" id="cn-image-m4-c-8" src="Scripting_files/image-m4-c-8.jpg" alt="Figure 1.7 Screenshot of PLABCENTOS"><figcaption>Figure 1.7 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-110"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-111">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-112"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-113">To find files that were modified several days ago, type the following command:</p>
+
+<pre id="cn-m4-114"><code>sudo find /var/spool -mtime +60
+
+</code></pre>
+
+<p id="cn-m4-115">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-116"></p><figure><img class="cn-img" id="cn-image-m4-c-9" src="Scripting_files/image-m4-c-9.jpg" alt="Figure 1.8 Screenshot of PLABCENTOS"><figcaption>Figure 1.8 Screenshot of PLABCENTOS: Entering a command to find files that were modified several days ago.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-117"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-118">The output of the command lists the files that were modified more than <b>60 </b>days back.</p>
+
+<p id="cn-m4-119"></p><figure><img class="cn-img" id="cn-image-m4-c-10" src="Scripting_files/image-m4-c-10.jpg" alt="Figure 1.9 Screenshot of PLABCENTOS"><figcaption>Figure 1.9 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-121"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-122">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-123"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-124">To find files that were modified in last hour and then get the detailed listing, type the following command:</p>
+
+<pre id="cn-m4-125"><code>sudo find -mmin -60 -exec ls -l {} \;
+
+</code></pre>
+
+<p id="cn-m4-126">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-127"></p><figure><img class="cn-img" id="cn-image-m4-c-11" src="Scripting_files/image-m4-c-11.jpg" alt="Figure 1.10 Screenshot of PLABCENTOS"><figcaption>Figure
+ 1.10 Screenshot of PLABCENTOS: Entering a command to find files that 
+were modified in the last one hour and then get the detailed listing.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-129"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-130">The output of this command is displayed.</p>
+
+<p id="cn-m4-131"></p><figure><img class="cn-img" id="cn-image-m4-c-12" src="Scripting_files/image-m4-c-12.jpg" alt="Figure 1.11 Screenshot of PLABCENTOS"><figcaption>Figure 1.11 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-133"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-134">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-135"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-136">To list all the files with size more than <b>1MB</b>, type the following command:</p>
+
+<pre id="cn-m4-137"><code>sudo find -size 1M -exec ls -l {} \;
+
+</code></pre>
+
+<p id="cn-m4-138">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-139"></p><figure><img class="cn-img" id="cn-image-m4-c-13" src="Scripting_files/image-m4-c-13.jpg" alt="Figure 1.12 Screenshot of PLABCENTOS"><figcaption>Figure 1.12 Screenshot of PLABCENTOS: Entering a command to list all the files with size more than 1MB.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-141"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m4-142">If prompted for the password, type the following for <b>plabadmin</b>:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m4-144">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-145"></p><figure><img class="cn-img" id="cn-image-m4-c-14" src="Scripting_files/image-m4-c-14.jpg" alt="Figure 1.13 Screenshot of PLABCENTOS"><figcaption>Figure 1.13 Screenshot of PLABCENTOS: Entering the user credentials for sudo.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-147"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m4-148">The output of the command is displayed. All files with more than <b>1 MB </b>of size are listed.</p>
+
+<p id="cn-m4-149"></p><figure><img class="cn-img" id="cn-image-m4-c-15" src="Scripting_files/image-m4-c-15.jpg" alt="Figure 1.14 Screenshot of PLABCENTOS"><figcaption>Figure 1.14 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-151"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m4-152">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-153"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-154">You can find a specific type of files for a particular user. Let’s find the <b>*.txt </b>files for the <b>root </b>user. Type the following command:</p>
+
+<pre id="cn-m4-155"><code>sudo find / -user root -iname “*.txt”
+
+</code></pre>
+
+<p id="cn-m4-156">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-157"></p><figure><img class="cn-img" id="cn-image-m4-c-16" src="Scripting_files/image-m4-c-16.jpg" alt="Figure 1.15 Screenshot of PLABCENTOS"><figcaption>Figure 1.15 Screenshot of PLABCENTOS: Entering a command to find the *.txt files for the root user.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-159"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m4-160">Notice that all txt files that belong to the user root are now listed.</p>
+
+<p id="cn-m4-161"></p><figure><img class="cn-img" id="cn-image-m4-c-17" src="Scripting_files/image-m4-c-17.jpg" alt="Figure 1.16 Screenshot of PLABCENTOS"><figcaption>Figure 1.16 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-163"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m4-164">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-165"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-166">Let’s find empty sub-directories in a specific directory. To do this, type the following command:</p>
+
+<pre id="cn-m4-167"><code>sudo find /tmp -type d -empty
+
+</code></pre>
+
+<p id="cn-m4-168">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-169"></p><figure><img class="cn-img" id="cn-image-m4-c-18" src="Scripting_files/image-m4-c-18.jpg" alt="Figure 1.17 Screenshot of PLABCENTOS"><figcaption>Figure 1.17 Screenshot of PLABCENTOS: Entering a command to find empty sub-directories in a specific directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-171"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m4-172">A list of empty sub-directories under the <b>/tmp </b>directory is shown.</p>
+
+<p id="cn-m4-173"></p><figure><img class="cn-img" id="cn-image-m4-c-19" src="Scripting_files/image-m4-c-19.jpg" alt="Figure 1.18 Screenshot of PLABCENTOS"><figcaption>Figure 1.18 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-175"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m4-176">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-177"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-178">Similarly, you can also find the executable files. To do this, type the following command:</p>
+
+<pre id="cn-m4-179"><code>sudo find / -perm /a=x
+
+</code></pre>
+
+<p id="cn-m4-180">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-181"></p><figure><img class="cn-img" id="cn-image-m4-c-20" src="Scripting_files/image-m4-c-20.jpg" alt="Figure 1.19 Screenshot of PLABCENTOS"><figcaption>Figure 1.19 Screenshot of PLABCENTOS: Entering a command to find the executable files.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-183"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m4-184">The list of executable files is shown.</p>
+
+<p id="cn-m4-185"></p><figure><img class="cn-img" id="cn-image-m4-c-21" src="Scripting_files/image-m4-c-21.jpg" alt="Figure 1.20 Screenshot of PLABCENTOS"><figcaption>Figure 1.20 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-187"><b>Task 2 - Find Files and Commands on a Linux System</b></h3>
+
+<p id="cn-m4-188">A small Linux distribution can contain thousands of files. For example, only the <b>/usr </b>directory of distribution can contain over 50,000 files. The complete installation may contain over 200,000 files.</p>
+
+<p id="cn-m4-189">Locating a file can be difficult in a large number of 
+files. Similarly, you can search for the path for a specific command and
+ find out which command will be executed&nbsp;when you enter a specific 
+command. In this task, you will locate files and commands in various 
+directories.</p>
+
+<p id="cn-m4-190">In this task, you will find files and commands on a Linux system.</p>
+
+<h4 id="cn-m4-191"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-192">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-193"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-194">To find a specific command and its location, type the following command:</p>
+
+<pre id="cn-m4-195"><code>which yum
+
+</code></pre>
+
+<p id="cn-m4-196">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-197"></p><figure><img class="cn-img" id="cn-image-m4-c-22" src="Scripting_files/image-m4-c-22.jpg" alt="Figure 1.21 Screenshot of PLABCENTOS"><figcaption>Figure 1.21 Screenshot of PLABCENTOS: Entering a command to find a command and its specific location.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-199"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-200">Note that the first occurrence where this command appears is displayed.</p>
+
+<p id="cn-m4-201"></p><figure><img class="cn-img" id="cn-image-m4-c-23" src="Scripting_files/image-m4-c-23.jpg" alt="Figure 1.22 Screenshot of PLABCENTOS"><figcaption>Figure 1.22 Screenshot of PLABCENTOS: Showing the output of the which command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-202"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-203">If you want to find out all the locations where a specific command occurs, type the following command:</p>
+
+<pre id="cn-m4-204"><code> which -a yum
+
+</code></pre>
+
+<p id="cn-m4-205">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-206"></p><figure><img class="cn-img" id="cn-image-m4-c-24" src="Scripting_files/image-m4-c-24.jpg" alt="Figure 1.23 Screenshot of PLABCENTOS"><figcaption>Figure 1.23 Screenshot of PLABCENTOS: Entering the command to find the location of a specific command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-208"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-209">In this case, there is only one instance of the command.</p>
+
+<p id="cn-m4-210"></p><figure><img class="cn-img" id="cn-image-m4-c-25" src="Scripting_files/image-m4-c-25.jpg" alt="Figure 1.24 Screenshot of PLABCENTOS"><figcaption>Figure 1.24 Screenshot of PLABCENTOS: Showing the output of the which command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-212"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-213">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-214"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-215">The <b>whereis </b>command allows you to locate more information than just the location of the command. To find more details of a command, such as <b>yum</b>, type the following command:</p>
+
+<pre id="cn-m4-216"><code>whereis yum
+
+</code></pre>
+
+<p id="cn-m4-217">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-218"></p><figure><img class="cn-img" id="cn-image-m4-c-26" src="Scripting_files/image-m4-c-26.jpg" alt="Figure 1.25 Screenshot of PLABCENTOS"><figcaption>Figure 1.25 Screenshot of PLABCENTOS: Entering the whereis command to find information about the yum command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-220"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-221">The output displays the location, the name of the configuration file, and the location of the <b>man </b>pages for the command.</p>
+
+<p id="cn-m4-222"></p><figure><img class="cn-img" id="cn-image-m4-c-27" src="Scripting_files/image-m4-c-27.jpg" alt="Figure 1.26 Screenshot of PLABCENTOS"><figcaption>Figure 1.26 Screenshot of PLABCENTOS: Showing the output of the whereis command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-224"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-225">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-226"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-227">There will be instances when you need to find files on
+ your Linux system using their names or path. To find files, type the 
+following command:</p>
+
+<pre id="cn-m4-228"><code>sudo find / -name "yum*"
+
+</code></pre>
+
+<p id="cn-m4-229">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-230"></p><figure><img class="cn-img" id="cn-image-m4-c-28" src="Scripting_files/image-m4-c-28.jpg" alt="Figure 1.27 Screenshot of PLABCENTOS"><figcaption>Figure 1.27 Screenshot of PLABCENTOS: Entering a command to find files on a Linux system.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-232"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-233">The output displays the names of the files and their locations.</p>
+
+<p id="cn-m4-234"></p><figure><img class="cn-img" id="cn-image-m4-c-29" src="Scripting_files/image-m4-c-29.jpg" alt="Figure 1.28 Screenshot of PLABCENTOS"><figcaption>Figure 1.28 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-236"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-237">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-238"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-239">Using the <b>find </b>command, you can also find all the directories. To find all the directories, type the following command:</p>
+
+<pre id="cn-m4-240"><code>sudo find / -type d
+
+</code></pre>
+
+<p id="cn-m4-241">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-242"><b><i>Note: </i></b><i>The </i><b><i>d </i></b><i>parameter signifies directories. </i><b><i>d </i></b><i>is an argument for the </i><b><i>-type </i></b><i>parameter. Therefore, the </i><b><i>-type </i></b><i>parameter allows you to specify that you are searching for the type “directories.”</i></span>
+
+<p id="cn-m4-243"></p><figure><img class="cn-img" id="cn-image-m4-c-30" src="Scripting_files/image-m4-c-30.jpg" alt="Figure 1.29 Screenshot of PLABCENTOS"><figcaption>Figure 1.29 Screenshot of PLABCENTOS: Entering a command to find all directories.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-245"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-246">The output displays all directories.</p>
+
+<p id="cn-m4-247"></p><figure><img class="cn-img" id="cn-image-m4-c-31" src="Scripting_files/image-m4-c-31.jpg" alt="Figure 1.30 Screenshot of PLABCENTOS"><figcaption>Figure 1.30 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-249"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-250">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-251"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-252">Using the <b>find </b>command, you can also find files by user and group. For example, to find all the files by the user <b>root</b>, type the following command:</p>
+
+<pre id="cn-m4-253"><code>sudo find /etc -user root
+
+</code></pre>
+
+<p id="cn-m4-254">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-255"><b><i>Note: /etc </i></b><i>is the name of the directory, which is where you will search for the files. The </i><b><i>-user </i></b><i>parameter specifies the name of the user, which is the </i><b><i>root </i></b><i>in this case.</i></span>
+
+<p id="cn-m4-256"></p><figure><img class="cn-img" id="cn-image-m4-c-32" src="Scripting_files/image-m4-c-32.jpg" alt="Figure 1.31 Screenshot of PLABCENTOS"><figcaption>Figure 1.31 Screenshot of PLABCENTOS: Entering a command to find files for a user and group.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-258"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-259">The output displays all files in the <b>/etc </b>directory that belong to the user <b>root</b>.</p>
+
+<span class="cn-quote" id="cn-m4-260"><b><i>Note</i></b><i>: There are a lot more combinations that you can use to find files. The above-shown examples are just a few of them.</i></span>
+
+<p id="cn-m4-261"></p><figure><img class="cn-img" id="cn-image-m4-c-33" src="Scripting_files/image-m4-c-33.jpg" alt="Figure 1.32 Screenshot of PLABCENTOS"><figcaption>Figure 1.32 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-263"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m4-264">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-265"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-266">When you use the <b>find </b>command, it searches for 
+the files and directories based on a given condition of the filesystem. 
+You can speed up the search using the <b>locate </b>command, which searches the location of files from a specific database.</p>
+
+<p id="cn-m4-267">For example, to find all the files in the <b>/etc </b>directory, type the following command:</p>
+
+<pre id="cn-m4-268"><code>sudo locate /etc
+
+</code></pre>
+
+<p id="cn-m4-269">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-270"><b><i>Note</i></b><i>: </i><b><i>/etc </i></b><i>is the name of the directory where you want to search for the files. </i></span>
+
+<p id="cn-m4-271">If you get an error, please run the <b>updatedb </b>command and retype the above:</p>
+
+<pre id="cn-m4-272"><code>sudo updatedb
+
+</code></pre>
+
+<p id="cn-m4-273"></p><figure><img class="cn-img" id="cn-image-m4-c-34" src="Scripting_files/image-m4-c-34.jpg" alt="Figure 1.33 Screenshot of PLABCENTOS"><figcaption>Figure 1.33 Screenshot of PLABCENTOS: Entering a command to find files in the /etc directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-275"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m4-276">Notice that all the files in the <b>/etc </b>directory are now listed.</p>
+
+<p id="cn-m4-277"></p><figure><img class="cn-img" id="cn-image-m4-c-35" src="Scripting_files/image-m4-c-35.jpg" alt="Figure 1.34 Screenshot of PLABCENTOS"><figcaption>Figure 1.34 Screenshot of PLABCENTOS: Showing the output of the find command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-279"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m4-280">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-281"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-282">You can find the database that the <b>locate </b>command uses to find files and directories. To find the location of the database, type the following command:</p>
+
+<pre id="cn-m4-283"><code>sudo locate -S
+
+</code></pre>
+
+<p id="cn-m4-284">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-285"></p><figure><img class="cn-img" id="cn-image-m4-c-36" src="Scripting_files/image-m4-c-36.jpg" alt="Figure 1.35 Screenshot of PLABCENTOS"><figcaption>Figure 1.35 Screenshot of PLABCENTOS: Entering the locate command to find files and directories.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-287"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m4-288">The database name is <b>mlocate.db, </b>and it is stored in the <b>/var/lib/mlocate </b>directory.</p>
+
+<span class="cn-quote" id="cn-m4-289"><b><i>Note</i></b><i>: The 
+database may differ in different Linux distributions. For example, in 
+some of the Linux distributions, you may find the database name to be </i><b><i>slocate </i></b><i>or </i><b><i>mlocate</i></b><i>. </i></span>
+
+<p id="cn-m4-290"></p><figure><img class="cn-img" id="cn-image-m4-c-37" src="Scripting_files/image-m4-c-37.jpg" alt="Figure 1.36 Screenshot of PLABCENTOS"><figcaption>Figure 1.36 Screenshot of PLABCENTOS: Showing the output of the locate command.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-292"><b>Task 3 - Search for a Specific Text in a File </b></h3>
+
+<p id="cn-m4-293">To search for a specific text in a file, you create 
+simple regular expressions containing several notational elements. In 
+this task, you will determine the parameters related to a particular 
+text in the <b>yum.conf </b>file.</p>
+
+<p id="cn-m4-294">To search for a specific text in a file, perform the following steps:</p>
+
+<h4 id="cn-m4-295"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-296">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-297"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-298">Using the <b>grep </b>command, you can find specific 
+words in one or more files. If you specify more than one file, the file 
+name is displayed in front of the line that contains the searched word.</p>
+
+<p id="cn-m4-299">For example, to find the word <b>proxy </b>in the <b>/etc/yum.conf </b>file, type the following command:</p>
+
+<pre id="cn-m4-300"><code>grep -n “proxy” /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-301">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-302"><i>Note: Various parameters can be
+ used with the grep command. The -n parameter displays the line-number 
+of the line that contains the searched text.</i></span>
+
+<p id="cn-m4-303"></p><figure><img class="cn-img" id="cn-image-m4-c-38" src="Scripting_files/image-m4-c-38.jpg" alt="Figure 1.37 Screenshot of PLABCENTOS"><figcaption>Figure 1.37 Screenshot of PLABCENTOS: Entering the grep command to find specific words in one or more files.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-305"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-306">Notice the number <b>2 </b>at the beginning of the display. This is the line number of the line that contains the specified text.</p>
+
+<p id="cn-m4-307"></p><figure><img class="cn-img" id="cn-image-m4-c-39" src="Scripting_files/image-m4-c-39.jpg" alt="Figure 1.38 Screenshot of PLABCENTOS"><figcaption>Figure 1.38 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-309"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-310">Instead of displaying the lines with the searched 
+text, you can simply count the number of lines in which the searched 
+text appears. You can count the number of lines by using the <b>-c </b>switch.</p>
+
+<p id="cn-m4-311">To use the <b>-c </b>switch, type the following command:</p>
+
+<pre id="cn-m4-312"><code>grep -c “proxy” /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-313">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-314"></p><figure><img class="cn-img" id="cn-image-m4-c-40" src="Scripting_files/image-m4-c-40.jpg" alt="Figure 1.39 Screenshot of PLABCENTOS"><figcaption>Figure 1.39 Screenshot of PLABCENTOS: Entering the grep command to count the number of lines on which a word appears.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-316"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-317">The total number of lines is displayed.</p>
+
+<p id="cn-m4-318"></p><figure><img class="cn-img" id="cn-image-m4-c-41" src="Scripting_files/image-m4-c-41.jpg" alt="Figure 1.40 Screenshot of PLABCENTOS"><figcaption>Figure 1.40 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-320"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-321">Let’s try to find the number of words that start with <b>p </b>in the <b>yum.conf </b>file. Type the following command:</p>
+
+<pre id="cn-m4-322"><code>grep -c “p*” /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-323">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-324"></p><figure><img class="cn-img" id="cn-image-m4-c-42" src="Scripting_files/image-m4-c-42.jpg" alt="Figure 1.41 Screenshot of PLABCENTOS"><figcaption>Figure
+ 1.41 Screenshot of PLABCENTOS: Entering the grep command to find the 
+number of words that start with p in the yum.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-326"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-327">The count of words starting with the letter <b>p </b>is displayed.</p>
+
+<p id="cn-m4-328"></p><figure><img class="cn-img" id="cn-image-m4-c-43" src="Scripting_files/image-m4-c-43.jpg" alt="Figure 1.42 Screenshot of PLABCENTOS"><figcaption>Figure 1.42 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-330"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-331">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-332"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-333">To list all the blank lines with their line numbers, type the following command:</p>
+
+<pre id="cn-m4-334"><code>grep -n “^$” /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-335">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-336"></p><figure><img class="cn-img" id="cn-image-m4-c-44" src="Scripting_files/image-m4-c-44.jpg" alt="Figure 1.43 Screenshot of PLABCENTOS"><figcaption>Figure 1.43 Screenshot of PLABCENTOS: Entering the grep command to list all the blank lines with their line numbers.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-338"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-339">Notice that this does not return an output. This means that there are no blank lines in the <b>yum.conf </b>file.</p>
+
+<p id="cn-m4-340"></p><figure><img class="cn-img" id="cn-image-m4-c-45" src="Scripting_files/image-m4-c-45.jpg" alt="Figure 1.44 Screenshot of PLABCENTOS"><figcaption>Figure 1.44 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-342"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-343">You can also simply list the lines that contain a specific word. Type the following command:</p>
+
+<pre id="cn-m4-344"><code>grep proxy /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-345">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-346"><b><i>Note: </i></b><i>In the above-given command, the word proxy is being searched without quotes.</i></span>
+
+<p id="cn-m4-347"></p><figure><img class="cn-img" id="cn-image-m4-c-46" src="Scripting_files/image-m4-c-46.jpg" alt="Figure 1.45 Screenshot of PLABCENTOS"><figcaption>Figure 1.45 Screenshot of PLABCENTOS: Entering the grep command to list the lines that contain a specific word.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-349"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-350">The line containing the word <b>proxy </b>is now shown as the output of the command.</p>
+
+<p id="cn-m4-351"></p><figure><img class="cn-img" id="cn-image-m4-c-47" src="Scripting_files/image-m4-c-47.jpg" alt="Figure 1.46 Screenshot of PLABCENTOS"><figcaption>Figure 1.46 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m4-352">Leave the devices you have powered on in their current state and proceed to the next exercise.</span>
+
+<h3 id="cn-m4-354"><b>Task 4 - Search for Specific Criteria Through a File Content or a Filesystem</b></h3>
+
+<p id="cn-m4-355">In the previous task, you used <b>grep</b>.</p>
+
+<p id="cn-m4-356">In this task, you will use <b>egrep</b>. There is a distinct difference between these. When you use <b>grep</b>, special characters such as ?,&nbsp;+,&nbsp;{,&nbsp;|,&nbsp;(, and&nbsp;), lose their meaning.</p>
+
+<p id="cn-m4-357">To use special characters as meta-characters, you need to use \?,&nbsp;\+,&nbsp;\{,&nbsp;\|,&nbsp;\(, and&nbsp;\). With <b>egrep</b>,
+ you do not have to use the \?,&nbsp;\+,&nbsp;\{,&nbsp;\|,&nbsp;\(, 
+and&nbsp;\). To search for specific criteria through a file content or 
+filesystem, perform the following steps:</p>
+
+<h4 id="cn-m4-358"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-359">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-360"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-361">You can list a specific set of files using the <b>pipe</b>. Type the following command:</p>
+
+<pre id="cn-m4-362"><code>ls | egrep "proxy” /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-363">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-365"></p><figure><img class="cn-img" id="cn-image-m4-c-48" src="Scripting_files/image-m4-c-48.jpg" alt="Figure 1.47 Screenshot of PLABCENTOS"><figcaption>Figure 1.47 Screenshot of PLABCENTOS: Entering a command to list a specific set of files using the pipe.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-367"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-368">In this command, the pipe <b>| </b>acts as an <b>OR </b>command. This means that <b>egrep </b>will simply search a specific file, in this case, <b>yum.conf</b>, and list the occurrences that have a <b>proxy </b>in the name.</p>
+
+<p id="cn-m4-369"></p><figure><img class="cn-img" id="cn-image-m4-c-49" src="Scripting_files/image-m4-c-49.jpg" alt="Figure 1.48 Screenshot of PLABCENTOS"><figcaption>Figure 1.48 Screenshot of PLABCENTOS: Showing the output of the egrep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-371"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-372">Now, attempt the same command with <b>grep. </b>Type the following command:</p>
+
+<pre id="cn-m4-373"><code>ls | grep "init|conf"
+
+</code></pre>
+
+<p id="cn-m4-374">Press Enter.</p>
+
+<p id="cn-m4-375"></p><figure><img class="cn-img" id="cn-image-m4-c-50" src="Scripting_files/image-m4-c-50.jpg" alt="Figure 1.49 Screenshot of PLABCENTOS"><figcaption>Figure 1.49 Screenshot of PLABCENTOS: Entering the grep command to find two words.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-377"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-378">Note that no result is returned. The <b>grep </b>command cannot interpret the pipe <b>|</b></p>
+
+<p id="cn-m4-379"></p><figure><img class="cn-img" id="cn-image-m4-c-51" src="Scripting_files/image-m4-c-51.jpg" alt="Figure 1.50 Screenshot of PLABCENTOS"><figcaption>Figure 1.50 Screenshot of PLABCENTOS: Showing no output of the grep command with the pipe.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-381"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-382">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-383"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-384">To count&nbsp;the number of lines in&nbsp;<b>/etc/yum.conf </b>that either start with&nbsp;<b>1&nbsp;</b>or end with&nbsp;<b>01</b>, type the following command:</p>
+
+<pre id="cn-m4-385"><code>egrep -c ‘^1|01$’ /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-386">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-387"><b><i>Note: </i></b><i>the use of 
+single inverted commas (‘) in the command as compared to the use of 
+double inverted commas (“) in the earlier commands.</i></span>
+
+<p id="cn-m4-388"></p><figure><img class="cn-img" id="cn-image-m4-c-52" src="Scripting_files/image-m4-c-52.jpg" alt="Figure 1.51 Screenshot of PLABCENTOS"><figcaption>Figure
+ 1.51 Screenshot of PLABCENTOS: Entering the egrep command to 
+count&nbsp;the number of lines in&nbsp;/etc/yum.conf that either start 
+with&nbsp;1&nbsp;or end with&nbsp;01.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-390"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-391">Notice that the output returns <b>0</b>, which means that the specified criteria were not met.</p>
+
+<p id="cn-m4-392"></p><figure><img class="cn-img" id="cn-image-m4-c-53" src="Scripting_files/image-m4-c-53.jpg" alt="Figure 1.52 Screenshot of PLABCENTOS"><figcaption>Figure 1.52 Screenshot of PLABCENTOS: Showing the output of the egrep command as 0.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-394"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-395">To find two words simultaneously in a file, type the following command:</p>
+
+<pre id="cn-m4-396"><code>egrep ‘proxy|installonly' /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-397">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-398"></p><figure><img class="cn-img" id="cn-image-m4-c-54" src="Scripting_files/image-m4-c-54.jpg" alt="Figure 1.53 Screenshot of PLABCENTOS"><figcaption>Figure 1.53 Screenshot of PLABCENTOS: Entering the egrep command to find two words simultaneously in a file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-400"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-401">The number of occurrences for both words are found.</p>
+
+<p id="cn-m4-402"></p><figure><img class="cn-img" id="cn-image-m4-c-55" src="Scripting_files/image-m4-c-55.jpg" alt="Figure 1.54 Screenshot of PLABCENTOS"><figcaption>Figure 1.54 Screenshot of PLABCENTOS: Showing the output of the egrep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-404"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-405"><b>Egrep </b>and <b>fgrep </b>are equivalent to grep with <b>-E </b>and <b>-F</b>.</p>
+
+<p id="cn-m4-406">The <b>fgrep </b>command is similar to <b>grep, </b>but it does not process any regular expression meta-characters as being special characters. To <b>fgrep</b>, type the following command:</p>
+
+<pre id="cn-m4-407"><code>fgrep -c ‘proxy’ /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-408">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-409"></p><figure><img class="cn-img" id="cn-image-m4-c-56" src="Scripting_files/image-m4-c-56.jpg" alt="Figure 1.55 Screenshot of PLABCENTOS"><figcaption>Figure 1.55 Screenshot of PLABCENTOS: Entering the fgrep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-411"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-412">The output of the <b>fgrep -c </b>command is displayed. It shows the total number of lines where the proxy word is displayed.</p>
+
+<p id="cn-m4-413"></p><figure><img class="cn-img" id="cn-image-m4-c-57" src="Scripting_files/image-m4-c-57.jpg" alt="Figure 1.56 Screenshot of PLABCENTOS"><figcaption>Figure 1.56 Screenshot of PLABCENTOS: Showing the output of the fgrep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-415"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-416">To use the <b>fgrep </b>tool to find two words, type the following command:</p>
+
+<pre id="cn-m4-417"><code>fgrep -c ‘proxy|installonly’ /etc/yum.conf
+
+</code></pre>
+
+<p id="cn-m4-418">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-419"></p><figure><img class="cn-img" id="cn-image-m4-c-58" src="Scripting_files/image-m4-c-58.jpg" alt="Figure 1.57 Screenshot of PLABCENTOS"><figcaption>Figure 1.57 Screenshot of PLABCENTOS: Entering the fgrep command to find two words in a file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-421"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-422">This command is trying to find both words - <b>proxy </b>as well as <b>installonly </b>- in the <b>/etc/yum.conf </b>file. However, it cannot determine two words and, therefore, returns <b>0 </b>as the search result.</p>
+
+<p id="cn-m4-423"></p><figure><img class="cn-img" id="cn-image-m4-c-59" src="Scripting_files/image-m4-c-59.jpg" alt="Figure 1.58 Screenshot of PLABCENTOS"><figcaption>Figure 1.58 Screenshot of PLABCENTOS: Showing the output of the grep command.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">6bd791b2-1a83-46a6-8333-7474832b03a2</span>
+< <a href="https://github.com/SeanOhAileasa" id="Scripting">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-426"><b>Exercise 2 - Scripting</b></h2>
+
+<p id="cn-m4-427"><b>Bash&nbsp;</b>is a&nbsp;shell, which acts as a 
+command language interpreter. When a user executes a command, the output
+ is generated as the output of the command. <b>Bash </b>can execute individual commands as well as commands from a file, which is known as a script<span class="cn-9999999">.</span></p>
+
+<p id="cn-m4-428">In this exercise, you will work with the <b>Bash </b>profiles and <b>Bash </b>scripts.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-430">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m4-431">
+
+<li id="cn-m4-431">Write a Simple Bash Script</li>
+
+<li id="cn-m4-432">Use Commenting</li>
+
+<li id="cn-m4-433">Use Parameters</li>
+
+<li id="cn-m4-434">Capture User Inputs in Scripts</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-436">You will be using the following devices in this lab. Please power this on now.</p>
+
+<p id="cn-m4-437"><img class="cn-img" id="cn-image-m4-c-60" src="Scripting_files/image-m4-c-60.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m4-438">
+
+<li id="cn-m4-438"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+</ul>
+
+<h3 id="cn-m4-439"><b>Task 1 - Write a Simple Bash Script </b></h3>
+
+<p id="cn-m4-440">Assume that a user has to execute a series of commands
+ multiple times. One method that the user can use is to keep typing in 
+the commands over and over again.</p>
+
+<p id="cn-m4-441">This method works well, but it is time-consuming. 
+Another method that the user can use is to create a file that contains 
+the series of commands, which shell can execute without any manual 
+intervention.</p>
+
+<p id="cn-m4-442">The file that the user will execute to automate the 
+execution of multiple commands is known as a shell script. The user can 
+create the shell script, store it, and execute it as many times as 
+required. Using this method, the user does not have to re-type the same 
+commands.</p>
+
+<p id="cn-m4-443">To write a simple bash script, perform the following steps:</p>
+
+<h4 id="cn-m4-444"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-445">Ensure the terminal window is opened on <b>PLABCENTOS</b>.</p>
+
+<p id="cn-m4-446">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-447"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-448">To create a shell script, type the following command:</p>
+
+<pre id="cn-m4-449"><code>vi script.sh
+
+</code></pre>
+
+<p id="cn-m4-450">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-451"></p><figure><img class="cn-img" id="cn-image-m4-c-61" src="Scripting_files/image-m4-c-61.jpg" alt="Figure 2.1 Screenshot of PLABCENTOS"><figcaption>Figure 2.1 Screenshot of PLABCENTOS: Creating a new script using the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-453"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-454">Press <b>i </b>to start <b>insert mode</b>.</p>
+
+<p id="cn-m4-455"><b>#!/bin/sh </b>will always be the first line that tells the operating system that the script needs to be executed by the <b>Bourne </b>shell. In this case, it is mentioned as <b>#!/bin/sh</b>, which is the default location of the <b>Bourne </b>shell.</p>
+
+<p id="cn-m4-456">Type the following statement:</p>
+
+<pre id="cn-m4-457"><code>#!/bin/sh
+
+</code></pre>
+
+<p id="cn-m4-458">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-459"></p><figure><img class="cn-img" id="cn-image-m4-c-62" src="Scripting_files/image-m4-c-62.jpg" alt="Figure 2.2 Screenshot of PLABCENTOS"><figcaption>Figure 2.2 Screenshot of PLABCENTOS: Entering the first statement in the shell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-461"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-462">Type the following statement:</p>
+
+<pre id="cn-m4-463"><code>echo “Good&nbsp;&nbsp;Morning!”
+
+</code></pre>
+
+<p id="cn-m4-464">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-465"><b><i>Note: </i></b><i>After typing Good, press the tab key.</i></span>
+
+<p id="cn-m4-466"></p><figure><img class="cn-img" id="cn-image-m4-c-63" src="Scripting_files/image-m4-c-63.jpg" alt="Figure 2.3 Screenshot of PLABCENTOS"><figcaption>Figure 2.3 Screenshot of PLABCENTOS: Entering the echo statement in the shell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-468"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-469">To save the file, you need to exit the insert mode. Press <b>ESC</b>. Type the following statement:</p>
+
+<pre id="cn-m4-470"><code>:wq
+
+</code></pre>
+
+<p id="cn-m4-471">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-472"></p><figure><img class="cn-img" id="cn-image-m4-c-64" src="Scripting_files/image-m4-c-64.jpg" alt="Figure 2.4 Screenshot of PLABCENTOS"><figcaption>Figure 2.4 Screenshot of PLABCENTOS: Saving and closing the shell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-474"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-475">You are now in the terminal window.</p>
+
+<p id="cn-m4-476"></p><figure><img class="cn-img" id="cn-image-m4-c-65" src="Scripting_files/image-m4-c-65.jpg" alt="Figure 2.5 Screenshot of PLABCENTOS"><figcaption>Figure 2.5 Screenshot of PLABCENTOS: Displaying the terminal window after shell script closure.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-478"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-479">Next, you need to change the permissions on this shell
+ script. Before a shell script can be executed, the user must make the 
+script executable. To do this, type the following command:</p>
+
+<pre id="cn-m4-480"><code>chmod 755 script.sh
+
+</code></pre>
+
+<p id="cn-m4-481">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-482"></p><figure><img class="cn-img" id="cn-image-m4-c-66" src="Scripting_files/image-m4-c-66.jpg" alt="Figure 2.6 Screenshot of PLABCENTOS"><figcaption>Figure 2.6 Screenshot of PLABCENTOS: Assigning execute permissions to the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-484"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-485">After the script is made executable, it can be executed in two different ways. The first method is to use the <b>bash </b>command. To execute the script, type the following command:</p>
+
+<pre id="cn-m4-486"><code>bash script.sh
+
+</code></pre>
+
+<p id="cn-m4-487">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-488"></p><figure><img class="cn-img" id="cn-image-m4-c-67" src="Scripting_files/image-m4-c-67.jpg" alt="Figure 2.7 Screenshot of PLABCENTOS"><figcaption>Figure 2.7 Screenshot of PLABCENTOS: Executing the script with the bash command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-490"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-491">The script will run and print the output on the console.</p>
+
+<span class="cn-quote" id="cn-m4-492"><b><i>Note: </i></b><i>With the 
+use of echo command, you need to put the string of characters in the 
+quote. It will be printed in the verbatim manner as you have entered. 
+Remember that you had pressed the tab after Good.</i></span>
+
+<p id="cn-m4-493"></p><figure><img class="cn-img" id="cn-image-m4-c-68" src="Scripting_files/image-m4-c-68.jpg" alt="Figure 2.8 Screenshot of PLABCENTOS"><figcaption>Figure 2.8 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-495"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-496">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-497"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-498">The second method to execute a script is to prefix it with ./. Type the following command:</p>
+
+<pre id="cn-m4-499"><code>./script.sh
+
+</code></pre>
+
+<p id="cn-m4-500">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-501"></p><figure><img class="cn-img" id="cn-image-m4-c-69" src="Scripting_files/image-m4-c-69.jpg" alt="Figure 2.9 Screenshot of PLABCENTOS"><figcaption>Figure 2.9 Screenshot of PLABCENTOS: Executing the script with the prefixed ./.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-503"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-504">Notice that the method is the same.</p>
+
+<p id="cn-m4-505"></p><figure><img class="cn-img" id="cn-image-m4-c-70" src="Scripting_files/image-m4-c-70.jpg" alt="Figure 2.10 Screenshot of PLABCENTOS"><figcaption>Figure 2.10 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-507"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-508">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-509"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-510">You can also use a third method that is recommended by various Linux flavors. You should create a subdirectory named <b>bin </b>in your home directory. Then, move the script to the subdirectory.</p>
+
+<p id="cn-m4-511">To create the subdirectory, type the following command:</p>
+
+<pre id="cn-m4-512"><code>mkdir bin
+
+</code></pre>
+
+<p id="cn-m4-513">Press <b>Enter</b>.</p>
+
+<h4 id="cn-m4-515"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-516">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-517"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-518">To list the files in the <b>home </b>directory, type the following command:</p>
+
+<pre id="cn-m4-519"><code>ls
+
+</code></pre>
+
+<p id="cn-m4-520">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-521"></p><figure><img class="cn-img" id="cn-image-m4-c-72" src="Scripting_files/image-m4-c-72.jpg" alt="Figure 2.12 Screenshot of PLABCENTOS"><figcaption>Figure 2.12 Screenshot of PLABCENTOS: Entering the ls command to list the files in the current directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-523"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m4-524">The output of the <b>ls </b>command is displayed.</p>
+
+<p id="cn-m4-525"></p><figure><img class="cn-img" id="cn-image-m4-c-73" src="Scripting_files/image-m4-c-73.jpg" alt="Figure 2.13 Screenshot of PLABCENTOS"><figcaption>Figure 2.13 Screenshot of PLABCENTOS: Showing the output of the ls command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-527"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m4-528">Move the file to the <b>bin </b>directory. Type the following command:</p>
+
+<pre id="cn-m4-529"><code>mv script.sh bin
+
+</code></pre>
+
+<p id="cn-m4-530">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-531"></p><figure><img class="cn-img" id="cn-image-m4-c-74" src="Scripting_files/image-m4-c-74.jpg" alt="Figure 2.14 Screenshot of PLABCENTOS"><figcaption>Figure 2.14 Screenshot of PLABCENTOS: Moving the file into the bin directory using the mv command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-533"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m4-534">The <b>mv </b>command does not provide any output. Let’s verify if the file has moved to the bin directory. To list the files in the <b>home </b>directory, type the following command:</p>
+
+<pre id="cn-m4-535"><code>ls
+
+</code></pre>
+
+<p id="cn-m4-536">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-537"></p><figure><img class="cn-img" id="cn-image-m4-c-75" src="Scripting_files/image-m4-c-75.jpg" alt="Figure 2.15 Screenshot of PLABCENTOS"><figcaption>Figure 2.15 Screenshot of PLABCENTOS: Verifying if the script file has moved to the bin directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-539"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m4-540">Notice that the <b>script.sh </b>file does not exist in the <b>root </b>directory anymore. With the use of the <b>mv </b>command, it has been moved to the <b>bin </b>directory.</p>
+
+<p id="cn-m4-541"></p><figure><img class="cn-img" id="cn-image-m4-c-76" src="Scripting_files/image-m4-c-76.jpg" alt="Figure 2.16 Screenshot of PLABCENTOS"><figcaption>Figure 2.16 Screenshot of PLABCENTOS: Entering the ls command to list the files in the current directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-543"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m4-544">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-545"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-546">To navigate to the <b>bin </b>directory, type the following command:</p>
+
+<pre id="cn-m4-547"><code>cd bin
+
+</code></pre>
+
+<p id="cn-m4-548">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-549"></p><figure><img class="cn-img" id="cn-image-m4-c-77" src="Scripting_files/image-m4-c-77.jpg" alt="Figure 2.17 Screenshot of PLABCENTOS"><figcaption>Figure 2.17 Screenshot of PLABCENTOS: Changing to the bin directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-551"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m4-552">To execute the script, type the following command:</p>
+
+<pre id="cn-m4-553"><code>script.sh
+
+</code></pre>
+
+<p id="cn-m4-554">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-555"></p><figure><img class="cn-img" id="cn-image-m4-c-78" src="Scripting_files/image-m4-c-78.jpg" alt="Figure 2.18 Screenshot of PLABCENTOS"><figcaption>Figure 2.18 Screenshot of PLABCENTOS: Executing the script from the bin directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-557"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m4-558">Notice that the script ran without the <b>bash </b>command or ./. In the <b>bin </b>directory, the script can run on its own by simply executing it.</p>
+
+<p id="cn-m4-559"></p><figure><img class="cn-img" id="cn-image-m4-c-79" src="Scripting_files/image-m4-c-79.jpg" alt="Figure 2.19 Screenshot of PLABCENTOS"><figcaption>Figure 2.19 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-561"><b>Task 2 - Use Commenting </b></h3>
+
+<p id="cn-m4-562">Scripts can also have comments, which are statements that do not get executed.</p>
+
+<p id="cn-m4-563">In this task, you will add comments in the <b>script.sh </b>file.</p>
+
+<h4 id="cn-m4-564"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-565">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-566"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-567">Open the <b>script.sh </b>file once again. Type the following command:</p>
+
+<pre id="cn-m4-568"><code>vi script.sh
+
+</code></pre>
+
+<p id="cn-m4-569">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-570"></p><figure><img class="cn-img" id="cn-image-m4-c-80" src="Scripting_files/image-m4-c-80.jpg" alt="Figure 2.20 Screenshot of PLABCENTOS"><figcaption>Figure 2.20 Screenshot of PLABCENTOS: Opening the script in the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-572"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-573">Press <b>i </b>to start the insert mode. Scroll down to the next blank line.</p>
+
+<p id="cn-m4-574">Type the following statement:</p>
+
+<pre id="cn-m4-575"><code>#This is just a test script.
+
+</code></pre>
+
+<p id="cn-m4-576"></p><figure><img class="cn-img" id="cn-image-m4-c-81" src="Scripting_files/image-m4-c-81.jpg" alt="Figure 2.21 Screenshot of PLABCENTOS"><figcaption>Figure 2.21 Screenshot of PLABCENTOS: Adding a comment statement in the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-578"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-579">To save the file, you need to exit the insert mode. Press <b>ESC</b>. Type the following statement:</p>
+
+<pre id="cn-m4-580"><code>:wq
+
+</code></pre>
+
+<p id="cn-m4-581">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-582"></p><figure><img class="cn-img" id="cn-image-m4-c-82" src="Scripting_files/image-m4-c-82.jpg" alt="Figure 2.22 Screenshot of PLABCENTOS"><figcaption>Figure 2.22 Screenshot of PLABCENTOS: Saving and closing the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-584"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-585">You are now in the terminal window.</p>
+
+<p id="cn-m4-586"></p><figure><img class="cn-img" id="cn-image-m4-c-83" src="Scripting_files/image-m4-c-83.jpg" alt="Figure 2.23 Screenshot of PLABCENTOS"><figcaption>Figure 2.23 Screenshot of PLABCENTOS: Navigating back to the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-588"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-589">Execute the script. Type the following command:</p>
+
+<pre id="cn-m4-590"><code>script.sh
+
+</code></pre>
+
+<p id="cn-m4-591">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-592"></p><figure><img class="cn-img" id="cn-image-m4-c-84" src="Scripting_files/image-m4-c-84.jpg" alt="Figure 2.24 Screenshot of PLABCENTOS"><figcaption>Figure 2.24 Screenshot of PLABCENTOS: Executing the script from the bin directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-594"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-595">Notice that the output does not show any comment.</p>
+
+<p id="cn-m4-596"></p><figure><img class="cn-img" id="cn-image-m4-c-85" src="Scripting_files/image-m4-c-85.jpg" alt="Figure 2.25 Screenshot of PLABCENTOS"><figcaption>Figure 2.25 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-598"><b>Task 3 - Use Parameters </b></h3>
+
+<p id="cn-m4-599">Shell scripts, as stated earlier, can be written once 
+and then re-used as many times as possible. The advantage of a shell 
+script is also that you can pass different parameters to get different 
+results.</p>
+
+<p id="cn-m4-600">To use parameters, perform the following steps:</p>
+
+<h4 id="cn-m4-601"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-602">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-603"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-604">Create the <b>param.sh </b>file. Type the following command:</p>
+
+<pre id="cn-m4-605"><code>vi param.sh
+
+</code></pre>
+
+<p id="cn-m4-606">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-607"></p><figure><img class="cn-img" id="cn-image-m4-c-86" src="Scripting_files/image-m4-c-86.jpg" alt="Figure 2.26 Screenshot of PLABCENTOS"><figcaption>Figure 2.26 Screenshot of PLABCENTOS: Creating a new script using the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-609"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-610">Start the insert mode by press <b>i</b>. Type the following in the script:</p>
+
+<pre id="cn-m4-611"><code>#!/bin/bash
+
+echo "$# parameters"
+
+echo "$@";
+
+</code></pre>
+
+<p id="cn-m4-614"></p><figure><img class="cn-img" id="cn-image-m4-c-87" src="Scripting_files/image-m4-c-87.jpg" alt="Figure 2.27 Screenshot of PLABCENTOS"><figcaption>Figure 2.27 Screenshot of PLABCENTOS: Entering the commands in the script in the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-616"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-617">Press <b>ESC </b>and then type the following command:</p>
+
+<pre id="cn-m4-618"><code>:wq
+
+</code></pre>
+
+<p id="cn-m4-619">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-620"></p><figure><img class="cn-img" id="cn-image-m4-c-88" src="Scripting_files/image-m4-c-88.jpg" alt="Figure 2.28 Screenshot of PLABCENTOS"><figcaption>Figure 2.28 Screenshot of PLABCENTOS: Saving and closing the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-622"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-623">You are now back on the command prompt.</p>
+
+<p id="cn-m4-624"></p><figure><img class="cn-img" id="cn-image-m4-c-89" src="Scripting_files/image-m4-c-89.jpg" alt="Figure 2.29 Screenshot of PLABCENTOS"><figcaption>Figure 2.29 Screenshot of PLABCENTOS: Navigating back to the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-626"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-627">Next, you need to change the permissions on this shell
+ script. Before a shell script can be executed, the user must make the 
+shell script executable. To do this, type the following command:</p>
+
+<pre id="cn-m4-628"><code>chmod 755 param.sh
+
+</code></pre>
+
+<p id="cn-m4-629">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-630"></p><figure><img class="cn-img" id="cn-image-m4-c-90" src="Scripting_files/image-m4-c-90.jpg" alt="Figure 2.30 Screenshot of PLABCENTOS"><figcaption>Figure 2.30 Screenshot of PLABCENTOS: Assigning the execute permission.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-632"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-633">You will now see how the script provides different results when parameters are passed on.</p>
+
+<p id="cn-m4-634">Type the following command:</p>
+
+<pre id="cn-m4-635"><code>param.sh 1 2 3
+
+</code></pre>
+
+<p id="cn-m4-636">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-637"></p><figure><img class="cn-img" id="cn-image-m4-c-91" src="Scripting_files/image-m4-c-91.jpg" alt="Figure 2.31 Screenshot of PLABCENTOS"><figcaption>Figure 2.31 Screenshot of PLABCENTOS: Executing the shell script with the parameters.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-639"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-640">Notice that the output is displayed. The output counts the number of parameters and then displays them.</p>
+
+<p id="cn-m4-641"></p><figure><img class="cn-img" id="cn-image-m4-c-92" src="Scripting_files/image-m4-c-92.jpg" alt="Figure 2.32 Screenshot of PLABCENTOS"><figcaption>Figure 2.32 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-643"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-644">Type the following command:</p>
+
+<pre id="cn-m4-645"><code>param.sh “1 2 3”
+
+</code></pre>
+
+<p id="cn-m4-646">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-647"></p><figure><img class="cn-img" id="cn-image-m4-c-93" src="Scripting_files/image-m4-c-93.jpg" alt="Figure 2.33 Screenshot of PLABCENTOS"><figcaption>Figure 2.33 Screenshot of PLABCENTOS: Executing the shell script with the parameters.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-649"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-650">Notice that the output counts the parameters in the quotes as one parameter. It also displays the parameters within the quotes.</p>
+
+<p id="cn-m4-651"></p><figure><img class="cn-img" id="cn-image-m4-c-94" src="Scripting_files/image-m4-c-94.jpg" alt="Figure 2.34 Screenshot of PLABCENTOS"><figcaption>Figure 2.34 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-653"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-654">Type the following command:</p>
+
+<pre id="cn-m4-655"><code>param.sh 1 “2 3”
+
+</code></pre>
+
+<p id="cn-m4-656">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-657"></p><figure><img class="cn-img" id="cn-image-m4-c-95" src="Scripting_files/image-m4-c-95.jpg" alt="Figure 2.35 Screenshot of PLABCENTOS"><figcaption>Figure 2.35 Screenshot of PLABCENTOS: Executing the script with the parameters.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-659"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-660">Notice that in all three cases, the output was 
+different. In this case, there are two parameters, and then the value of
+ the parameters.</p>
+
+<p id="cn-m4-661"></p><figure><img class="cn-img" id="cn-image-m4-c-96" src="Scripting_files/image-m4-c-96.jpg" alt="Figure 2.36 Screenshot of PLABCENTOS"><figcaption>Figure 2.36 Screenshot of PLABCENTOS: Showing the output of the executed script.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-663"><b>Task 4 - Capture User Inputs in Scripts </b></h3>
+
+<p id="cn-m4-664">You can also capture user inputs in scripts. For example, you can prompt a user to enter the name and then display the name.</p>
+
+<p id="cn-m4-665">In this task, you will capture user inputs in scripts.</p>
+
+<h4 id="cn-m4-666"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-667">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-668"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-669">Create another script named <b>test.sh</b>. Type the following command:</p>
+
+<p id="cn-m4-670">Type the following in the script using the insert mode:</p>
+
+<pre id="cn-m4-671"><code>#!/bin/bash
+
+echo Hello, Please enter your name.
+
+read varname
+
+echo Hello $varname
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m4-675"><b><i>Note: </i></b><i>The value entered by the user is stored in the variable named varname.</i></span>
+
+<p id="cn-m4-676"></p><figure><img class="cn-img" id="cn-image-m4-c-97" src="Scripting_files/image-m4-c-97.jpg" alt="Figure 2.37 Screenshot of PLABCENTOS"><figcaption>Figure 2.37 Screenshot of PLABCENTOS: Creating a new script using the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-678"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-679">Press <b>ESC </b>and then type the following command:</p>
+
+<pre id="cn-m4-680"><code>:wq
+
+</code></pre>
+
+<p id="cn-m4-681">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-682"></p><figure><img class="cn-img" id="cn-image-m4-c-98" src="Scripting_files/image-m4-c-98.jpg" alt="Figure 2.38 Screenshot of PLABCENTOS"><figcaption>Figure 2.38 Screenshot of PLABCENTOS: Saving and closing the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-684"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-685">Back on the terminal window, type the following command:</p>
+
+<pre id="cn-m4-686"><code>chmod 755 test.sh
+
+</code></pre>
+
+<p id="cn-m4-687">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-688"></p><figure><img class="cn-img" id="cn-image-m4-c-99" src="Scripting_files/image-m4-c-99.jpg" alt="Figure 2.39 Screenshot of PLABCENTOS"><figcaption>Figure 2.39 Screenshot of PLABCENTOS: Assigning the execute permission.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-690"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-691">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-692"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-693">Type the following command to execute the script:</p>
+
+<pre id="cn-m4-694"><code>test.sh
+
+</code></pre>
+
+<p id="cn-m4-695">Press <b>Enter</b>. You are prompted for your name.</p>
+
+<p id="cn-m4-696"></p><figure><img class="cn-img" id="cn-image-m4-c-100" src="Scripting_files/image-m4-c-100.jpg" alt="Figure 2.40 Screenshot of PLABCENTOS"><figcaption>Figure 2.40 Screenshot of PLABCENTOS: Executing the shell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-698"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-699">Type your name and press <b>Enter</b>.</p>
+
+<p id="cn-m4-700"></p><figure><img class="cn-img" id="cn-image-m4-c-101" src="Scripting_files/image-m4-c-101.jpg" alt="Figure 2.41 Screenshot of PLABCENTOS"><figcaption>Figure 2.41 Screenshot of PLABCENTOS: Showing the output of the script and prompting to enter the name.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-702"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-703">You are prompted with a welcome message.</p>
+
+<p id="cn-m4-704"></p><figure><img class="cn-img" id="cn-image-m4-c-102" src="Scripting_files/image-m4-c-102.jpg" alt="Figure 2.42 Screenshot of PLABCENTOS"><figcaption>Figure 2.42 Screenshot of PLABCENTOS: Showing the output of the script after receiving the user input.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-706"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-707">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-708"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-709">Create another script named <b>fruits.sh</b>. Use the following code:</p>
+
+<pre id="cn-m4-710"><code>#!/bin/bash
+
+echo Name three fruits that you love to eat:
+
+read fruit1 fruit2 fruit3
+
+echo First fruit you like is: $fruit1
+
+echo Second fruit you like is: $fruit2
+
+echo Third fruit you like is: $fruit3
+
+</code></pre>
+
+<p id="cn-m4-716"></p><figure><img class="cn-img" id="cn-image-m4-c-103" src="Scripting_files/image-m4-c-103.jpg" alt="Figure 2.43 Screenshot of PLABCENTOS"><figcaption>Figure 2.43 Screenshot of PLABCENTOS: Creating a new script using the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-718"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-719">Save the file. In this script, you are accepting 
+multiple values using the read command. The read will split the values 
+on whitespace.</p>
+
+<p id="cn-m4-720"></p><figure><img class="cn-img" id="cn-image-m4-c-104" src="Scripting_files/image-m4-c-104.jpg" alt="Figure 2.44 Screenshot of PLABCENTOS"><figcaption>Figure 2.44 Screenshot of PLABCENTOS: Entering the commands in the script in the vi editor.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-722"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-723">After creating the file, assign the execute permissions using the following command:</p>
+
+<pre id="cn-m4-724"><code>chmod 755 fruits.sh
+
+</code></pre>
+
+<p id="cn-m4-725">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-726"></p><figure><img class="cn-img" id="cn-image-m4-c-105" src="Scripting_files/image-m4-c-105.jpg" alt="Figure 2.45 Screenshot of PLABCENTOS"><figcaption>Figure 2.45 Screenshot of PLABCENTOS: Assigning the execute permissions.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-728"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-729">Then, execute the script. Type the following command:</p>
+
+<pre id="cn-m4-730"><code>fruits.sh
+
+</code></pre>
+
+<p id="cn-m4-731">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-732"></p><figure><img class="cn-img" id="cn-image-m4-c-106" src="Scripting_files/image-m4-c-106.jpg" alt="Figure 2.46 Screenshot of PLABCENTOS"><figcaption>Figure 2.46 Screenshot of PLABCENTOS: Executing the script from the bin directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-734"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-735">Notice you are prompted to provide an input.</p>
+
+<p id="cn-m4-736"></p><figure><img class="cn-img" id="cn-image-m4-c-107" src="Scripting_files/image-m4-c-107.jpg" alt="Figure 2.47 Screenshot of PLABCENTOS"><figcaption>Figure 2.47 Screenshot of PLABCENTOS: Prompting the user input after executing the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-738"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-739">Type the following values:</p>
+
+<pre id="cn-m4-740"><code>Apple&nbsp;&nbsp; Orange Watermelon
+
+</code></pre>
+
+<p id="cn-m4-741">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m4-742"><b><i>Note: </i></b><i>You can use any values of your choice. They must be entered in the same sequence. </i></span>
+
+<p id="cn-m4-743"></p><figure><img class="cn-img" id="cn-image-m4-c-108" src="Scripting_files/image-m4-c-108.jpg" alt="Figure 2.48 Screenshot of PLABCENTOS"><figcaption>Figure 2.48 Screenshot of PLABCENTOS: Entering the user inputs as prompted by the script.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-745"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m4-746">Notice that the entered values are assigned to the appropriate variables.</p>
+
+<p id="cn-m4-747"></p><figure><img class="cn-img" id="cn-image-m4-c-109" src="Scripting_files/image-m4-c-109.jpg" alt="Figure 2.49 Screenshot of PLABCENTOS"><figcaption>Figure 2.49 Screenshot of PLABCENTOS: Showing the output of the script.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">6bd791b2-1a83-46a6-8333-7474832b03a2</span>
+< <a href="https://github.com/SeanOhAileasa" id="Piping">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-750"><b>Exercise 3 - Piping</b></h2>
+
+<p id="cn-m4-751">Linux shells use pipes (|) as an operator between two 
+commands, where the output of one command is the input of the second 
+command.</p>
+
+<p id="cn-m4-752">Redirects are meant to direct the output to a specific file or take the input from a specific file<span class="cn-9999999">. </span></p>
+
+<p id="cn-m4-753">In this exercise, you will understand to use pipes.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-755">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m4-756">
+
+<li id="cn-m4-756">Pipe the Output of one Command to the Input of another Command</li>
+
+<li id="cn-m4-757">Use the Output of One Command as Argument to another Command</li>
+
+<li id="cn-m4-758">Send Output to Both Stdout and a File</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-760">You will be using the following devices in this lab. Please power this on now.</p>
+
+<p id="cn-m4-761"><img class="cn-img" id="cn-image-m4-c-110" src="Scripting_files/image-m4-c-110.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m4-762">
+
+<li id="cn-m4-762"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+</ul>
+
+<h3 id="cn-m4-763"><b>Task 1 - Pipe the Output of one Command to the Input of another Command</b></h3>
+
+<p id="cn-m4-764">Pipes provide a method to apply multiple commands 
+concurrently. In this task, you will pipe the output of one command to 
+the input of the other.</p>
+
+<p id="cn-m4-765">In this task, you will pipe the output of one command to the input of another command.</p>
+
+<h4 id="cn-m4-766"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-767">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-768"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-769">To redirect the standard output of the first command to the standard input of the second command, type the following command:</p>
+
+<pre id="cn-m4-770"><code>ls -l /dev | more
+
+</code></pre>
+
+<p id="cn-m4-771">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-772"></p><figure><img class="cn-img" id="cn-image-m4-c-111" src="Scripting_files/image-m4-c-111.jpg" alt="Figure 3.1 Screenshot of PLABCENTOS"><figcaption>Figure
+ 3.1 Screenshot of PLABCENTOS: Executing the command to redirect the 
+standard output of the first command to the standard input of the second
+ command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-774"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-775">The <b>more </b>parameter is used for pagination. You will need to press <b>Enter </b>to continue reading further.</p>
+
+<p id="cn-m4-776"></p><figure><img class="cn-img" id="cn-image-m4-c-112" src="Scripting_files/image-m4-c-112.jpg" alt="Figure 3.2 Screenshot of PLABCENTOS"><figcaption>Figure 3.2 Screenshot of PLABCENTOS: Showing the user of more command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-778"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-779">You can continue to press <b>Enter </b>to view the complete output or terminate <b>CTRL + c </b>to terminate the output.</p>
+
+<p id="cn-m4-780">You are back at the command prompt.</p>
+
+<p id="cn-m4-781"></p><figure><img class="cn-img" id="cn-image-m4-c-113" src="Scripting_files/image-m4-c-113.jpg" alt="Figure 3.3 Screenshot of PLABCENTOS"><figcaption>Figure 3.3 Screenshot of PLABCENTOS: Terminating the command.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-783"><b>Task 2 - Use the Output of One Command as Argument to another Command</b></h3>
+
+<p id="cn-m4-784">You can use the output of one command as an argument 
+to the other command. In this task, you will use the output of one 
+command as an argument to the other command. To do this, perform the 
+following steps:</p>
+
+<h4 id="cn-m4-785"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-786">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-787"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-788">Type the following command:</p>
+
+<pre id="cn-m4-789"><code>ls -l /etc/*.conf | grep user
+
+</code></pre>
+
+<p id="cn-m4-790">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-791"></p><figure><img class="cn-img" id="cn-image-m4-c-114" src="Scripting_files/image-m4-c-114.jpg" alt="Figure 3.4 Screenshot of PLABCENTOS"><figcaption>Figure
+ 3.4 Screenshot of PLABCENTOS: Entering the command to accept the output
+ of the first command as input to the second command using piping.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-792"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-793">This command uses piping with the <b>grep </b>command. The command will find any file that has the word user in the name.</p>
+
+<p id="cn-m4-794"></p><figure><img class="cn-img" id="cn-image-m4-c-115" src="Scripting_files/image-m4-c-115.jpg" alt="Figure 3.5 Screenshot of PLABCENTOS"><figcaption>Figure 3.5 Screenshot of PLABCENTOS: Showing the output of the command using piping with the grep command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-796"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-797">The <b>xargs </b>command generates an argument list using standard input for a command. The <b>xargs </b>command is typically used with a pipe <b>| </b>operator.</p>
+
+<p id="cn-m4-798">To use the <b>xargs </b>command, type the following command:</p>
+
+<pre id="cn-m4-799"><code>ls | xargs cat
+
+</code></pre>
+
+<p id="cn-m4-800">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-801"></p><figure><img class="cn-img" id="cn-image-m4-c-116" src="Scripting_files/image-m4-c-116.jpg" alt="Figure 3.6 Screenshot of PLABCENTOS"><figcaption>Figure 3.6 Screenshot of PLABCENTOS: Using the xargs command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-803"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-804">The <b>cat </b>parameter reads the contents of the files displayed in the <b>ls </b>parameter.</p>
+
+<p id="cn-m4-805"></p><figure><img class="cn-img" id="cn-image-m4-c-117" src="Scripting_files/image-m4-c-117.jpg" alt="Figure 3.7 Screenshot of PLABCENTOS"><figcaption>Figure 3.7 Screenshot of PLABCENTOS: Showing the argument of the xargs command.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-807"><b>Task 3 - Send Output to Both Stdout and a File</b></h3>
+
+<p id="cn-m4-808">Linux offers commands that enable you to send an output to both - the standard output file (stdout) and any other file.</p>
+
+<p id="cn-m4-809">In this task you will send the output to both - stdout and a file.</p>
+
+<h4 id="cn-m4-810"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-811">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-812"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-813">You can redirect the standard output to a file and the screen at the same time. The <b>tee </b>command reads the input and then writes to standard output and also to the file that is specified. Type the following command:</p>
+
+<pre id="cn-m4-814"><code>ls -l /dev | tee output.txt
+
+</code></pre>
+
+<p id="cn-m4-815">Press Enter.</p>
+
+<p id="cn-m4-816"></p><figure><img class="cn-img" id="cn-image-m4-c-118" src="Scripting_files/image-m4-c-118.jpg" alt="Figure 3.8 Screenshot of PLABCENTOS"><figcaption>Figure 3.8 Screenshot of PLABCENTOS: Redirecting the standard output to a file and on the screen at the same time.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-817"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-818">The standard output is generated. Along with this, a file named output.txt is also generated.</p>
+
+<p id="cn-m4-819"></p><figure><img class="cn-img" id="cn-image-m4-c-119" src="Scripting_files/image-m4-c-119.jpg" alt="Figure 3.9 Screenshot of PLABCENTOS"><figcaption>Figure 3.9 Screenshot of PLABCENTOS: Showing the redirected standard output to a file and on the screen at the same time.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-821"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-822">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-823"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-824">Type the following command to verify that the <b>output.txt </b>file exists:</p>
+
+<pre id="cn-m4-825"><code>ls
+
+</code></pre>
+
+<p id="cn-m4-826">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-827"></p><figure><img class="cn-img" id="cn-image-m4-c-120" src="Scripting_files/image-m4-c-120.jpg" alt="Figure 3.10 Screenshot of PLABCENTOS"><figcaption>Figure 3.10 Screenshot of PLABCENTOS: Listing the files using the ls command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-829"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-830">Notice that the <b>output.txt </b>file is now created with the input from the <b>tee </b>command.</p>
+
+<p id="cn-m4-831"></p><figure><img class="cn-img" id="cn-image-m4-c-121" src="Scripting_files/image-m4-c-121.jpg" alt="Figure 3.11 Screenshot of PLABCENTOS"><figcaption>Figure 3.11 Screenshot of PLABCENTOS: Verifying that the output.txt file exists.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-833"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-834">To view the contents of the <b>output.txt </b>file, type the following command:</p>
+
+<p id="cn-m4-835">cat output.txt</p>
+
+<p id="cn-m4-836">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-837"></p><figure><img class="cn-img" id="cn-image-m4-c-122" src="Scripting_files/image-m4-c-122.jpg" alt="Figure 3.12 Screenshot of PLABCENTOS"><figcaption>Figure 3.12 Screenshot of PLABCENTOS: Viewing the contents of the output.txt file using the cat command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-839"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-840">The <b>output.txt </b>file contains the same output that was displayed on the console.</p>
+
+<p id="cn-m4-841"></p><figure><img class="cn-img" id="cn-image-m4-c-123" src="Scripting_files/image-m4-c-123.jpg" alt="Figure 3.13 Screenshot of PLABCENTOS"><figcaption>Figure 3.13 Screenshot of PLABCENTOS: Viewing the contents of the output.txt file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">6bd791b2-1a83-46a6-8333-7474832b03a2</span>
+
+<span class="atom-code hidden">86b3caf2-2504-4e20-a81b-2fcb2368c8d2</span>
+
+<span class="cn-alert" id="cn-m4-845">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-846"><b>Review</b></h2>
+
+<p id="cn-m4-847">Well done, you have completed the <b>Scripting </b>Practice Lab.</p>
+
+<span class="atom-code hidden">2abaca70-efa1-4fe5-94fb-ad1777bfc242</span>
+
+<span class="atom-code hidden">6223b706-9b9c-4e71-beca-bb461b4c1939</span>
+
+<span class="atom-code hidden">052344c7-6173-404a-9d6a-88f94c24ff71</span>
+
+<span class="atom-code hidden">6e82aa90-a3fc-4e62-9399-4202a93c90eb</span>
+
+<span class="atom-code hidden">fd863df6-ec7c-414f-b708-31bb55fbd8c5</span>
+
+<span class="atom-code hidden">6e192208-f647-4ac4-8ffa-860ad5e57351</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m4-857">You completed the following exercises:</p>
+
+<ul id="cn-m4-858">
+
+<li id="cn-m4-858">Exercise 1 - Perform Search</li>
+
+<li id="cn-m4-859">Exercise 2 - Scripting</li>
+
+<li id="cn-m4-860">Exercise 3 - Piping</li>
+
+</ul>
+
+<p id="cn-m4-861"><b> </b>You should now be able to:</p>
+
+<ul id="cn-m4-862">
+
+<li id="cn-m4-862">Use the Find Command</li>
+
+<li id="cn-m4-863">Find Files and Commands on a Linux System</li>
+
+<li id="cn-m4-864">Search for a Specific Text in a File</li>
+
+<li id="cn-m4-865">Search for Specific Criteria Through a File Content or a Filesystem</li>
+
+<li id="cn-m4-866">Write a Simple Bash Script</li>
+
+<li id="cn-m4-867">Use Commenting</li>
+
+<li id="cn-m4-868">Use Parameters</li>
+
+<li id="cn-m4-869">Capture User Inputs in Scripts</li>
+
+<li id="cn-m4-870">Pipe the Output of one Command to the Input of Another Command</li>
+
+<li id="cn-m4-871">Use the Output of one Command as Argument to Another Command</li>
+
+<li id="cn-m4-872">Send Output to Both Stdout and a File</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b> Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m4-876">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

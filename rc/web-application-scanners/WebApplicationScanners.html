@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="WebApplicationScanners_files/print-styles.css" rel="stylesheet">
+    <script src="WebApplicationScanners_files/jquery.min.js"></script>
+    <script src="WebApplicationScanners_files/jspdf.js"></script>
+    <script src="WebApplicationScanners_files/from_html.js"></script>
+    <script src="WebApplicationScanners_files/addimage.js"></script>
+    <script src="WebApplicationScanners_files/filesaver.js"></script>
+    <script src="WebApplicationScanners_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="C/tz7DTKGpWdf3OGn1SvVaobAHIlvMVbSXJbZVxruFc01H1nabHV3dC3C/YT7nDYSDEY5XUygRInw84qO/E8Sb5M4WgyPUtc+eDb8Ay1RDc=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Cybersecurity Analyst (CySA+)</h1>
+                <h2>Web Application Scanners</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Web Application Scanner</li><li>Exercise 2 - Software Assessment Tools and Techniques</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m8-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>OWASP Zed Attack Proxy (ZAP)</div>
+
+<div>Nikto</div>
+
+<div>Static Analysis</div>
+
+<div>Dynamic Analysis</div>
+
+<div>Reverse Engineering</div>
+
+<div>Fuzzing</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m8-9">Welcome to the <b>Web Application Scanners </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-13">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m8-14">
+
+<li id="cn-m8-14">Exercise 1 - Web Application scanner</li>
+
+<li id="cn-m8-15">Exercise 2 - Software assessment tools and techniques</li>
+
+</ul>
+
+<p id="cn-m8-16">After completing this module, you will be able to:</p>
+
+<ul id="cn-m8-17">
+
+<li id="cn-m8-17">Use OWASP Zed Attack Proxy (ZAP)</li>
+
+<li id="cn-m8-18">Use Nikto</li>
+
+</ul>
+
+<p id="cn-m8-19">After completing this module, you will have further knowledge of:</p>
+
+<ul id="cn-m8-20">
+
+<li id="cn-m8-20">Static Analysis</li>
+
+<li id="cn-m8-21">Dynamic Analysis</li>
+
+<li id="cn-m8-22">Reverse Engineering</li>
+
+<li id="cn-m8-23">Fuzzing</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m8-25">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m8-26">
+
+<li id="cn-m8-26">1.4 Given a scenario, analyze the output from common vulnerability assessment tools.</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m8-27"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m8-29">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">1b317064-7b0c-48e0-845c-05a2d99e80c5</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m8-33">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m8-34">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-36"><b>Lab Topology</b></h2>
+
+<p id="cn-m8-37">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m8-38"><img class="cn-img" id="cn-image-m8-c-0" src="WebApplicationScanners_files/image-m8-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m8-39">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m8-40">
+
+<li id="cn-m8-40"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m8-41"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m8-42"><b>PLABKALI01 </b>- (Kali Linux 2019 - Linux Kali)</li>
+
+<li id="cn-m8-43"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m8-44"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+<li id="cn-m8-45"><b>PLABALIENVAULT </b>- (Alien Vault Linux Security Management Platform)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m8-46">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="WebApplicationScanner">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-47"><b>Exercise 1 - Web Application Scanner</b></h2>
+
+<p id="cn-m8-48">There is a high probability that a Web application has a
+ security flaw. It is not easy to detect security flaws unless you use a
+ security auditing tool or framework. One can use these security tools 
+to find vulnerabilities before a hacker does. Most organizations around 
+the world ensure that their applications are thoroughly tested before 
+they are made live. Over a period of time, the use of Web application 
+security tools has been widely accepted and has only increased.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-50">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m8-51">
+
+<li id="cn-m8-51">Use OWASP Zed Attack Proxy (ZAP)</li>
+
+<li id="cn-m8-52">Use Nikto</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-54">You will be using the following devices in this lab. Please power these on now.</p>
+
+<p id="cn-m8-55"><img class="cn-img" id="cn-image-m8-c-1" src="WebApplicationScanners_files/image-m8-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m8-56">
+
+<li id="cn-m8-56"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m8-57"><b>PLABKALI01 </b>- (Kali Linux 2019 - Linux Kali)</li>
+
+<li id="cn-m8-58"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<h3 id="cn-m8-59"><b>Task 1 - Verify that the DVWA is running</b></h3>
+
+<p id="cn-m8-60">In this task, the DVWA will be started which will be needed in the following tasks to conduct web application exploits.</p>
+
+<span class="cn-alert" id="cn-m8-61">This task was performed in the <b>Attack Types </b>module. Please note that if DVWA has already been started, please continue to Task 2.</span>
+
+<h4 id="cn-m8-62"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-63">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m8-64"></p><figure><img class="cn-img" id="cn-image-m8-c-2" src="WebApplicationScanners_files/image-m8-c-2.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Displaying the Desktop."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Displaying the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-66"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-67">Click <b>Start </b>and select <b>XAMPP Control Panel</b>.</p>
+
+<p id="cn-m8-68"></p><figure><img class="cn-img" id="cn-image-m8-c-3" src="WebApplicationScanners_files/image-m8-c-3.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Displaying opening the XAMPP Control Panel."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Displaying opening the XAMPP Control Panel.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-70"><b><i>Note: </i></b><i>The XAMPP 
+application is used to host an Apache web application on Windows and 
+Linux operating systems. This application also configures the necessary 
+MySQL database for the installation. In the infrastructure, the 
+application has already been configured to run the DVWA.</i></span>
+
+<h4 id="cn-m8-71"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-72">In the <b>XAMPP Control Panel </b>in the <b>Actions </b>column, select <b>Start </b>for the following services:</p>
+
+<pre id="cn-m8-73"><code>Apache
+
+MySQL
+
+</code></pre>
+
+<p id="cn-m8-75"></p><figure><img class="cn-img" id="cn-image-m8-c-4" src="WebApplicationScanners_files/image-m8-c-4.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Displaying starting the Apache and MySQL services using the XAMPP Control Panel."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Displaying starting the Apache and MySQL services using the XAMPP Control Panel.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-77"><b><i>Note: </i></b><i>The Apache and MySQL services need to run for the DVWA to be accessible.</i></span>
+
+<h4 id="cn-m8-78"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-79">Minimize the <b>XAMPP Control Panel</b>.</p>
+
+<p id="cn-m8-80"></p><figure><img class="cn-img" id="cn-image-m8-c-5" src="WebApplicationScanners_files/image-m8-c-5.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Displaying minimizing the XAMPP Control Panel."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Displaying minimizing the XAMPP Control Panel.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-82"><b><i>Note: </i></b><i>After 
+starting these services, it can be seen which ports are open for the 
+DVWA to function. Port 80 and 443 are used for web application traffic 
+on the network; port 80 uses the http protocol, and port 443 uses the 
+https protocol. The https protocol is more secure as it encrypts the 
+network, where the http protocol does not encrypt the traffic.</i></span>
+
+<h4 id="cn-m8-83"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-84">From the <b>Taskbar</b>, open the <b>Microsoft Edge </b>web browser.</p>
+
+<p id="cn-m8-86"></p><figure><img class="cn-img" id="cn-image-m8-c-6" src="WebApplicationScanners_files/image-m8-c-6.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar."><figcaption>Figure 1.5 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-88"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-89">In the <b>Microsoft Edge </b>browser, navigate to the following URL:</p>
+
+<pre id="cn-m8-90"><code>http://192.168.0.4/dvwa
+
+</code></pre>
+
+<p id="cn-m8-91"></p><figure><img class="cn-img" id="cn-image-m8-c-7" src="WebApplicationScanners_files/image-m8-c-7.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Displaying browsing to the DVWA using Microsoft Edge."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Displaying browsing to the DVWA using Microsoft Edge.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-93"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-94">In <b>Microsoft Edge</b>, enter the following credentials and click <b>Login:</b></p>
+
+<pre id="cn-m8-95"><code>Username: admin
+
+Password: <span class="cn-password">password</span>
+
+</code></pre>
+
+<p id="cn-m8-97"></p><figure><img class="cn-img" id="cn-image-m8-c-8" src="WebApplicationScanners_files/image-m8-c-8.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Displaying logging into the DVWA using the Microsoft Edge browser."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Displaying logging into the DVWA using the Microsoft Edge browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-99"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-100">In the <b>Save password </b>pop-up window, select <b>Never</b>.</p>
+
+<p id="cn-m8-101"></p><figure><img class="cn-img" id="cn-image-m8-c-9" src="WebApplicationScanners_files/image-m8-c-9.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Displaying the Microsoft Edge browser and selecting not to save the password to log into the DVWA."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: Displaying the Microsoft Edge browser and 
+selecting not to save the password to log into the DVWA.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-103"><b><i>Note: </i></b><i>After successful login, the different types of Web application exploits are shown.</i></span>
+
+<h4 id="cn-m8-104"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m8-105">Close the <b>Microsoft Edge </b>browser.</p>
+
+<p id="cn-m8-106"></p><figure><img class="cn-img" id="cn-image-m8-c-10" src="WebApplicationScanners_files/image-m8-c-10.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Displaying closing the Microsoft Edge browser."><figcaption>Figure 1.9 Screenshot of PLABWIN10: Displaying closing the Microsoft Edge browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-108"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m8-109">Connect to <b>PLABKALI01</b>.</p>
+
+<p id="cn-m8-110"></p><figure><img class="cn-img" id="cn-image-m8-c-11" src="WebApplicationScanners_files/image-m8-c-11.jpg" alt="Figure 1.10 Screenshot of PLABKALI01: Displaying the Desktop."><figcaption>Figure 1.10 Screenshot of PLABKALI01: Displaying the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-112"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m8-113">Select <b>Firefox ESR </b>in the menu bar on the left.</p>
+
+<p id="cn-m8-114"></p><figure><img class="cn-img" id="cn-image-m8-c-12" src="WebApplicationScanners_files/image-m8-c-12.jpg" alt="Figure 1.11 Screenshot of PLABKALI01: Displaying opening the Firefox ESR browser."><figcaption>Figure 1.11 Screenshot of PLABKALI01: Displaying opening the Firefox ESR browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-116"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m8-117">Browse to the following <b>URL </b>in the <b>Firefox ESR </b>browser:</p>
+
+<pre id="cn-m8-118"><code>http://192.168.0.4/dvwa
+
+</code></pre>
+
+<p id="cn-m8-119"></p><figure><img class="cn-img" id="cn-image-m8-c-13" src="WebApplicationScanners_files/image-m8-c-13.jpg" alt="Figure 1.12 Screenshot of PLABKALI01: Displaying browsing to the DVWA website."><figcaption>Figure 1.12 Screenshot of PLABKALI01: Displaying browsing to the DVWA website.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-121"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m8-122">In <b>Firefox ESR </b>enter the following credentials and click <b>Login:</b></p>
+
+<pre id="cn-m8-123"><code>Username: admin
+
+Password: <span class="cn-password">password</span>
+
+</code></pre>
+
+<p id="cn-m8-125"></p><figure><img class="cn-img" id="cn-image-m8-c-14" src="WebApplicationScanners_files/image-m8-c-14.jpg" alt="Figure 1.13 Screenshot of PLABKALI01: Displaying logging into the DVWA application using the Firefox ESR browser."><figcaption>Figure 1.13 Screenshot of PLABKALI01: Displaying logging into the DVWA application using the Firefox ESR browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-127"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m8-128">Select <b>Don’t Save </b>in the pop-up window from <b>Firefox ESR</b>.</p>
+
+<p id="cn-m8-129"></p><figure><img class="cn-img" id="cn-image-m8-c-15" src="WebApplicationScanners_files/image-m8-c-15.jpg" alt="Figure 1.14 Screenshot of PLABKALI01: Displaying successfully logged onto the DVWA in Firefox ESR."><figcaption>Figure 1.14 Screenshot of PLABKALI01: Displaying successfully logged onto the DVWA in Firefox ESR.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-131"><b><i>Note: </i></b><i>The DVWA 
+was accessed remotely from PLABKALI01 using the Firefox ESR web browser.
+ By using Kali linux, specific web application vulnerabilities can be 
+exploited. </i></span>
+
+<h4 id="cn-m8-132"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m8-133">Close the <b>Firefox ESR </b>web browser.</p>
+
+<h3 id="cn-m8-135"><b>Task 2 - Use OWASP Zed Attack Proxy (ZAP)</b></h3>
+
+<p id="cn-m8-136"><b>OWASP ZAP </b>is an application to test the Web application security and is used for finding vulnerabilities in Web applications. Using <b>OWASP ZAP</b>,
+ you can test for critical security flaws, such as directory browsing, 
+XSS flaw, remote OS command injection, cross-site scripting, and many 
+more.</p>
+
+<p id="cn-m8-137">In this task, you will use a vulnerable Website for the attack. This Website is known as <b>DVWA</b>. To use <b>OWASP ZAP</b>, perform the following steps:</p>
+
+<h4 id="cn-m8-138"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-139">Ensure that you have powered on the required devices. Connect to <b>PLABKALI01</b>.</p>
+
+<p id="cn-m8-140">The desktop is displayed.</p>
+
+<p id="cn-m8-141"></p><figure><img class="cn-img" id="cn-image-m8-c-16" src="WebApplicationScanners_files/image-m8-c-16.jpg" alt="Figure 1.1 Screenshot of PLABKALI01: Showing the desktop of PLABKALI01."><figcaption>Figure 1.1 Screenshot of PLABKALI01: Showing the desktop of PLABKALI01.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-144"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-145">Click the <b>Terminal </b>icon in the application bar.</p>
+
+<p id="cn-m8-146"></p><figure><img class="cn-img" id="cn-image-m8-c-17" src="WebApplicationScanners_files/image-m8-c-17.jpg" alt="Figure 1.2 Screenshot of PLABKALI01: Clicking the Terminal icon in the application bar."><figcaption>Figure 1.2 Screenshot of PLABKALI01: Clicking the Terminal icon in the application bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-149"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-150">You need to first install <b>OWASP-ZAP</b>; for which the installer is stored in the <b>Downloads </b>folder. Let’s first navigate to the <b>Downloads </b>folder using the following command:</p>
+
+<pre id="cn-m8-151"><code>cd Downloads
+
+</code></pre>
+
+<p id="cn-m8-152">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-153"></p><figure><img class="cn-img" id="cn-image-m8-c-18" src="WebApplicationScanners_files/image-m8-c-18.jpg" alt="Figure 1.3 Screenshot of PLABKALI01: Navigating to the Downloads folder."><figcaption>Figure 1.3 Screenshot of PLABKALI01: Navigating to the Downloads folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-156"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-157">Let’s view the files kept in the <b>Downloads </b>folder. To do this, type the following command:</p>
+
+<pre id="cn-m8-158"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m8-159">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-160"></p><figure><img class="cn-img" id="cn-image-m8-c-19" src="WebApplicationScanners_files/image-m8-c-19.jpg" alt="Figure 1.4 Screenshot of PLABKALI01: Listing the files in the Downloads folder."><figcaption>Figure 1.4 Screenshot of PLABKALI01: Listing the files in the Downloads folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-163"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-164">There is only one installer for <b>OWAP ZAP </b>in the <b>Downloads </b>folder.
+ Notice that there are no execute permissions on this installer. If you 
+attempt to run the installer, you will get the permission denied error. 
+To change the permissions on this installer, type the following command:</p>
+
+<pre id="cn-m8-165"><code>chmod o+x ZAP_2_9_0_unix.sh
+
+</code></pre>
+
+<p id="cn-m8-166">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-167"></p><figure><img class="cn-img" id="cn-image-m8-c-20" src="WebApplicationScanners_files/image-m8-c-20.jpg" alt="Figure 1.5 Screenshot of PLABKALI01: Changing the permissions on the installer with the chmod command."><figcaption>Figure 1.5 Screenshot of PLABKALI01: Changing the permissions on the installer with the chmod command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-170"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-171">The command runs successfully but does not generate an output. To verify permissions, type the following command:</p>
+
+<pre id="cn-m8-172"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m8-173">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-174"></p><figure><img class="cn-img" id="cn-image-m8-c-21" src="WebApplicationScanners_files/image-m8-c-21.jpg" alt="Figure 1.6 Screenshot of PLABKALI01: Listing the files in the Downloads folder."><figcaption>Figure 1.6 Screenshot of PLABKALI01: Listing the files in the Downloads folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-177"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-178">Execute permissions have been assigned to the installer.</p>
+
+<p id="cn-m8-179"></p><figure><img class="cn-img" id="cn-image-m8-c-22" src="WebApplicationScanners_files/image-m8-c-22.jpg" alt="Figure 1.7 Screenshot of PLABKALI01: Showing the changed permissions on the installer."><figcaption>Figure 1.7 Screenshot of PLABKALI01: Showing the changed permissions on the installer.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-182"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-183">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-184"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-185">To install OWAP-ZAP, run the following command:</p>
+
+<pre id="cn-m8-186"><code>./ZAP_2_9_0_unix.sh
+
+</code></pre>
+
+<p id="cn-m8-187">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-188"></p><figure><img class="cn-img" id="cn-image-m8-c-23" src="WebApplicationScanners_files/image-m8-c-23.jpg" alt="Figure 1.8 Screenshot of PLABKALI01: Running OWASP ZAP installer in the terminal window."><figcaption>Figure 1.8 Screenshot of PLABKALI01: Running OWASP ZAP installer in the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-191"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m8-192">The installation process starts.</p>
+
+<p id="cn-m8-193"></p><figure><img class="cn-img" id="cn-image-m8-c-24" src="WebApplicationScanners_files/image-m8-c-24.jpg" alt="Figure 1.9 Screenshot of PLABKALI01: Showing the start of the installation of OWASP ZAP."><figcaption>Figure 1.9 Screenshot of PLABKALI01: Showing the start of the installation of OWASP ZAP.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-196"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m8-197">The <b>Setup - OWASP Zed Attack Proxy 2.9.0 </b>wizard is now displayed. On the <b>Welcome to the OWASP Zed Attack Proxy Setup Wizard </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m8-198"></p><figure><img class="cn-img" id="cn-image-m8-c-25" src="WebApplicationScanners_files/image-m8-c-25.jpg" alt="Figure 1.10 Screenshot of PLABKALI01: Showing the Welcome page of the OWASP installation wizard."><figcaption>Figure 1.10 Screenshot of PLABKALI01: Showing the Welcome page of the OWASP installation wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-201"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m8-202">On the <b>License Agreement </b>page, select <b>I accept the agreement </b>and click <b>Next</b>.</p>
+
+<p id="cn-m8-203"></p><figure><img class="cn-img" id="cn-image-m8-c-26" src="WebApplicationScanners_files/image-m8-c-26.jpg" alt="Figure 1.11 Screenshot of PLABKALI01: Selecting the agreement and click Next on the License Agreement page."><figcaption>Figure 1.11 Screenshot of PLABKALI01: Selecting the agreement and click Next on the License Agreement page.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-206"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m8-207">On the <b>Select Installation Type </b>page, keep the default selection of <b>Standard installation </b>and click <b>Next</b>.</p>
+
+<p id="cn-m8-208"></p><figure><img class="cn-img" id="cn-image-m8-c-27" src="WebApplicationScanners_files/image-m8-c-27.jpg" alt="Figure 1.12 Screenshot of PLABKALI01: Clicking Next with the default selection of Standard Installation on the Select Installation Type page."><figcaption>Figure
+ 1.12 Screenshot of PLABKALI01: Clicking Next with the default selection
+ of Standard Installation on the Select Installation Type page.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-211"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m8-212">On the <b>Ready to Install </b>page, review the configuration settings, and click <b>Install</b>.</p>
+
+<p id="cn-m8-213"></p><figure><img class="cn-img" id="cn-image-m8-c-28" src="WebApplicationScanners_files/image-m8-c-28.jpg" alt="Figure 1.13 Screenshot of PLABKALI01: Reviewing the configuration on the Ready to Install page and clicking Next."><figcaption>Figure 1.13 Screenshot of PLABKALI01: Reviewing the configuration on the Ready to Install page and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-216"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m8-217">The installation process for <b>OWASP ZAP </b>now starts.</p>
+
+<p id="cn-m8-218"></p><figure><img class="cn-img" id="cn-image-m8-c-29" src="WebApplicationScanners_files/image-m8-c-29.jpg" alt="Figure 1.14 Screenshot of PLABKALI01: Showing the OWASP ZAP installation in progress."><figcaption>Figure 1.14 Screenshot of PLABKALI01: Showing the OWASP ZAP installation in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-221"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m8-222">Once installation is complete, click <b>Finish </b>on the <b>Completing the OWASP Zed Attack Proxy Setup Wizard </b>page.</p>
+
+<p id="cn-m8-223"></p><figure><img class="cn-img" id="cn-image-m8-c-30" src="WebApplicationScanners_files/image-m8-c-30.jpg" alt="Figure 1.15 Screenshot of PLABKALI01: Clicking Finish on the Completing the OWASP Zed Attack Proxy Setup Wizard page."><figcaption>Figure 1.15 Screenshot of PLABKALI01: Clicking Finish on the Completing the OWASP Zed Attack Proxy Setup Wizard page.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m8-225">Post-installation, close the terminal window.</span>
+
+<h4 id="cn-m8-226"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m8-227">Click the first icon to display the menu, select <b>Usual applications, </b>select <b>Other</b>, and then select <b>OWASP ZAP</b>.</p>
+
+<p id="cn-m8-228"></p><figure><img class="cn-img" id="cn-image-m8-c-31" src="WebApplicationScanners_files/image-m8-c-31.jpg" alt="Figure 1.16 Screenshot of PLABKALI01: Selecting OWASP ZAP from the menu options."><figcaption>Figure 1.16 Screenshot of PLABKALI01: Selecting OWASP ZAP from the menu options.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-231"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m8-232">The <b>OWASP ZAP </b>application starts up. The <b>OWASP ZAP </b>splash screen is displayed. After the files are loaded, it will automatically close.</p>
+
+<p id="cn-m8-233"></p><figure><img class="cn-img" id="cn-image-m8-c-32" src="WebApplicationScanners_files/image-m8-c-32.jpg" alt="Figure 1.17 Screenshot of PLABKALI01: Showing the splash screen of OWASP ZAP."><figcaption>Figure 1.17 Screenshot of PLABKALI01: Showing the splash screen of OWASP ZAP.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-236"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m8-237">The <b>OWASP ZAP </b>window is displayed along with another <b>OWASP ZAP </b>dialog box. Select <b>Yes, I want to persist in this session, but I want to specify the name and location</b>. Click <b>Start</b>.</p>
+
+<p id="cn-m8-238"></p><figure><img class="cn-img" id="cn-image-m8-c-33" src="WebApplicationScanners_files/image-m8-c-33.jpg" alt="Figure 1.18 Screenshot of PLABKALI01: Selecting the persistence method for a ZAP session."><figcaption>Figure 1.18 Screenshot of PLABKALI01: Selecting the persistence method for a ZAP session.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-241"><b><i>Step 19 </i></b></h4>
+
+<p id="cn-m8-242">The <b>Save </b>dialog box is displayed. Keep the default location to save the file. In the <b>File Name </b>textbox, overwrite the existing name with <b>PLAB </b>and click <b>Save</b>.</p>
+
+<p id="cn-m8-243"></p><figure><img class="cn-img" id="cn-image-m8-c-34" src="WebApplicationScanners_files/image-m8-c-34.jpg" alt="Figure 1.19 Screenshot of PLABKALI01: Saving the session information."><figcaption>Figure 1.19 Screenshot of PLABKALI01: Saving the session information.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-246"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m8-247">You are now on the <b>OWASP ZAP </b>main window.</p>
+
+<span class="cn-quote" id="cn-m8-248"><i>Note: The OWASP ZAP window has been maximized.</i></span>
+
+<p id="cn-m8-249">OWASP ZAP is equipped with a lot of powerful features.
+ However, in this task, you will simply provide the URL that you want to
+ attack and then start the attack.</p>
+
+<p id="cn-m8-250">In the right upper section, click <b>Automated Scan</b>.</p>
+
+<p id="cn-m8-251"></p><figure><img class="cn-img" id="cn-image-m8-c-35" src="WebApplicationScanners_files/image-m8-c-35.jpg" alt="Figure 1.20 Screenshot of PLABKALI01: Clicking the Automated Scan method in the OWASP session window."><figcaption>Figure 1.20 Screenshot of PLABKALI01: Clicking the Automated Scan method in the OWASP session window.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-254"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m8-255">In the upper right section, in the <b>URL to attack </b>textbox, enter the following URL:</p>
+
+<pre id="cn-m8-256"><code>http://192.168.0.4/dvwa
+
+</code></pre>
+
+<p id="cn-m8-257">Click <b>Attack</b>.</p>
+
+<p id="cn-m8-258"></p><figure><img class="cn-img" id="cn-image-m8-c-36" src="WebApplicationScanners_files/image-m8-c-36.jpg" alt="Figure 1.21 Screenshot of PLABKALI01: Setting the URL to attack in the URL to attack textbox."><figcaption>Figure 1.21 Screenshot of PLABKALI01: Setting the URL to attack in the URL to attack textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-261"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m8-262">The attack is now being conducted.</p>
+
+<span class="cn-quote" id="cn-m8-263"><b><i>Note</i></b><i>: This attack may take a while to complete.</i></span>
+
+<p id="cn-m8-264"></p><figure><img class="cn-img" id="cn-image-m8-c-37" src="WebApplicationScanners_files/image-m8-c-37.jpg" alt="Figure 1.22 Screenshot of PLABKALI01: Showing the attack progress."><figcaption>Figure 1.22 Screenshot of PLABKALI01: Showing the attack progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-267"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m8-268">After the attack is completed, you are automatically 
+navigated to the Alerts tab in the bottom section, which displays 
+several alerts that are categorized by vulnerability types.</p>
+
+<p id="cn-m8-269">Select any of the given vulnerability in the lower-left section.</p>
+
+<p id="cn-m8-270">The lower right section displays the details of the selected vulnerability.</p>
+
+<p id="cn-m8-271"></p><figure><img class="cn-img" id="cn-image-m8-c-38" src="WebApplicationScanners_files/image-m8-c-38.jpg" alt="Figure 1.23 Screenshot of PLABKALI01: Showing the output of the attack."><figcaption>Figure 1.23 Screenshot of PLABKALI01: Showing the output of the attack.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-274"><b><i>Step 24 </i></b></h4>
+
+<p id="cn-m8-275">It is important to note that the number mentioned in 
+brackets is the number of occurrences of the vulnerability in the 
+Website. Expand <b>Directory Browsing </b>and select the first occurrence.</p>
+
+<p id="cn-m8-276">The lower right section displays the URL, risk, and other related information.</p>
+
+<p id="cn-m8-277"></p><figure><img class="cn-img" id="cn-image-m8-c-39" src="WebApplicationScanners_files/image-m8-c-39.jpg" alt="Figure 1.24 Screenshot of PLABKALI01: Selecting a specific alert to explore it further."><figcaption>Figure 1.24 Screenshot of PLABKALI01: Selecting a specific alert to explore it further.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-280"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m8-281">Scroll down in the lower right section. Notice that a solution is also mentioned in the <b>Solution </b>section.
+ For example, because the directory listing is enabled on the Website, 
+the solution suggests that you should disable directory listing.</p>
+
+<p id="cn-m8-282"></p><figure><img class="cn-img" id="cn-image-m8-c-40" src="WebApplicationScanners_files/image-m8-c-40.jpg" alt="Figure 1.25 Screenshot of PLABKALI01: Showing the solution for a specific type of alert."><figcaption>Figure 1.25 Screenshot of PLABKALI01: Showing the solution for a specific type of alert.</figcaption></figure><p></p>
+
+<h3 id="cn-m8-285"><b>Task 3 - Use Nikto</b></h3>
+
+<p id="cn-m8-286"><b>Nikto </b>is a vulnerability scanner that is part 
+of Kali Linux. It is widely used by ethical hackers and penetration 
+testers to find the vulnerabilities in Web applications. In this task, 
+you will learn to use Nikto for vulnerability scanning.</p>
+
+<p id="cn-m8-287">To do this, perform the following steps:</p>
+
+<h4 id="cn-m8-288"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-289">Ensure you have powered on all the devices listed in the introduction and connect to <b>PLABKALI01</b>. The desktop of <b>PLABKALI01 </b>is displayed.</p>
+
+<p id="cn-m8-290"></p><figure><img class="cn-img" id="cn-image-m8-c-41" src="WebApplicationScanners_files/image-m8-c-41.jpg" alt="Figure 1.26 Screenshot of PLABKALI01: Showing the desktop of PLABKALI01."><figcaption>Figure 1.26 Screenshot of PLABKALI01: Showing the desktop of PLABKALI01.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-293"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-294">On the desktop, click the <b>Terminal </b>icon if not already open.</p>
+
+<p id="cn-m8-295"></p><figure><img class="cn-img" id="cn-image-m8-c-42" src="WebApplicationScanners_files/image-m8-c-42.jpg" alt="Figure 1.27 Screenshot of PLABKALI01: Clicking the Terminal icon in the left pane."><figcaption>Figure 1.27 Screenshot of PLABKALI01: Clicking the Terminal icon in the left pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-298"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-299">To scan a Website for vulnerabilities, type the following command:</p>
+
+<span class="cn-quote" id="cn-m8-300"><b><i>Note: </i></b><i>Instead of the </i><b><i>-host </i></b><i>parameter, you can also use the </i><b><i>-h </i></b><i>parameter. Both provide the same result.</i></span>
+
+<pre id="cn-m8-301"><code>nikto -host http://192.168.0.4
+
+</code></pre>
+
+<p id="cn-m8-302">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-303"></p><figure><img class="cn-img" id="cn-image-m8-c-43" src="WebApplicationScanners_files/image-m8-c-43.jpg" alt="Figure 1.28 Screenshot of PLABKALI01: Entering the nikto command with a host IP."><figcaption>Figure 1.28 Screenshot of PLABKALI01: Entering the nikto command with a host IP.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-307"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-308">The vulnerability scanning process starts. Depending on the number of vulnerabilities, the process may run for a few minutes.</p>
+
+<p id="cn-m8-309"></p><figure><img class="cn-img" id="cn-image-m8-c-44" src="WebApplicationScanners_files/image-m8-c-44.jpg" alt="Figure 1.29 Screenshot of PLABKALI01: Showing the running process of the nikto command."><figcaption>Figure 1.29 Screenshot of PLABKALI01: Showing the running process of the nikto command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-312"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-313">A detailed list of vulnerabilities is listed as the output. Type <b>n </b>and press <b>Enter </b>to continue.</p>
+
+<p id="cn-m8-314"></p><figure><img class="cn-img" id="cn-image-m8-c-45" src="WebApplicationScanners_files/image-m8-c-45.jpg" alt="Figure 1.30 Screenshot of PLABKALI01: Showing the output of the nikto command."><figcaption>Figure 1.30 Screenshot of PLABKALI01: Showing the output of the nikto command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-317"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-318">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-319"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-320">To scan a Website for vulnerabilities and save the output to an HTML file, type the following command:</p>
+
+<pre id="cn-m8-321"><code>nikto -host http://192.168.0.4 -o plab.html
+
+</code></pre>
+
+<p id="cn-m8-322">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-323"></p><figure><img class="cn-img" id="cn-image-m8-c-46" src="WebApplicationScanners_files/image-m8-c-46.jpg" alt="Figure 1.31 Screenshot of PLABKALI01: Entering the nikto command with a host IP and output file name."><figcaption>Figure 1.31 Screenshot of PLABKALI01: Entering the nikto command with a host IP and output file name.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-326"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-327">Let the vulnerability scanning process complete. Type n and press Enter.</p>
+
+<p id="cn-m8-328">Then, type the following command:</p>
+
+<pre id="cn-m8-329"><code>firefox plab.html
+
+</code></pre>
+
+<p id="cn-m8-330">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-331"></p><figure><img class="cn-img" id="cn-image-m8-c-47" src="WebApplicationScanners_files/image-m8-c-47.jpg" alt="Figure 1.32 Screenshot of PLABKALI01: Opening the output file name with Firefox."><figcaption>Figure 1.32 Screenshot of PLABKALI01: Opening the output file name with Firefox.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-334"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-335">A new <b>Firefox </b>window opens. Notice that the vulnerabilities are listed on the HTML Webpage.</p>
+
+<p id="cn-m8-336"></p><figure><img class="cn-img" id="cn-image-m8-c-48" src="WebApplicationScanners_files/image-m8-c-48.jpg" alt="Figure 1.33 Screenshot of PLABKALI01: Showing the nikto output file in Firefox."><figcaption>Figure 1.33 Screenshot of PLABKALI01: Showing the nikto output file in Firefox.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">5552932f-e263-4095-bb6a-fa7be9031d50</span>
+
+<p id="cn-m8-340">Close the <b>Firefox </b>window.</p>
+< <a href="https://github.com/SeanOhAileasa" id="SoftwareAssessmentToolsandTechniques">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-342"><b>Exercise 2 - Software Assessment Tools and Techniques</b></h2>
+
+<p id="cn-m8-343">Software assurance is a process that is applied to 
+ensure that developed software is free from defects, bugs, and 
+vulnerabilities. Software developers intend to design clean software 
+that works well. However, there are usually errors or defects that are 
+built into the code unintentionally. Developers typically do not find 
+errors themselves. The software assurance team is responsible for 
+detecting such errors and defects.</p>
+
+<p id="cn-m8-344">There are different types of testing techniques that are used in software assurance. Some key types are:</p>
+
+<ul id="cn-m8-345">
+
+<li id="cn-m8-345">Static analysis</li>
+
+<li id="cn-m8-346">Dynamic analysis</li>
+
+<li id="cn-m8-347">Reverse engineering</li>
+
+<li id="cn-m8-348">Fuzzing</li>
+
+</ul>
+
+<p id="cn-m8-349">In this exercise, you will learn about the different types of software assessment or testing.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-351">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m8-352">
+
+<li id="cn-m8-352">Static analysis</li>
+
+<li id="cn-m8-353">Dynamic analysis</li>
+
+<li id="cn-m8-354">Reverse engineering</li>
+
+<li id="cn-m8-355">Fuzzing</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-357">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m8-358"><img class="cn-img" id="cn-image-m8-c-49" src="WebApplicationScanners_files/image-m8-c-49.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m8-359"><b>Static Analysis</b></h3>
+
+<p id="cn-m8-360">Static analysis is about reading and reviewing code to
+ clear errors, which can be related to syntax, loop structures, or 
+simply terminating the code with curly braces. Static analysis can cover
+ the entire code and find the errors if they exist. Some of the key 
+advantages of static analysis are:</p>
+
+<ul id="cn-m8-361">
+
+<li id="cn-m8-361">It is thorough as the entire code is covered</li>
+
+<li id="cn-m8-362">It can track code-based errors</li>
+
+<li id="cn-m8-363">It helps to mark the location of the code where an error exists</li>
+
+</ul>
+
+<p id="cn-m8-364">Despite these advantages, it also has disadvantages, which are:</p>
+
+<ul id="cn-m8-365">
+
+<li id="cn-m8-365">It does not catch runtime errors if they exist</li>
+
+<li id="cn-m8-366">It is time-consuming as you need to evaluate the entire code base</li>
+
+</ul>
+
+<h3 id="cn-m8-367"><b>Dynamic Analysis</b></h3>
+
+<p id="cn-m8-368">Dynamic analysis refers to running code and generating
+ the desired output. If the desired output is generated, then the goal 
+of dynamic analysis is met, which is to find the errors within the code.
+ In dynamic analysis, a program must be executed or run to be evaluated.</p>
+
+<p id="cn-m8-369">Some of the key advantages of dynamic analysis are:</p>
+
+<ul id="cn-m8-370">
+
+<li id="cn-m8-370">It catches runtime errors</li>
+
+<li id="cn-m8-371">It is used alongside Web application scanning, penetration testing, and black box testing</li>
+
+<li id="cn-m8-372">It’s easy to perform dynamic analysis as you need to only target the Web application</li>
+
+<li id="cn-m8-373">It provides results from a third-person perspective, as it’s not evaluating code but the application and output</li>
+
+</ul>
+
+<p id="cn-m8-374">Some key disadvantages are:</p>
+
+<ul id="cn-m8-375">
+
+<li id="cn-m8-375">It does not pinpoint to the exact location of the error within a Web application</li>
+
+<li id="cn-m8-376">It will require a certain level of expertise in running the application to perform these tests</li>
+
+</ul>
+
+<h3 id="cn-m8-377"><b>Reverse Engineering</b></h3>
+
+<p id="cn-m8-378">Reverse Engineering is the process in which software 
+is reconstructed. In the Software Development Lifecycle (SDLC), you 
+would typically perform the following steps to develop software:</p>
+
+<p id="cn-m8-379"></p><figure><img class="cn-img" id="cn-image-m8-c-50" src="WebApplicationScanners_files/image-m8-c-50.jpg" alt="Figure 2.1 Screenshot of SDLC method: Showing the broad level steps in SDLC, Specification &amp;gt; Design &amp;gt; Code &amp;gt; Behavior."><figcaption>Figure 2.1 Screenshot of SDLC method: Showing the broad level steps in SDLC, Specification &gt; Design &gt; Code &gt; Behavior.</figcaption></figure><p></p>
+
+<p id="cn-m8-381">However, this process is reversed in the reverse 
+engineering process. From compiled software, you would analyze its 
+behavior, extract code, understand the design, and find the 
+specifications that make the software.</p>
+
+<p id="cn-m8-382"></p><figure><img class="cn-img" id="cn-image-m8-c-51" src="WebApplicationScanners_files/image-m8-c-51.jpg" alt="Figure 2.2 Screenshot of Reverse Engineering method: Showing the broad level steps in Reverse Engineering, Behavior &amp;gt; Code &amp;gt; Design &amp;gt; Specification."><figcaption>Figure
+ 2.2 Screenshot of Reverse Engineering method: Showing the broad level 
+steps in Reverse Engineering, Behavior &gt; Code &gt; Design &gt; 
+Specification.</figcaption></figure><p></p>
+
+<p id="cn-m8-384">Without process of reverse engineering, you would not 
+have any insight on the internals of software. You can run compiled 
+software and receive its output, however how it is generating the output
+ is hidden behind compiled code.</p>
+
+<p id="cn-m8-385">There are various reasons due to which reverse engineering on software can be performed. For example:</p>
+
+<ul id="cn-m8-386">
+
+<li id="cn-m8-386">Re-programming software for new features or re-branding as new software</li>
+
+<li id="cn-m8-387">Finding vulnerabilities by reviewing code</li>
+
+<li id="cn-m8-388">Increasing security by finding existing security flaws or vulnerabilities</li>
+
+<li id="cn-m8-389">Modernizing software, or moving from legacy to a new version</li>
+
+</ul>
+
+<h3 id="cn-m8-390"><b>Fuzzing</b></h3>
+
+<p id="cn-m8-391">Fuzzing is another type of software testing that can 
+be categorized as a black box software testing method. Using the fuzzing
+ method, a tester assumes that there will always be bugs or errors 
+within software, and therefore, Fuzzing can be applied or used to inject
+ malformed data into it. The intent is to find bugs or errors.</p>
+
+<p id="cn-m8-392">It is a point to note that Fuzzing does not replace 
+manual testing, which requires code reviews and debugging. Rather, it 
+complements the manual method by evaluating software by inserting random
+ malformed data. In some scenarios, if the source code of the software 
+is not available or not accessible for testing, you can use the fuzzing 
+method. It can be useful in scenarios where software is complex and 
+large and contains various input fields. In this case, Fuzzing can be 
+handy because it can find bugs by inserting random and malformed data.</p>
+
+<p id="cn-m8-393">There are certain drawbacks to using the fuzzing method. Some of the key drawbacks are:</p>
+
+<ul id="cn-m8-394">
+
+<li id="cn-m8-394">It does not provide the overall security posture of the software</li>
+
+<li id="cn-m8-395">You need to know the software to be able to evaluate it using the fuzzing method</li>
+
+<li id="cn-m8-396">Fuzzing data within software may cause it to crash</li>
+
+</ul>
+
+<p id="cn-m8-397">The process of Fuzzing is as follows:</p>
+
+<p id="cn-m8-398"></p><figure><img class="cn-img" id="cn-image-m8-c-52" src="WebApplicationScanners_files/image-m8-c-52.jpg" alt="Figure 2.3 Screenshot of Fuzzing process: Showing the broad level steps in Fuzzing; Identifying your Target &amp;gt; Recognizing Input &amp;gt; Generating Data &amp;gt; Performing Fuzzing &amp;gt; Monitoring and Collating the results."><figcaption>Figure
+ 2.3 Screenshot of Fuzzing process: Showing the broad level steps in 
+Fuzzing; Identifying your Target &gt; Recognizing Input &gt; Generating 
+Data &gt; Performing Fuzzing &gt; Monitoring and Collating the results.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+
+<span class="atom-code hidden">86b3caf2-2504-4e20-a81b-2fcb2368c8d2</span>
+
+<span class="cn-alert" id="cn-m8-403">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-404"><b>Review</b></h2>
+
+<p id="cn-m8-405">Well done, you have completed the <b>Web Application Scanners </b>Practice Lab.</p>
+
+<span class="atom-code hidden">2abaca70-efa1-4fe5-94fb-ad1777bfc242</span>
+
+<span class="atom-code hidden">51a716d4-b4ce-4750-a55a-96f48e033a82</span>
+
+<span class="atom-code hidden">23ce60d3-2b3f-4db5-b447-023a55bbdab0</span>
+
+<span class="atom-code hidden">6ba27ef2-0d22-4ba2-b040-c78ecaca821d</span>
+
+<span class="atom-code hidden">5a82198c-65e0-494c-befd-b72e89fb84cb</span>
+
+<span class="atom-code hidden">f657cd34-b48d-436b-ae65-26a1c02d6f70</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m8-415">You completed the following exercises:</p>
+
+<ul id="cn-m8-416">
+
+<li id="cn-m8-416">Exercise 1 - Web Application scanner</li>
+
+<li id="cn-m8-417">Exercise 2 - Software assessment tools and techniques</li>
+
+</ul>
+
+<p id="cn-m8-418">You should now be able to:</p>
+
+<ul id="cn-m8-419">
+
+<li id="cn-m8-419">Use OWASP Zed Attack Proxy (ZAP)</li>
+
+<li id="cn-m8-420">Use Nikto</li>
+
+</ul>
+
+<p id="cn-m8-421">You should now have further knowledge of:</p>
+
+<ul id="cn-m8-422">
+
+<li id="cn-m8-422">Static Analysis</li>
+
+<li id="cn-m8-423">Dynamic Analysis</li>
+
+<li id="cn-m8-424">Reverse Engineering</li>
+
+<li id="cn-m8-425">Fuzzing</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m8-429">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="InfrastructureSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="InfrastructureSolutions_files/jquery.min.js"></script>
+    <script src="InfrastructureSolutions_files/jspdf.js"></script>
+    <script src="InfrastructureSolutions_files/from_html.js"></script>
+    <script src="InfrastructureSolutions_files/addimage.js"></script>
+    <script src="InfrastructureSolutions_files/filesaver.js"></script>
+    <script src="InfrastructureSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="As+5hpw+0b+IdtaMZ8pT4GCFxuoPpy8qiy+6MZIKF/MgxQT+bPlIx9mJtS3SVxpE1o2+uEPsO7qhOTztHlH45ByyJIE1qekQlvD9xMO+snY=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Cybersecurity Analyst (CySA+)</h1>
+                <h2>Infrastructure Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - On-premises and Cloud Infrastructure</li><li>Exercise 2 - Network Architecture</li><li>Exercise 3 - Asset Management</li><li>Exercise 4 - Change Management</li><li>Exercise 5 - Virtualization and Containerization</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m19-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>On-premises</div>
+
+<div>Cloud</div>
+
+<div>Asset Management</div>
+
+<div>Change Management</div>
+
+<div>Virtualization</div>
+
+<div>Containerization</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m19-9">Welcome to the <b>Infrastructure Solutions </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-13">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m19-14">
+
+<li id="cn-m19-14">Exercise 1 - On-premises and Cloud Infrastructure</li>
+
+<li id="cn-m19-15">Exercise 2 - Network Architecture</li>
+
+<li id="cn-m19-16">Exercise 3 - Asset Management</li>
+
+<li id="cn-m19-17">Exercise 4 - Change Management</li>
+
+<li id="cn-m19-18">Exercise 5 - Virtualization and Containerization</li>
+
+</ul>
+
+<p id="cn-m19-19">After completing this module, you will have further knowledge of:</p>
+
+<ul id="cn-m19-20">
+
+<li id="cn-m19-20">On-premise and Cloud Infrastructure</li>
+
+<li id="cn-m19-21">Cloud Access Service Broker (CASB)</li>
+
+<li id="cn-m19-22">Physical Networks</li>
+
+<li id="cn-m19-23">Software-defined Networking (SDN)</li>
+
+<li id="cn-m19-24">Virtual Private Cloud (VPC)</li>
+
+<li id="cn-m19-25">Virtual Private Network (VPN)</li>
+
+<li id="cn-m19-26">Serverless Networks</li>
+
+<li id="cn-m19-27">Asset Tagging</li>
+
+<li id="cn-m19-28">Change Management</li>
+
+<li id="cn-m19-29">Virtualization and Containerization</li>
+
+<li id="cn-m19-30">Virtual Desktop Infrastructure (VDI)</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m19-32">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m19-33">
+
+<li id="cn-m19-33">2.1 Given a scenario, apply security solutions for infrastructure management</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m19-34"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m19-36">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">89816a20-56f2-42c5-bfa0-46f11f2986ba</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m19-40">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m19-41">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-43"><b>Lab Topology</b></h2>
+
+<p id="cn-m19-44">This lab contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-45"><img class="cn-img" id="cn-image-m19-c-0" src="InfrastructureSolutions_files/image-m19-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<span class="cn-alert" id="cn-m19-46">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="OnpremisesandCloudInfrastructure">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-47"><b>Exercise 1 - On-premises and Cloud Infrastructure</b></h2>
+
+<p id="cn-m19-48">A few years back, the only options for IT 
+infrastructure hosting were either on-premises or in third-party data 
+centers. In the last few years, the cloud environment was established, 
+and several thousands of organizations moved their infrastructure to the
+ cloud. However, several organizations decided to still stick with a 
+more traditional on-premises infrastructure. There are good and bad 
+sides of both types.</p>
+
+<p id="cn-m19-49">In this exercise, you will learn about the on-premises and cloud infrastructure.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-51">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m19-52">
+
+<li id="cn-m19-52">On-premise and Cloud Infrastructure</li>
+
+<li id="cn-m19-53">Cloud Access Service Broker (CASB)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m19-55">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-56"><img class="cn-img" id="cn-image-m19-c-1" src="InfrastructureSolutions_files/image-m19-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m19-57"><b>On-premise and Cloud Infrastructure</b></h3>
+
+<p id="cn-m19-58">You can either deploy an infrastructure on-premises or
+ in a cloud environment. The fundamental difference between the two is 
+where and how it is done. When you refer to an on-premises 
+infrastructure, the complete environment is in your control, such as 
+security, network, physical systems, and applications. However, in a 
+cloud environment, deployment is done at the vendor’s end, but the type 
+of control you have on the environment is dependent on the cloud 
+deployment model, which can be one of the following:</p>
+
+<h4 id="cn-m19-59"><b><i>Software as a Service (SaaS)</i></b></h4>
+
+<p id="cn-m19-60">In the Software as a Service model, an application is 
+licensed to users after they purchase a subscription. The license holder
+ must then renew their subscription to continue to use the full features
+ of the application. Typically, users will need a Web browser to access 
+the application. For example, <b>GoToMeeting</b>, which is hosted online.</p>
+
+<h4 id="cn-m19-61"><b><i>Infrastructure as a Service (IaaS)</i></b></h4>
+
+<p id="cn-m19-62">Infrastructure as a Service is an online model that 
+provides virtualization of underlying network infrastructures such as 
+physical computing resources, location, data partitioning, scaling, 
+security, and backups. Virtual machines, software-defined networking, 
+and virtual network devices are all considered parts of the IaaS model. 
+IaaS provides flexibility in upscaling and downscaling infrastructure as
+ required.</p>
+
+<h4 id="cn-m19-63"><b><i>Platform as a Service (PaaS)</i></b></h4>
+
+<p id="cn-m19-64">In Platform as a Service, a platform for development 
+is offered to users on a subscription basis. In this model, a set of 
+development tools are provided by the service provider. It reduces the 
+cost of purchasing these tools outright.</p>
+
+<h4 id="cn-m19-65"><b><i>Network as a Service (NaaS)</i></b></h4>
+
+<p id="cn-m19-66">With Network as a Service, clients have access to 
+additional network resources, such as switches and routers. The 
+third-party provider owns the resources and provides it to an 
+organization either through a fixed fee or a fee based on component 
+usage.</p>
+
+<h4 id="cn-m19-67"><b><i>Security as a Service (SECaaS)</i></b></h4>
+
+<p id="cn-m19-68">Security as a Service offers cloud-based security 
+solutions. When you implement this solution, it removes the burden of 
+having the on-premises hardware.</p>
+
+<h3 id="cn-m19-69"><b>Advantages and Disadvantages</b></h3>
+
+<p id="cn-m19-70">There are several advantages and disadvantages of both the environments:</p>
+
+<h4 id="cn-m19-71"><b><i>Control</i></b></h4>
+
+<p id="cn-m19-72">The biggest advantage of an on-premises infrastructure
+ is that you have complete control over the physical as well as the 
+logical environment. You can customize the said environment as per your 
+business requirements. You can also add or remove hardware and software 
+as and when required. However, with the cloud, you have little control 
+over the infrastructure. For example, the physical environment is not in
+ your control.</p>
+
+<h4 id="cn-m19-73"><b><i>Cost</i></b></h4>
+
+<p id="cn-m19-74">In the on-premises infrastructure model, the cost of 
+deployment is very high. You have to purchase the physical hardware, 
+which can include desktops, servers, switches, firewalls, routers, and 
+various other networking and security devices. You also have to purchase
+ licenses for software that the users are going to use. You also have to
+ maintain your infrastructure or outsource maintenance to a third-party.
+ When referring to the cloud environment, they mostly work with the 
+pay-per-use or subscription model. This means that you do not have to 
+pay the upfront cost of deploying hardware or software. You can start 
+using the environment, and depending on the payment model, and you have 
+to pay accordingly. Another big advantage is that you can customize your
+ infrastructure on the fly.</p>
+
+<h4 id="cn-m19-75"><b><i>Redundancy</i></b></h4>
+
+<p id="cn-m19-76">With an on-premises infrastructure, you have to 
+protect against redundancy of the entire environment by adding another 
+site. This can add a huge cost to the organization. However, in the 
+cloud environment, the infrastructure is already replicated or can be 
+replicated to another geography. This adds redundancy to the 
+infrastructure and data.</p>
+
+<h4 id="cn-m19-77"><b><i>Security</i></b></h4>
+
+<p id="cn-m19-78">With on-premises infrastructures, security can be set 
+at a certain level as per the requirement of the organization. Depending
+ on the regulations or any type of compliance requirements, such as <b>ISO 27001 </b>or <b>PCI-DSS</b>,
+ organizations can add or remove the security controls. However, in the 
+cloud environment, data security is always a question. Several 
+organizations in the Banking and Finance sectors tend to use the 
+on-premises infrastructure that is required to provide the optimum level
+ of security.</p>
+
+<h4 id="cn-m19-79"><b><i>Compliance</i></b></h4>
+
+<p id="cn-m19-80">The organizations may have to comply with certain regulations, such as <b>HIPAA </b>or <b>PCI-DSS</b>.
+ Therefore, organizations can customize their IT environment with 
+specific security controls. On the other hand, the cloud service 
+provider may be compliant with these regulations, but it is your 
+responsibility to perform a due diligence. Ultimately, you are 
+responsible for your data.</p>
+
+<h3 id="cn-m19-81"><b>Cloud Access Service Broker (CASB)</b></h3>
+
+<p id="cn-m19-82">In the simplest terms, a CASB is a mediator between a 
+cloud consumer and service provider. The key role of a CASB is to bridge
+ security gaps from the cloud consumer to the cloud service provider, 
+who may be running SaaS, PaaS, or IaaS. A CASB can also extend the 
+organizational security policies into the cloud environment and enforce 
+them on cloud components and services as they are accessed. Users may be
+ using various types of devices, such as laptops or mobile. The same set
+ of security policies, which are applied in the on-premises 
+infrastructure, can be extended to the cloud infrastructure.</p>
+
+<p id="cn-m19-83">It seems that generally, organizations are quite 
+apprehensive about putting their data in the cloud. However, with the 
+CASB implementation, there are enough security controls and methods that
+ can be applied to protect data. With a CASB, you can use a security 
+control, such as a Web Application Firewall (WAF) or secure Web 
+gateways. Other security offerings that a CASB may offer:</p>
+
+<ul id="cn-m19-84">
+
+<li id="cn-m19-84">Malware prevention</li>
+
+<li id="cn-m19-85">Cloud governance</li>
+
+<li id="cn-m19-86">Risk assessment</li>
+
+<li id="cn-m19-87">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m19-88">User and Entity Behavior Analytics (UBEA)</li>
+
+<li id="cn-m19-89">Threat prevention</li>
+
+<li id="cn-m19-90">Single sign-on</li>
+
+<li id="cn-m19-91">Data Encryption</li>
+
+<li id="cn-m19-92">Identity and Access Management (IAM)</li>
+
+</ul>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+< <a href="https://github.com/SeanOhAileasa" id="NetworkArchitecture">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-95"><b>Exercise 2 - Network Architecture</b></h2>
+
+<p id="cn-m19-96">A network architecture consists of multiple 
+components. Physical components play a key role in the architecture. You
+ may also have a virtual environment, but even for it to run, you still 
+need to have the physical components available. You can have different 
+types of networks and components within a single IT environment. You may
+ have software-defined networking (SDN), a virtual private network 
+(VPN), or you may be using cloud-based technologies like VPC or 
+serverless.</p>
+
+<p id="cn-m19-97">In this exercise, you will learn about various types of components of a network.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-99">After completing this exercise, you will have a further knowledge of:</p>
+
+<ul id="cn-m19-100">
+
+<li id="cn-m19-100">Physical Networks</li>
+
+<li id="cn-m19-101">Software-defined Networking (SDN)</li>
+
+<li id="cn-m19-102">Virtual Private Cloud (VPC)</li>
+
+<li id="cn-m19-103">Virtual Private Network (VPN)</li>
+
+<li id="cn-m19-104">Serverless Networks</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m19-106">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-107"><img class="cn-img" id="cn-image-m19-c-2" src="InfrastructureSolutions_files/image-m19-c-2.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m19-108"><b>Physical</b></h3>
+
+<p id="cn-m19-109">Each organization will either have a small or large 
+physical IT infrastructure. For example, if an organization has an 
+entire IT infrastructure in the cloud environment,  users will still 
+have laptops and mobile devices that they use to connect to remote 
+resources in the cloud. Laptops and mobile devices make up the physical 
+environment. On the other hand, you may have an organization that has a 
+large infrastructure that they run from their data center, which 
+consists of routers, switches, servers, firewalls, and many other 
+components.</p>
+
+<p id="cn-m19-110">It could also be possible that an organization uses a
+ hybrid model, which has some servers in the on-premises datacenter and 
+the rest of the servers in the cloud. When there is physical 
+infrastructure, the organization is responsible for physical and logical
+ security.</p>
+
+<h3 id="cn-m19-111"><b>Software-defined Networking (SDN)</b></h3>
+
+<p id="cn-m19-112">Software-defined networking (SDN) helps 
+administrators to initialize, control, change, and manage network 
+behavior dynamically. SDN is there to address static architecture of 
+traditional networks, as they do not support dynamic or scaleable 
+computing and storage needs of more modern computing environments such 
+as data centers. This is done by decoupling or disassociating the system
+ that makes decisions about where traffic is sent (the SDN controller, 
+or control plane) from the underlying systems that forward traffic to 
+the selected destination (the data plane).</p>
+
+<h3 id="cn-m19-113"><b>Virtual Private Cloud (VPC)</b></h3>
+
+<p id="cn-m19-114">A Virtual Private Cloud (VPC) is a logically isolated
+ part of the cloud environment. Almost all cloud service providers allow
+ you to use VPCs using your account. You can create a VPC and add 
+various resources within it. There are several components that you can 
+use within the VPC. Some of the key components are:</p>
+
+<ul id="cn-m19-115">
+
+<li id="cn-m19-115">IP address ranges</li>
+
+<li id="cn-m19-116">Subnets</li>
+
+<li id="cn-m19-117">Route tables</li>
+
+<li id="cn-m19-118">Network gateways</li>
+
+<li id="cn-m19-119">VPC endpoint</li>
+
+</ul>
+
+<p id="cn-m19-120"></p><figure><img class="cn-img" id="cn-image-m19-c-3" src="InfrastructureSolutions_files/image-m19-c-3.jpg" alt="Figure 2.1 Diagram showing the VPC"><figcaption>Figure 2.1 Diagram showing the VPC: Showing VPC architecture on AWS.</figcaption></figure><p></p>
+
+<p id="cn-m19-121">You can think of a VPC as a small, isolated cloud 
+within a larger cloud. You are free to configure the type of VPC that 
+meets your requirements. A VPC for a customer is isolated from the rest 
+of the VPCs that are running within the same cloud. You can provision a 
+VPC within the cloud environment, create a virtual network, and then 
+launch various resources within the network.</p>
+
+<p id="cn-m19-122">In some of the cases, a cloud service provider may give you the following choices to configure a VPC:</p>
+
+<ul id="cn-m19-123">
+
+<li id="cn-m19-123">A VPC with a single public subnet</li>
+
+<li id="cn-m19-124">A VPC with public and private subnets</li>
+
+<li id="cn-m19-125">A VPC with public and private subnets and hardware VPN access</li>
+
+<li id="cn-m19-126">A VPC with private subnet and hardware VPN access</li>
+
+</ul>
+
+<p id="cn-m19-127">You are free to choose the type of VPC you want to 
+configure. If you are looking to configure an isolated private subnet, 
+you can configure it and then connect it to the on-premises data center 
+using hardware VPN access, which will use IPSec encrypted tunnel for 
+traffic routing.</p>
+
+<p id="cn-m19-128">For example, this is the example of Amazon AWS, where you are configuring a VPC with public and private subnets.</p>
+
+<p id="cn-m19-130"></p><figure><img class="cn-img" id="cn-image-m19-c-4" src="InfrastructureSolutions_files/image-m19-c-4.jpg" alt="Figure 2.2 Diagram showing the VPC configuration"><figcaption>Figure 2.2 Diagram showing the VPC configuration: Showing VPC configuration with a public and private subnet.</figcaption></figure><p></p>
+
+<h3 id="cn-m19-132"><b>Virtual Private Network (VPN)</b></h3>
+
+<p id="cn-m19-133">VPNs allow users remote access and allows them 
+specific access to resources on the internal network. Using the public 
+network, which is the Internet, the user can connect to the VPN server 
+using his or her login credentials. Based on the access granted to the 
+user, he or she will be able to access resources on the network. To 
+connect to and access the network, you need to use a client installed on
+ the user’s end to connect to the VPN server.</p>
+
+<p id="cn-m19-134">There are primarily two types of VPNs:</p>
+
+<h4 id="cn-m19-135"><b><i>Site-to-Site VPN</i></b></h4>
+
+<p id="cn-m19-136">where a VPN is established between Customer Premises 
+Equipment (CPE) devices found at the location of each site. 
+Specifically, these are the routers found at each location.  A VPN is 
+established between them such that the clients at each site are 
+oblivious to any VPN configurations. They communicate with each other as
+ if, from their point of view, they are on the same private network. The
+ VPN routers on each end provide the VPN functionality between the two 
+sites.</p>
+
+<h4 id="cn-m19-137"><b><i>Client-to-Site VPN</i></b></h4>
+
+<p id="cn-m19-138">where a VPN is established between a single user, and
+ a VPN enabled server or router. The server is located on the corporate 
+network and accepts and establishes VPN requests from clients. Clients 
+must have the appropriate VPN software and the appropriate credentials 
+to establish the VPN. A VPN server can allow multiple client connections
+ simultaneously.</p>
+
+<h3 id="cn-m19-139"><b>Serverless</b></h3>
+
+<p id="cn-m19-140">Serverless architecture, also known as Function As A Service (<b>FaaS</b>),
+ is based out of the cloud. A developer does not have to set up the 
+infrastructure, which is completely managed and handled by the cloud 
+service provider. The developer has to focus on developing an 
+application rather than spending time in setting up the infrastructure. 
+With the serverless technology, the applications are built directly in 
+the cloud environment, and applications run on the servers as they do in
+ the on-premises infrastructure. As and when required, there is 
+automatic provisioning and scaling of the underlying infrastructure.</p>
+
+<p id="cn-m19-141">There is often confusion between <b>PaaS </b>and <b>FaaS</b>.
+ Both follow the same concept of running an application in the cloud. 
+However, the underlying architectural differences are there. In <b>PaaS</b>,
+ the entire application is run as a single unit, which means that the 
+scaling can only be done at the application level, However, in <b>FaaS</b>,
+ the scaling is done at the function level because the application is 
+composed at the function level. As and when required, the functions can 
+be scaled individually. This saves many system resources because you may
+ have only one function that consumes more resources than the others.</p>
+
+<p id="cn-m19-142">Serverless architecture is good to use when you have a
+ limited number of functions. If you have an existing application, you 
+will need to architect it again to run as small functions that can run 
+independently.</p>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+< <a href="https://github.com/SeanOhAileasa" id="AssetManagement">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-146"><b>Exercise 3 - Asset Management</b></h2>
+
+<p id="cn-m19-147">Assets are critical for an organization. Each 
+organization will have several types of assets, such as hardware and 
+software. Asset Management is a process that helps an organization 
+maintain and manage its assets. The information for all IT assets can be
+ maintained in a centralized database, which is known as the 
+Configuration Management Database (CMDB). It helps you collate asset 
+information, such as:</p>
+
+<ul id="cn-m19-148">
+
+<li id="cn-m19-148">Type</li>
+
+<li id="cn-m19-149">Make</li>
+
+<li id="cn-m19-150">Owner</li>
+
+<li id="cn-m19-151">Service record</li>
+
+<li id="cn-m19-152">Maintenance record</li>
+
+<li id="cn-m19-153">Allocation record</li>
+
+</ul>
+
+<p id="cn-m19-154">Based on the information maintained in the CMDB, it 
+is easy for an organization to view the complete set of assets that are 
+functional or non-functional.</p>
+
+<p id="cn-m19-155">In this exercise, you will learn about assets and asset tagging.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-157">After completing this exercise, you will have a further knowledge of:</p>
+
+<ul id="cn-m19-158">
+
+<li id="cn-m19-158">Asset Tagging</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m19-160">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-161"><img class="cn-img" id="cn-image-m19-c-5" src="InfrastructureSolutions_files/image-m19-c-5.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m19-162"><b>Asset Tagging</b></h3>
+
+<p id="cn-m19-163">Before understanding types of assets, it is important
+ to understand what an asset is. It is anything that has value to an 
+organization. It could be servers, software, devices, the information in
+ any format, services, people, or even intangibles, such as reputation 
+or brand.</p>
+
+<p id="cn-m19-164">Assets typically have owners and custodians.</p>
+
+<ul id="cn-m19-165">
+
+<li id="cn-m19-165"><b>Owner</b>: performs asset management and is responsible for handling, disclosure, and retirement of assets.</li>
+
+<li id="cn-m19-166"><b>Custodian</b>: is responsible for protecting data
+ as per security requirements. The custodian provides accessibility of 
+assets to end-users. They are also responsible for quality assurance and
+ data validation.</li>
+
+</ul>
+
+<p id="cn-m19-167">Types of assets in an organization are:</p>
+
+<ul id="cn-m19-168">
+
+<li id="cn-m19-168"><b>People</b>: Includes employees and customers.</li>
+
+<li id="cn-m19-169"><b>Hardware</b>: Includes servers, desktops, laptops, and any devices that are being owned by the organization.</li>
+
+<li id="cn-m19-170"><b>Software</b>: Includes operating systems and applications that are used for business purposes.</li>
+
+<li id="cn-m19-171"><b>Data</b>: Includes business and employee information.</li>
+
+<li id="cn-m19-172"><b>Physical environment</b>: Includes the physical infrastructure, which includes the business premises.</li>
+
+<li id="cn-m19-173"><b>Processes</b>: Includes the processes and procedures that enable an organization to run its business.</li>
+
+<li id="cn-m19-174"><b>Third-parties</b>: Includes partners, and associated hardware/software.</li>
+
+</ul>
+
+<h4 id="cn-m19-175"><b><i>Asset Inventories</i></b></h4>
+
+<p id="cn-m19-176">Asset inventories are critical when figuring out what
+ to protect and how much to spend protecting it. Asset inventories 
+should be checked periodically to verify accuracy. Inventories should 
+track details necessary for the following reasons:</p>
+
+<ul id="cn-m19-177">
+
+<li id="cn-m19-177">Asset identification</li>
+
+<li id="cn-m19-178">Date of acquisition</li>
+
+<li id="cn-m19-179">Security Classification</li>
+
+<li id="cn-m19-180">Descriptive details</li>
+
+<li id="cn-m19-181">Asset Location</li>
+
+<li id="cn-m19-182">Information necessary for backup and restore, disaster recovery</li>
+
+<li id="cn-m19-183">Asset owner and custodial information</li>
+
+</ul>
+
+<h4 id="cn-m19-184"><b><i>Asset tags</i></b></h4>
+
+<p id="cn-m19-185">Asset tags are used to track hardware. An asset tag 
+has a barcode or a serial number. When you scan the barcode, the 
+complete hardware details of the item are fetched from the inventory 
+database. Consider the example of a grocery store. When you purchase an 
+item, the cash counter person simply scans the barcode on the item, and 
+it is added for checkout.</p>
+
+<p id="cn-m19-186">You can replicate the grocery store’s scenario in 
+your organization where you can use an asset tag, which will then be 
+placed on each hardware item, such as a laptop, desktop, printers, 
+servers, and so on. By scanning the tag, you can maintain assets in an 
+inventory management system. You can put a number series on the tags, 
+which, when entered into the inventory management system, will pull out 
+all information from the date it was acquired to it was disposed of. An 
+asset tag can be an RFID-based, which can help you track them. The 
+number of assets and paper labels may help you mark an asset, but they 
+cannot track them.</p>
+
+<p id="cn-m19-187">You can use an asset tag with a bar code, which does 
+not require any manual intervention when entering or pulling out 
+information about a tag. For example, instead of typing the asset 
+number, you can scan the barcode to retrieve complete information about 
+an asset. The number of assets and paper labels may help you mark the 
+asset, but they are manual methods and are prone to human error.</p>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+< <a href="https://github.com/SeanOhAileasa" id="ChangeManagement">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-189"><b>Exercise 4 - Change Management</b></h2>
+
+<p id="cn-m19-190">No network can ever be static. There will always be 
+changes due to various reasons, such as improving security or even 
+adding new functionality. For example, you may be upgrading an 
+application with a new version. However, the smallest change in the 
+network environment can cause chaos and, therefore, needs to be handled 
+with caution and using proper processes and procedures.</p>
+
+<p id="cn-m19-191">In this exercise, you will learn about change management.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-193">After completing this exercise, you will have a further knowledge of:</p>
+
+<ul id="cn-m19-194">
+
+<li id="cn-m19-194">Change Management</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m19-196">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-197"><img class="cn-img" id="cn-image-m19-c-6" src="InfrastructureSolutions_files/image-m19-c-6.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m19-198"><b>Change Management</b></h3>
+
+<p id="cn-m19-199">In a network environment, you may want to implement a
+ new application or add a new server. Before doing any such activity, 
+you need to be aware that there is a change that is going to take place 
+on the network. The change can work without causing any disruption, or 
+it can simply cause chaos, which you would want to avoid.</p>
+
+<p id="cn-m19-200">For example, you want to add a new security 
+application on the network. In a typical scenario, you would go ahead 
+and install and configure the application without giving much thought of
+ the consequences that you may have to go through later on. If it works 
+fine without any disruption to the network or other services, it is 
+fine. What if it does not? You want to protect the disruption or any 
+unwanted results from this application. Therefore, the safest route is 
+to go through the change management process.</p>
+
+<p id="cn-m19-201">The change management process helps you make a change
+ in an environment in a systematic manner. The change that you are going
+ to make is thought through and then approved by a set of designated 
+personnel. The change that you want to implement needs to be tested, 
+approved, deployed and documented.</p>
+
+<p id="cn-m19-202">There are a certain steps that you need to perform 
+during the process. However, different organizations may have slight 
+variations. Some organizations may simply follow the 6-steps process, 
+and some may have more steps. There is no hard rule on the number of 
+steps as long as you have implemented the basic set of steps to fulfil 
+the change management criteria.</p>
+
+<p id="cn-m19-203">The broad level steps are:</p>
+
+<p id="cn-m19-204"></p><figure><img class="cn-img" id="cn-image-m19-c-7" src="InfrastructureSolutions_files/image-m19-c-7.jpg" alt="Figure 4.1 Diagram showing the Change Management Phases"><figcaption>Figure 4.1 Diagram showing the Change Management Phases: Showing the six different phases the Change Management process.</figcaption></figure><p></p>
+
+<ol id="cn-m19-205">
+
+<li id="cn-m19-205"><b>Create Request for Change</b>: First, you need to
+ create a Request for Change (RFC), which requires information such as 
+description, configuration items, reason, and information about the 
+person requesting the change. It will also require information, such as 
+cost, timeframe, justification, and fallback plan.</li>
+
+<li id="cn-m19-206"><b>Review Request for Change (RFC</b>): A team of 
+designated personnel reviews the RFC. If the information with the RFC is
+ found to be appropriate, it is then approved. If not, the RFC is 
+rejected and returned to the person who submitted it.</li>
+
+<li id="cn-m19-207"><b>Evaluate the Change</b>: The change that has to 
+be implemented, its impact needs to be assessed. The change needs to be 
+thoroughly evaluated and then documented in the Change Evaluation 
+Report.</li>
+
+<li id="cn-m19-208"><b>Authorize the Change</b>: After a thorough evaluation of the change is completed, the change needs to be authorized for implementation.</li>
+
+<li id="cn-m19-209"><b>Implement the Change</b>: After a change is 
+authorized, it can be implemented. Before the implementation, a backup 
+plan is also prepared in case the change fails, or the results are 
+unexpected. The implementation team should be able to fall back to the 
+original configuration.</li>
+
+<li id="cn-m19-210"><b>Close the Request</b>: After the change is implemented, a Post Implementation Review (PIR) is prepared. It contains the details of the change.</li>
+
+</ol>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+< <a href="https://github.com/SeanOhAileasa" id="VirtualizationandContainerization">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-213"><b>Exercise 5 - Virtualization and Containerization</b></h2>
+
+<p id="cn-m19-214">Scalability is always a challenge when it comes to 
+networks, systems, and applications. When you need to scale up, you have
+ to add the physical hardware. However, to a great extent, this problem 
+is solved by virtualization and containerization. Both can help you 
+increase agility in the IT operations and can help you scale up and 
+scale down the infrastructure as required.</p>
+
+<p id="cn-m19-215">Virtualization and containerization are similar but 
+work with different approaches. The only fundamental similarity in both 
+of these concepts is that they create and work with self-contained 
+packages. However, beyond this, they differ in their functionalities and
+ use cases.</p>
+
+<p id="cn-m19-216">In this exercise, you will learn about virtualization and containerization.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m19-218">After completing this exercise, you will have a further knowledge of:</p>
+
+<ul id="cn-m19-219">
+
+<li id="cn-m19-219">Virtualization and Containerization</li>
+
+<li id="cn-m19-220">Virtual Desktop Infrastructure (VDI)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m19-222">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m19-223"><img class="cn-img" id="cn-image-m19-c-8" src="InfrastructureSolutions_files/image-m19-c-8.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m19-224"><b>Virtualization and Containerization</b></h3>
+
+<p id="cn-m19-225">Virtualization allows a system’s physical hardware to
+ be emulated in the form of virtual systems. Each physical system has a 
+certain amount of physical resources, such as CPU, memory, network 
+adapter, and storage. When you install an operating system, it can use 
+system resources. However, there is only one operating system that can 
+run per physical system.</p>
+
+<p id="cn-m19-226">With the use of virtualization, you can run multiple 
+virtual systems. Virtualization allows a single processor to act as 
+multiple processors. When you run multiple virtual machines on the 
+system, virtualization helps the processor to isolate tasks.</p>
+
+<p id="cn-m19-227">You need to have a hypervisor, which is responsible 
+for virtualization in a system. A hypervisor allows multiple operating 
+systems to run in parallel and consume the system resources. These 
+operating systems run within a shell, which is known as a virtual 
+machine. Each virtual machine works like a normal system, except that it
+ does not have any physical hardware. The physical system that runs the 
+virtual machine must have a hypervisor to run a virtual machine.</p>
+
+<p id="cn-m19-228">Hypervisor makes the creation of virtual machines 
+possible on a physical computer. The virtual machine is a guest computer
+ within a hypervisor with its operating system and synthetic hardware. 
+You can also edit the virtual machine settings and customize them to 
+suit your needs.</p>
+
+<p id="cn-m19-229"></p><figure><img class="cn-img" id="cn-image-m19-c-9" src="InfrastructureSolutions_files/image-m19-c-9.jpg" alt="Figure 5.1 Diagram showing the virtual machine properties"><figcaption>Figure
+ 5.1 Diagram showing the virtual machine properties: Showing the virtual
+ machine configuration properties in Type 2 hypervisor.</figcaption></figure><p></p>
+
+<p id="cn-m19-231">There are two types of hypervisors:</p>
+
+<p id="cn-m19-232"><b>Type 1: </b>The Type 1 hypervisor is not dependent
+ on an operating system. Type 1 hypervisors run on a bare-metal system 
+and does not require an operating system in between to host the virtual 
+machines. In the Type 1 hypervisor, the order of layers is as follows:</p>
+
+<ol id="cn-m19-233">
+
+<li id="cn-m19-233">Hypervisor</li>
+
+<li id="cn-m19-234">Operating System</li>
+
+<li id="cn-m19-235">Hardware</li>
+
+</ol>
+
+<p id="cn-m19-236"><b>Type 2: </b>In the Type 2 hypervisor, the order of layers is as follows:</p>
+
+<ol id="cn-m19-237">
+
+<li id="cn-m19-237">Guest OS</li>
+
+<li id="cn-m19-238">Hypervisor</li>
+
+<li id="cn-m19-239">Operating System</li>
+
+<li id="cn-m19-240">Hardware</li>
+
+</ol>
+
+<p id="cn-m19-241">The operating system, which is layer 3, is installed 
+on the base hardware. On the operating system, you need to install a 
+TYPE 2 hypervisor, such as VMware Workstation. Then, on the top, you 
+will have the guest virtual machines.</p>
+
+<p id="cn-m19-242"></p><figure><img class="cn-img" id="cn-image-m19-c-10" src="InfrastructureSolutions_files/image-m19-c-10.jpg" alt="Figure 5.2 Diagram showing the VMware Workstation Player"><figcaption>Figure 5.2 Diagram showing the VMware Workstation Player: Showing the virtual machine in the Type 2 hypervisor.</figcaption></figure><p></p>
+
+<h4 id="cn-m19-243"><b><i>Containerization</i></b></h4>
+
+<p id="cn-m19-244">Containers work on the concept of compartments. They 
+use the operating system from the host to deploy applications. You can 
+deploy multiple containers on a single host, and each container can run 
+different applications. However, the operating system will remain the 
+same on all containers on a single physical host. Therefore, if you need
+ to run a container with a different operating system, you need to 
+deploy them on another physical host.</p>
+
+<p id="cn-m19-245">One of the great advantages of a container is that it
+ runs using the operating system and base system resources; it is 
+lightweight and can start as soon as a system boots. However, this can 
+also lead to a disadvantage because if there is a vulnerability in the 
+OS kernel, then all containers running on the operating system will have
+ the same vulnerability.</p>
+
+<p id="cn-m19-246">Containers are useful when you need to run multiple 
+applications using the same operating system. You can quickly create a 
+container and run the application within it.</p>
+
+<p id="cn-m19-247">There are typically four layers for a container:</p>
+
+<ol id="cn-m19-248">
+
+<li id="cn-m19-248">Operating system</li>
+
+<li id="cn-m19-249">Container engine</li>
+
+<li id="cn-m19-250">Binaries and libraries</li>
+
+<li id="cn-m19-251">Application</li>
+
+</ol>
+
+<p id="cn-m19-252">Containers should be used when you need to have the 
+native performance for an application. Since you are running part of the
+ operating system within a container, there is generally less overhead, 
+and you get good performance for hosting the application.</p>
+
+<p id="cn-m19-253">There are several fundamental differences between virtualization and containerization. Some of the key differences are:</p>
+
+<p id="cn-m19-254"><b>Speed</b>: Containers start with the operating 
+system as it is loaded. Therefore, the start is immediate. However, 
+virtual machines need to load the complete operating system.</p>
+
+<p id="cn-m19-255"><b>Resources</b>: Containers start immediately with 
+the operating system, and therefore, there is little memory consumption.
+ On the other hand, there can be multiple virtual machines running on a 
+single physical host, and each virtual machine will require its share of
+ system resources. This can put the load on the physical server, which 
+will impact the virtual machines ultimately.</p>
+
+<p id="cn-m19-256"><b>Security and isolation</b>: Containers run within 
+the operating system. Virtual machines run separately and in isolation. 
+Therefore, the virtual machines tend to be more secure than containers. 
+On the other hand, the containers can isolate the applications and their
+ data only at the process level, and they are less secure. If the 
+operating system is compromised, then the containers can also be 
+compromised.</p>
+
+<p id="cn-m19-257"><b>Portability</b>: Containers are much smaller in 
+size, and therefore, they are easy to port. Virtual machines tend to be 
+larger, and therefore, portability can be a problem. When you port a 
+virtual machine, you need to include configuration files and libraries 
+along with the virtual machine.</p>
+
+<p id="cn-m19-258"><b>Operating System</b>: A virtual machine can run an
+ independent operating system on a physical host. Containers can run 
+only the operating system that the host is running.</p>
+
+<h3 id="cn-m19-259"><b>Virtual Desktop Infrastructure (VDI)</b></h3>
+
+<p id="cn-m19-260">Virtual Desktop Infrastructure or <b>VDI </b>was coined by <b>VMware</b>, which later became the industry standard terminology. <b>VDI </b>allows
+ a user to use an endpoint device, such as a thin client or a mobile 
+device, and connect to a virtual desktop image. The VDI works like a 
+conventional system except that it is in a virtual form and is hosted 
+either in a data center or in the cloud. A <b>VDI </b>can work on a one-to-one or one-to-many ratio. In a one-to-one ratio, a <b>VDI </b>is assigned to a single user. In a one-to-many ratio, a VDI is assigned to multiple users.</p>
+
+<p id="cn-m19-261">Different vendors have different methods to access a <b>VDI </b>using an endpoint. For example, there are three key players in the <b>VDI </b>market:</p>
+
+<ul id="cn-m19-262">
+
+<li id="cn-m19-262"><b>Citrix</b>: Uses Independent Computing Architecture (<b>ICA</b>) and Enlightened Data Transport (<b>EDT</b>)</li>
+
+<li id="cn-m19-263"><b>VMware</b>: Uses Blast Extreme and PC over IP (PCoIP)</li>
+
+<li id="cn-m19-264"><b>Microsoft</b>: Uses Remote Desktop Protocol (RDP)</li>
+
+</ul>
+
+<p id="cn-m19-265"><b>VDIs </b>are hosted on a centralized server and 
+run in the form of virtual machines. A hypervisor hosts the virtual 
+machines, which are then deployed as <b>VDIs</b>. Whenever a request is generated from a user, the connection broker works as the central authority to handle that request.</p>
+
+<p id="cn-m19-266"><b>VDIs </b>can be of two types:</p>
+
+<ul id="cn-m19-267">
+
+<li id="cn-m19-267"><b>Persistent</b>: Works more like a personalized desktop. A user is assigned a <b>VDI</b>, which can be customized by the user. When the user closes the <b>VDI</b>, the changes are saved.</li>
+
+<li id="cn-m19-268"><b>Non-persistent</b>: Works more like a temporary desktop. A user connects to a <b>VDI</b>, where the user works, but when the user logs off from the <b>VDI</b>, the changes are discarded.</li>
+
+</ul>
+
+<p id="cn-m19-269">There are several benefits of using a <b>VDI</b>. Some of the key benefits are:</p>
+
+<ul id="cn-m19-270">
+
+<li id="cn-m19-270"><b>Remote connectivity</b>: Users can use their thin client or a mobile device to connect with the remote <b>VDI</b>.
+ All files and data are stored on the servers. This provides the 
+flexibility of using different devices for connectivity with VDI.</li>
+
+<li id="cn-m19-271"><b>Cost</b>: Using <b>VDI </b>provides huge cost 
+savings. You do not need to install, configure, and maintain high-end 
+desktops and laptops. The users can work with the systems or any device 
+with minimal configuration.</li>
+
+<li id="cn-m19-272"><b>Security</b>: The data is stored on the centralized server, and therefore, it is more secure.</li>
+
+<li id="cn-m19-273"><b>Management</b>: Since the <b>VDIs </b>are running on centralized servers, they are easy to manage. You can update or patch them in a centralized location.</li>
+
+</ul>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+
+<span class="atom-code hidden">86b3caf2-2504-4e20-a81b-2fcb2368c8d2</span>
+
+<span class="cn-alert" id="cn-m19-276">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-277"><b>Review</b></h2>
+
+<p id="cn-m19-278">Well done, you have completed the <b>Infrastructure Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">2abaca70-efa1-4fe5-94fb-ad1777bfc242</span>
+
+<span class="atom-code hidden">90c72a5a-227e-4ba5-b3e8-75fe22ac9762</span>
+
+<span class="atom-code hidden">fc7e04e4-f4a8-4553-a3f5-b67c513e3487</span>
+
+<span class="atom-code hidden">47f6bdbd-fb00-4d35-a13e-2becc2424e3d</span>
+
+<span class="atom-code hidden">71d180a4-50ad-40d5-a8be-27ae15b4d6d3</span>
+
+<span class="atom-code hidden">c3dd3a66-bdae-443e-820f-ec097dbd0e21</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m19-288">You completed the following exercises:</p>
+
+<ul id="cn-m19-289">
+
+<li id="cn-m19-289">Exercise 1 - On-premises and Cloud Infrastructure</li>
+
+<li id="cn-m19-290">Exercise 2 - Network Architecture</li>
+
+<li id="cn-m19-291">Exercise 3 - Asset Management</li>
+
+<li id="cn-m19-292">Exercise 4 - Change Management</li>
+
+<li id="cn-m19-293">Exercise 5 - Virtualization and Containerization</li>
+
+</ul>
+
+<p id="cn-m19-294">You should now have a further knowledge of:</p>
+
+<ul id="cn-m19-295">
+
+<li id="cn-m19-295">On-premise and Cloud Infrastructure</li>
+
+<li id="cn-m19-296">Cloud Access Service Broker (CASB)</li>
+
+<li id="cn-m19-297">Physical Networks</li>
+
+<li id="cn-m19-298">Software-defined Networking (SDN)</li>
+
+<li id="cn-m19-299">Virtual Private Cloud (VPC)</li>
+
+<li id="cn-m19-300">Virtual Private Network (VPN)</li>
+
+<li id="cn-m19-301">Serverless Networks</li>
+
+<li id="cn-m19-302">Asset Tagging</li>
+
+<li id="cn-m19-303">Change Management</li>
+
+<li id="cn-m19-304">Virtualization and Containerization</li>
+
+<li id="cn-m19-305">Virtual Desktop Infrastructure (VDI)</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m19-309">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

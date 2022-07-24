@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="SecuritysMonitoringActivities_files/print-styles.css" rel="stylesheet">
+    <script src="SecuritysMonitoringActivities_files/jquery.min.js"></script>
+    <script src="SecuritysMonitoringActivities_files/jspdf.js"></script>
+    <script src="SecuritysMonitoringActivities_files/from_html.js"></script>
+    <script src="SecuritysMonitoringActivities_files/addimage.js"></script>
+    <script src="SecuritysMonitoringActivities_files/filesaver.js"></script>
+    <script src="SecuritysMonitoringActivities_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="c1t7XEEZr8OHSFJa5yUjUQtM0KF/lMa83RY61IGjg/uruXMeA/UuPsD8J/Baa2ptiWM4MWioTRj9KT/rgzPcJgtmUiW1xS+2U/2/6rpXJxg=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Cybersecurity Analyst (CySA+)</h1>
+                <h2>Security Monitoring Activities</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Security Information and Event Management (SIEM) </li><li>Exercise 2 - Email Analysis </li><li>Exercise 3 - Network</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m14-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Known-bad Internet protocol (IP)</div>
+
+<div>Domain Keys Identified Mail (DKIM)</div>
+
+<div>Domain-based Message Authentication, Reporting, and Conformance (DMARC)</div>
+
+<div>Sender Policy Framework (SPF)</div>
+
+<div>Phishing</div>
+
+<div>Digital signature</div>
+
+<div>E-mail signature block</div>
+
+<div>Embedded links</div>
+
+<div>Impersonation</div>
+
+<div>Header</div>
+
+<div>Malicious payload</div>
+
+<div>Heuristics</div>
+
+<div>Endpoint</div>
+
+<div>Malware Reverse engineering</div>
+
+<div>Memory</div>
+
+<div>File system</div>
+
+<div>User and entity behavior analytics (UEBA)</div>
+
+<div>Rule writing</div>
+
+<div>Dashboard</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m14-22">Welcome to the <b>Security Monitoring Activities </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-26">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m14-27">
+
+<li id="cn-m14-27">Exercise 1 - Security information and event management (SIEM) review</li>
+
+<li id="cn-m14-28">Exercise 2 - Email analysis</li>
+
+<li id="cn-m14-29">Exercise 3 - Network</li>
+
+</ul>
+
+<p id="cn-m14-30">After completing this module, you will be able to:</p>
+
+<ul id="cn-m14-31">
+
+<li id="cn-m14-31">Write Rules using SIEM</li>
+
+<li id="cn-m14-32">Understand the SIEM Dashboard</li>
+
+</ul>
+
+<p id="cn-m14-33">After completing this module, you will have further knowledge of:</p>
+
+<ul id="cn-m14-34">
+
+<li id="cn-m14-34">Known-Bad Internet protocol (IP)</li>
+
+<li id="cn-m14-35">Domain Keys Identified Mail (DKIM)</li>
+
+<li id="cn-m14-36">Domain-Based Message Authentication, Reporting, and Conformance (DMARC)</li>
+
+<li id="cn-m14-37">Sender Policy Framework (SPF)</li>
+
+<li id="cn-m14-38">Phishing</li>
+
+<li id="cn-m14-39">Digital Signature</li>
+
+<li id="cn-m14-40">E-mail Signature Block</li>
+
+<li id="cn-m14-41">Embedded Links</li>
+
+<li id="cn-m14-42">Impersonation</li>
+
+<li id="cn-m14-43">Headers</li>
+
+<li id="cn-m14-44">Malicious Payload</li>
+
+<li id="cn-m14-45">Heuristics</li>
+
+<li id="cn-m14-46">Endpoint</li>
+
+<li id="cn-m14-47">Malware Reverse Engineering</li>
+
+<li id="cn-m14-48">Memory</li>
+
+<li id="cn-m14-49">System and Application Behavior</li>
+
+<li id="cn-m14-50">File Systems</li>
+
+<li id="cn-m14-51">User and Entity Behavior Analytics (UEBA)</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m14-53">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m14-54">
+
+<li id="cn-m14-54">3.1 Given a scenario, analyze data as part of security monitoring activities</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m14-55"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m14-57">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">1b317064-7b0c-48e0-845c-05a2d99e80c5</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m14-61">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m14-62">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-64"><b>Lab Topology</b></h2>
+
+<p id="cn-m14-65">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m14-66"><img class="cn-img" id="cn-image-m14-c-0" src="SecuritysMonitoringActivities_files/image-m14-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m14-67">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m14-68">
+
+<li id="cn-m14-68"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m14-69"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m14-70"><b>PLABKALI01 </b>- (Kali Linux 2019 - Linux Kali)</li>
+
+<li id="cn-m14-71"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m14-72"><b>PLABCENTOS </b>- (Centos 8 Linux - Stand-alone Linux Server)</li>
+
+<li id="cn-m14-73"><b>PLABALIENVAULT </b>- (Alien Vault Linux Security Management Platform)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m14-74">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="SecurityInformationandEventManagementSIEM">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-75"><b>Exercise 1 - Security Information and Event Management (SIEM) </b></h2>
+
+<p id="cn-m14-76"><b>Alien Vault OSSIM </b>is a <b>SIEM </b>tool that 
+can be used for managing events across different assets in a network and
+ has different built-in capabilities. It also has a detailed dashboard, 
+which provides the overall view of a network’s security posture.</p>
+
+<p id="cn-m14-77">In this exercise, you will learn about <b>Alien Vault OSSIM</b>.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-79">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m14-80">
+
+<li id="cn-m14-80">Write Rules using SIEM</li>
+
+<li id="cn-m14-81">Understand the SIEM Dashboard</li>
+
+</ul>
+
+<p id="cn-m14-82">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m14-83">
+
+<li id="cn-m14-83">Known-bad Internet protocol (IP)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-85">You will be using the following devices in this lab. Please power these on now.</p>
+
+<p id="cn-m14-86"><img class="cn-img" id="cn-image-m14-c-1" src="SecuritysMonitoringActivities_files/image-m14-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m14-87">
+
+<li id="cn-m14-87"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m14-88"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m14-89"><b>PLABALIENVAULT </b>- (Alien Vault Linux Security Management Platform)</li>
+
+</ul>
+
+<h3 id="cn-m14-90"><b>Known-bad Internet Protocol (IP)</b></h3>
+
+<p id="cn-m14-91">The known-bad Internet Protocols or IP addresses are 
+sources of various threats. In most cases, these IP addresses are known 
+to perform various malicious activities, such as:</p>
+
+<ul id="cn-m14-92">
+
+<li id="cn-m14-92">Active source of malware</li>
+
+<li id="cn-m14-93">Active role in botnets</li>
+
+<li id="cn-m14-94">Active role in sending phishing Emails</li>
+
+<li id="cn-m14-95">Known to be Command-and-Control (CNC) systems managing one or more botnets</li>
+
+<li id="cn-m14-96">Any type of malicious cyber activity</li>
+
+</ul>
+
+<p id="cn-m14-97">Known-bad IP addresses are also known as Domain Name 
+System&nbsp;Blacklists. In some cases, there can be a possibility in 
+which a legitimate IP address is blacklisted. One of the reasons can be 
+that this IP address is sending out spam, which it is not. There can be a
+ possibility that too many Emails sent out, and therefore, the IP 
+address got blacklisted.</p>
+
+<h3 id="cn-m14-98"><b>Task 1 - Understanding the SIEM Dashboard</b></h3>
+
+<p id="cn-m14-99"><b>Alien Vault OSSIM </b>(<b>Open Source Security Information and Even Management</b>) is an open source <b>SIEM </b>program
+ developed by industry engineers to provide a rich dashboard that  
+covers different aspects of security in a single window. From here you 
+can view analysis, stored logs and reports, configuration options and 
+more.</p>
+
+<p id="cn-m14-100">In this task, you will learn to navigate through the <b>Alien Vault OSSIM </b>dashboard.</p>
+
+<h4 id="cn-m14-101"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-102">Ensure that the required devices are powered on and connect to <b>PLABWIN10</b>. The Windows desktop is displayed. Click the <b>Firefox </b>icon in the taskbar.</p>
+
+<p id="cn-m14-103"></p><figure><img class="cn-img" id="cn-image-m14-c-2" src="SecuritysMonitoringActivities_files/image-m14-c-2.jpg" alt="Figure 2.1 Screenshot of PLABWIN10"><figcaption>Figure 2.1 Screenshot of PLABWIN10: Clicking the Firefox icon in the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-104"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-105">In the address bar, type the following URL:</p>
+
+<pre id="cn-m14-106"><code>https://192.168.0.6
+
+</code></pre>
+
+<p id="cn-m14-107">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-108"></p><figure><img class="cn-img" id="cn-image-m14-c-3" src="SecuritysMonitoringActivities_files/image-m14-c-3.jpg" alt="Figure 2.2 Screenshot of PLABWIN10"><figcaption>Figure 2.2 Screenshot of PLABWIN10: Entering a URL in the address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-109"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-110">The login page for <b>ALIEN VAULT OSSIM </b>is displayed. In the <b>USERNAME </b>text box, type the following:</p>
+
+<pre id="cn-m14-111"><code>admin
+
+</code></pre>
+
+<p id="cn-m14-112">In the <b>PASSWORD </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m14-114">Click <b>LOGIN</b>.</p>
+
+<p id="cn-m14-115"></p><figure><img class="cn-img" id="cn-image-m14-c-4" src="SecuritysMonitoringActivities_files/image-m14-c-4.jpg" alt="Figure 2.3 Screenshot of PLABWIN10"><figcaption>Figure 2.3 Screenshot of PLABWIN10: Entering the user credentials on the ALIEN VAULT OSSIM login window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-117"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-118">The <b>Alien Vault Dashboard </b>is displayed. There 
+is a possibility that some of the sections on the dashboard may not have
+ any data. This is because those events would not have taken place.</p>
+
+<p id="cn-m14-119">For example, in the <b>SECURITY EVENTS: TOP 5 ALARMS </b>section on the left, there is no data. This is because no alarm has been generated.</p>
+
+<p id="cn-m14-120"></p><figure><img class="cn-img" id="cn-image-m14-c-5" src="SecuritysMonitoringActivities_files/image-m14-c-5.jpg" alt="Figure 2.4 Screenshot of PLABWIN10"><figcaption>Figure 2.4 Screenshot of PLABWIN10: Showing the dashboard of OSSIM.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-122"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-123">Scroll down to view more information on the dashboard.</p>
+
+<p id="cn-m14-124"></p><figure><img class="cn-img" id="cn-image-m14-c-6" src="SecuritysMonitoringActivities_files/image-m14-c-6.jpg" alt="Figure 2.5 Screenshot of PLABWIN10"><figcaption>Figure 2.5 Screenshot of PLABWIN10: Showing the dashboard of OSSIM.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-126"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-127">Scroll up once again. Alien Vault <b>OSSIM </b>generates interactive graphs, which are clickable.</p>
+
+<p id="cn-m14-128">Hover and click on any of the pieces of the <b>Pie </b>chart.</p>
+
+<p id="cn-m14-129"></p><figure><img class="cn-img" id="cn-image-m14-c-7" src="SecuritysMonitoringActivities_files/image-m14-c-7.jpg" alt="Figure 2.6 Screenshot of PLABWIN10"><figcaption>Figure 2.6 Screenshot of PLABWIN10: Showing the Pie chart.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-131"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-132">You are taken to the relevant <b>SIEM </b>page of the piece of the <b>Pie </b>chart.</p>
+
+<p id="cn-m14-133"></p><figure><img class="cn-img" id="cn-image-m14-c-8" src="SecuritysMonitoringActivities_files/image-m14-c-8.jpg" alt="Figure 2.7 Screenshot of PLABWIN10"><figcaption>Figure 2.7 Screenshot of PLABWIN10: Showing the information related to Pie chart piece.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-135"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-136">Scroll down to view the events that have taken place:</p>
+
+<p id="cn-m14-137"></p><figure><img class="cn-img" id="cn-image-m14-c-9" src="SecuritysMonitoringActivities_files/image-m14-c-9.jpg" alt="Figure 2.8 Screenshot of PLABWIN10"><figcaption>Figure 2.8 Screenshot of PLABWIN10: Showing the list of events.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-139"><i>Keep the current window open.&nbsp;&nbsp;</i></span>
+
+<h3 id="cn-m14-140"><b>Task 2 - Write Rules using SIEM</b></h3>
+
+<p id="cn-m14-141"><b>Alien Vault OSSIM </b>also has the ability to write custom rules to perform various tasks. You can also edit those rules, and create copies if needed.</p>
+
+<p id="cn-m14-142">In this task, you will learn about rule writing in <b>Alien Vault OSSIM</b>.</p>
+
+<h4 id="cn-m14-143"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-144">Ensure that you connect to <b>PLABWIN10 </b>and are logged in <b>Alien Vault OSSIM</b>.</p>
+
+<p id="cn-m14-145">Click the <b>ENVIRONMENT </b>tab and then click <b>DETECTION</b>.</p>
+
+<p id="cn-m14-146"></p><figure><img class="cn-img" id="cn-image-m14-c-10" src="SecuritysMonitoringActivities_files/image-m14-c-10.jpg" alt="Figure 2.9 Screenshot of PLABWIN10"><figcaption>Figure 2.9 Screenshot of PLABWIN10: Click ENVIRONMENT and then click DETECTION.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-148"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-149">On the <b>DETECTION </b>page, click <b>EDIT RULES</b>.</p>
+
+<p id="cn-m14-150"></p><figure><img class="cn-img" id="cn-image-m14-c-11" src="SecuritysMonitoringActivities_files/image-m14-c-11.jpg" alt="Figure 2.10 Screenshot of PLABWIN10"><figcaption>Figure 2.10 Screenshot of PLABWIN10: Clicking EDIT RULES on the DETECTION page.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-152"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-153">On the <b>DETECTION </b>page, you are on the <b>RULES FILES </b>tab. Click the <b>local_rules.xml </b>drop-down.</p>
+
+<p id="cn-m14-154">Notice that there are several rule files. However, only a local rule file is editable. Keep the <b>local_rules.xml </b>file selected and close the drop-down.</p>
+
+<p id="cn-m14-155"></p><figure><img class="cn-img" id="cn-image-m14-c-12" src="SecuritysMonitoringActivities_files/image-m14-c-12.jpg" alt="Figure 2.11 Screenshot of PLABWIN10"><figcaption>Figure 2.11 Screenshot of PLABWIN10: Selecting the local_rules.xml file.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-157"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-158">Click the <b>RULES EDITOR </b>tab.</p>
+
+<p id="cn-m14-159"></p><figure><img class="cn-img" id="cn-image-m14-c-13" src="SecuritysMonitoringActivities_files/image-m14-c-13.jpg" alt="Figure 2.12 Screenshot of PLABWIN10"><figcaption>Figure 2.12 Screenshot of PLABWIN10: Clicking the RULES EDITOR tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-161"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-162">On the <b>RULE EDITOR </b>tab, notice that the currently selected rule is now editable. Notice that a sample rule is activated. It is marked as level <b>0</b>, which means ignore.</p>
+
+<p id="cn-m14-163">For this task, you can skip making changes to the rules. However, in your idle time, you can come back and try editing the rule.</p>
+
+<p id="cn-m14-164"></p><figure><img class="cn-img" id="cn-image-m14-c-14" src="SecuritysMonitoringActivities_files/image-m14-c-14.jpg" alt="Figure 2.13 Screenshot of PLABWIN10"><figcaption>Figure 2.13 Screenshot of PLABWIN10: Showing the details of the rule in the RULE EDITOR.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-166"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-167">You can also clone the rule and then modify the cloned rule. To be able to do this, select the <b>group name </b>in the left-hand pane and then in the right pane, click the <b>Clone Rule </b>icon.</p>
+
+<p id="cn-m14-168"></p><figure><img class="cn-img" id="cn-image-m14-c-15" src="SecuritysMonitoringActivities_files/image-m14-c-15.jpg" alt="Figure 2.14 Screenshot of PLABWIN10"><figcaption>Figure 2.14 Screenshot of PLABWIN10: Clicking the Clone Rule icon.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-170"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-171">Notice that a new rule with the same rule id is created. Click <b>Save</b>.</p>
+
+<p id="cn-m14-172"></p><figure><img class="cn-img" id="cn-image-m14-c-16" src="SecuritysMonitoringActivities_files/image-m14-c-16.jpg" alt="Figure 2.15 Screenshot of PLABWIN10"><figcaption>Figure 2.15 Screenshot of PLABWIN10: Clicking Save after duplicating the rule.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-174"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-175">The saving process takes a little while.</p>
+
+<p id="cn-m14-176"></p><figure><img class="cn-img" id="cn-image-m14-c-17" src="SecuritysMonitoringActivities_files/image-m14-c-17.jpg" alt="Figure 2.16 Screenshot of PLABWIN10"><figcaption>Figure 2.16 Screenshot of PLABWIN10: Showing the saving process.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-178"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-179">Click the second rule and then click the <b>Edit Rule </b>icon.</p>
+
+<p id="cn-m14-180"></p><figure><img class="cn-img" id="cn-image-m14-c-18" src="SecuritysMonitoringActivities_files/image-m14-c-18.jpg" alt="Figure 2.17 Screenshot of PLABWIN10"><figcaption>Figure 2.17 Screenshot of PLABWIN10: Clicking the second rule and then clicking the Edit Rule icon.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-182"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-183">The rule is now editable. In the <b>id </b>field, change the value of <b>100001 </b>to <b>100002</b>. Click <b>Save</b>.</p>
+
+<p id="cn-m14-184"></p><figure><img class="cn-img" id="cn-image-m14-c-19" src="SecuritysMonitoringActivities_files/image-m14-c-19.jpg" alt="Figure 2.18 Screenshot of PLABWIN10"><figcaption>Figure 2.18 Screenshot of PLABWIN10: Clicking the Save after changing the id value.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-186"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-187">Notice in the left-hand pane, a new rule with the name <b>100002 </b>appears.</p>
+
+<p id="cn-m14-188"></p><figure><img class="cn-img" id="cn-image-m14-c-20" src="SecuritysMonitoringActivities_files/image-m14-c-20.jpg" alt="Figure 2.19 Screenshot of PLABWIN10"><figcaption>Figure 2.19 Screenshot of PLABWIN10: Showing the new rule after its name change.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">92fea127-9ca7-4825-8147-63c3d2f6f0d4</span>
+< <a href="https://github.com/SeanOhAileasa" id="EmailAnalysis">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-191"><b>Exercise 2 - Email Analysis </b></h2>
+
+<p id="cn-m14-192">There are several methods that organizations are 
+deploying to protect their Email infrastructure. However, due to either 
+human or technical errors, some issues will still remain and exist on an
+ organization’s mail server. Email analysis is often required while 
+performing forensic investigation.</p>
+
+<p id="cn-m14-193">In this exercise, you will learn about various terminology related to Email and its analysis.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-195">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m14-196">
+
+<li id="cn-m14-196">Known-bad Internet protocol (IP)</li>
+
+<li id="cn-m14-197">Domain Keys Identified Mail (DKIM)</li>
+
+<li id="cn-m14-198">Domain-based Message Authentication, Reporting, and Conformance (DMARC)</li>
+
+<li id="cn-m14-199">Sender Policy Framework (SPF)</li>
+
+<li id="cn-m14-200">Phishing</li>
+
+<li id="cn-m14-201">Digital signature</li>
+
+<li id="cn-m14-202">E-mail signature block</li>
+
+<li id="cn-m14-203">Embedded links</li>
+
+<li id="cn-m14-204">Impersonation</li>
+
+<li id="cn-m14-205">Headers</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-207">This exercise contains supporting materials for CySA+.</p>
+
+<p id="cn-m14-208"><img class="cn-img" id="cn-image-m14-c-21" src="SecuritysMonitoringActivities_files/image-m14-c-21.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m14-209"><b>Malicious Payload</b></h3>
+
+<p id="cn-m14-210">A malicious payload is a piece of code that can be 
+dormant for several days or even months before it is triggered. It is 
+usually embedded within another application or piece of code, which, 
+when triggered, activates a malicious payload. The intent of this could 
+vary, depending on its nature. For example, some can be designed to:</p>
+
+<ul id="cn-m14-211">
+
+<li id="cn-m14-211">Steal data</li>
+
+<li id="cn-m14-212">Monitor activity</li>
+
+<li id="cn-m14-213">Delete files</li>
+
+<li id="cn-m14-214">Download more malicious files</li>
+
+<li id="cn-m14-215">Run a background process</li>
+
+</ul>
+
+<p id="cn-m14-216">There are several methods to deliver a malicious 
+payload to a target system. Email is one of the key methods or delivery 
+vector for this. There is usually an attachment or a link that is 
+delivered via an Email, which, when either clicked or opened, will 
+trigger the malicious payload.</p>
+
+<p id="cn-m14-217">Emails with malicious payloads come from unknown 
+sources. However, it could also be possible that an Email came from a 
+known source but contains an unknown attachment. There is a possibility 
+that the Email was spoofed, which is a common practice followed by 
+attackers. They can compromise a messaging server or network of an 
+organization and then use the messaging server to route their emails 
+with malicious payloads. For the recipient, the Email seems to come from
+ a known source and, therefore, falls into the trap of opening the 
+attachment.</p>
+
+<h3 id="cn-m14-218"><b>Domain Key Identified Mail (DKIM)</b></h3>
+
+<p id="cn-m14-219">As mentioned above, spoofing is one of the most 
+common problems with Email. For example, John sends an Email to Mary, 
+but the contents of the Email states that it has come from James.</p>
+
+<p id="cn-m14-220"><b>Domain Key Identified Mail </b>(<b>DKIM</b>) helps
+ you to prevent spoofed Email leaving your messaging servers. When an 
+Email is outbound of the messaging server, it adds an encrypted 
+signature to the header of the Email. When this Email is received by a 
+messaging server, it needs to verify the message for its authenticity. 
+The message can only be verified after the recipient messaging server 
+decrypts the message.</p>
+
+<p id="cn-m14-221">To enable <b>DKIM </b>for the messaging server in your domain, you need to follow three basic steps:</p>
+
+<p id="cn-m14-222"></p><figure><img class="cn-img" id="cn-image-m14-c-22" src="SecuritysMonitoringActivities_files/image-m14-c-22.jpg" alt="Figure 3.1 Diagram of DKIM"><figcaption>Figure
+ 3.1 Diagram of DKIM: Showing the various steps of enabling DKIM for the
+ messaging server in your domain, including generating the Domain Key, 
+adding the Public Key to your domain’s DNS records and turning on DKIM 
+signing.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-223"><b>Sender Policy Framework</b></h3>
+
+<p id="cn-m14-224">A <b>Domain Name System </b>(<b>DNS</b>) is a network service that translates a hostname to its numeric <b>Internet Protocol </b>(<b>IP</b>)
+ address and vice-versa. Although largely associated with the Internet 
+to find hosts in the massive public network, private organizations use <b>DNS </b>as well so that hosts and their respective services can be located in a corporate network.</p>
+
+<p id="cn-m14-225"><b>DNS </b>relies on zones that contain resource records (<b>RRs</b>), which are used to ensure a successful resolution of hostnames to its <b>IP </b>address. For <b>DNS </b>servers facing the Internet, its <b>RRs </b>contain
+ hostnames that are resolvable in the public network. These hostnames 
+are typically web servers, mail relay servers, and FTP servers.</p>
+
+<p id="cn-m14-226">An important <b>DNS </b>record is the <b>Sender Policy Framework </b>(<b>SPF</b>).
+ This record identifies specific mail servers that are allowed to send 
+e-mail messages from that organization’s domain. The SPF is an important
+ record against senders of junk mail who send e-mail messages with a 
+spoofed “From address” because the SPF record lists which IP addresses 
+or addresses are authorized to send Emails from that domain.</p>
+
+<h3 id="cn-m14-227"><b>Domain-based Message Authentication, Reporting, and Conformance (DMARC)</b></h3>
+
+<p id="cn-m14-228">You may have, in the past, received an Email that has
+ come from a known address. However, the sender of the message, if you 
+check in person, denies sending such an Email to you. This means that 
+someone has forged the From address of the Email, which indicates that 
+the spammers are using your domain name to send spam messages.</p>
+
+<p id="cn-m14-229"><b>Domain-based Message Authentication, Reporting, and Conformance </b>(<b>DMARC</b>) is a protocol that uses <b>SPF </b>and <b>DKIM</b>. It is used to determine the authenticity of the Email. If <b>DMARC </b>is enabled on a domain, its messaging server will verify the incoming Emails to ensure that they are authentic. If the <b>DMARC </b>policy is implemented in the domain, and an Email does not pass its verification process, then the <b>DMARC </b>policy is triggered.</p>
+
+<p id="cn-m14-230">Two possible actions can take place:</p>
+
+<ul id="cn-m14-231">
+
+<li id="cn-m14-231"><b>An Email passes the verification process</b>: This indicates that the Email was authenticated by <b>SPF </b>or <b>DKIM </b>(could be both), and the domain in the From field is authenticated by <b>DMARC</b>.</li>
+
+<li id="cn-m14-232"><b>An Email does not pass the verification process</b>: There can be three different types of actions that can be defined when an Email does not pass the verification process:</li>
+
+</ul>
+
+<p id="cn-m14-233">- No action is taken</p>
+
+<p id="cn-m14-234">- Email is marked as SPAM</p>
+
+<p id="cn-m14-235">- Email is rejected by the server</p>
+
+<p id="cn-m14-236">The <b>DMARC </b>policy can be implemented via the <b>DNS </b>by any organization.</p>
+
+<h3 id="cn-m14-237"><b>Phishing</b></h3>
+
+<p id="cn-m14-238">Phishing is an act of obtaining confidential 
+information from the user by using a fake identity. The attacker poses 
+as a legitimate and trustworthy entity who is seeking information for 
+genuine reasons; however, their identity is never disclosed. If the user
+ provides the required information (thinking that the attacker is as an 
+authorized entity), the attacker then will use this information for 
+harmful activities. Generally, phishing takes place using Email. An 
+attacker would pose as an authorized entity, and demand information in 
+reply to that mail.</p>
+
+<p id="cn-m14-239">Phishing can be conducted through various methods:</p>
+
+<ul id="cn-m14-240">
+
+<li id="cn-m14-240">In-person</li>
+
+<li id="cn-m14-241">Through a malicious Website</li>
+
+<li id="cn-m14-242">Through E-mail malware attachments</li>
+
+</ul>
+
+<h4 id="cn-m14-243"><b><i>Reasons for Successful Phishing Attacks</i></b></h4>
+
+<p id="cn-m14-244">Lack of foresight and ignorance are probably the two 
+big reasons why users fall into the phishing trap. Several users, 
+typically those who are not tech-savvy, get lured by an E-mail that asks
+ them to log on to a seemingly legitimate website to claim a large 
+amount of money as a prize. They are requested to provide their username
+ and password on said website, which is a spoofed one made to resemble 
+the original.</p>
+
+<h4 id="cn-m14-245"><b><i>Phishing and its types</i></b></h4>
+
+<p id="cn-m14-246"><b>Watering Hole</b></p>
+
+<p id="cn-m14-247">A Watering Hole is a more complex type of phishing 
+attack. In this type of attack, an attacker infects a website that is 
+often visited by the target users. The website is infected with malware 
+that is injected into the user’s system when they connect to the 
+website. It is a multi-phased attack in which the attacker first 
+profiles the target, who are employees of an organization or a 
+government agency. In the profiling stage, the attacker learns about the
+ website these employees frequently visit. Then, the website is infected
+ with malware. When the users visit the website, their systems are 
+infected.</p>
+
+<p id="cn-m14-248">The majority of the phishing attacks are performed 
+using E-mails, and mostly in the form of spam. Phishers create a 
+database of millions of E-mail accounts, usually from social networking 
+Websites, and then send E-mails to these accounts. Over the years, spam 
+E-mails have been well-written and well-designed, making them more 
+convincing. Of late, along with messaging, spam SMS has picked up its 
+pace on mobile phones.</p>
+
+<p id="cn-m14-249"><b>Whaling</b></p>
+
+<p id="cn-m14-250">Similar to phishing and spear phishing, but the size 
+of the target is much bigger. Whale phishing is meant to target 
+high-profile candidates, such as CEO or CIO in an organization, or maybe
+ a well-known and established person, such as a film star. High-profile 
+people have high-profile secrets to keep - personal or business-related,
+ which can be used against them. Remember, phishing is just another form
+ of social engineering, and your convincing power plays a major role. 
+The attacker may create a sense of urgency in an E-mail and force a 
+person to click a URL embedded in the E-mail.</p>
+
+<p id="cn-m14-251">Let’s take an example - using whale phishing, you 
+could get your hands on an executive’s official E-mail, and official 
+bank account credentials. You cannot only approve monetary transactions 
+but also perform them.</p>
+
+<p id="cn-m14-252">To prevent whale phishing, you need to ensure that 
+you build enough technical and detection controls. Not only in the 
+office, but they also need to be secure at home as well as when they are
+ using mobile phones.</p>
+
+<p id="cn-m14-253"><b>Spear Phishing</b></p>
+
+<p id="cn-m14-254">Spear phishing, unlike general phishing, targets 
+specific individuals and companies. This entity could be an individual 
+or several individuals. An attacker may target a top executive of an 
+organization to steal information, and the spear-phishing may be used to
+ install malware on to his or her system, and eventually get into the 
+network. The spear-phishing Emails are usually designed to look like 
+they originate from a well-known company or a Website. For example, as a
+ top executive of a firm, you may receive an Email from eBay asking you 
+to reset your account password. The E-mail includes a URL to click and 
+states that there have been unauthorized login attempts, and thus, you 
+should reset your password. Otherwise, your account will be locked. In 
+this example, the E-mail was designed to create a sense of urgency.</p>
+
+<h3 id="cn-m14-255"><b>Digital Signatures</b></h3>
+
+<p id="cn-m14-256">Digital signatures are used for signing emails to 
+effectively place a unique signature on an Email to help with 
+verification of the sender. The act of signing is effectively a digital 
+signature. The idea is to have the message readable to everyone. Still, 
+the clever part is checking whether the message has been changed by 
+someone other than the author of the Email, thereby helping to thwart 
+man-in-the-middle attacks and maintain the message integrity.</p>
+
+<p id="cn-m14-257">Two keys are used in a digital signature - a private 
+key and a public key. A private key is used when a message is signed. A 
+public key is available with the recipient of the message and is used to
+ verify message authenticity.</p>
+
+<p id="cn-m14-258">To be able to create a digital signature, you need to
+ use your private key. For example, John, after receiving the message 
+with the digital signature, needs to use the sender's public key to 
+decrypt the message. You cannot create a digital signature with your own
+ or recipient’s public key. Only John can use his private key to create a
+ digital signature. You cannot use someone else’s private key.</p>
+
+<h3 id="cn-m14-259"><b>Email Signature Block</b></h3>
+
+<p id="cn-m14-260">A signature block is always towards the end of an 
+Email, and it signifies the names and details of the sender. However, it
+ is important to understand that the Email signature block can easily be
+ forged or copied. It is not secure at all, and therefore, digital 
+signatures can be used as a replacement for the more typical Email 
+signature block. This is because digital signatures cannot be tampered 
+with.</p>
+
+<h3 id="cn-m14-261"><b>Embedded Links</b></h3>
+
+<p id="cn-m14-262">Emails contain embedded links, which can either be 
+valid or malicious. Most spam or spoofed Emails contain embedded links, 
+which are malicious. When the recipient clicks on the embedded link, 
+different types of actions can take place, depending on how the link has
+ been programmed.</p>
+
+<ul id="cn-m14-263">
+
+<li id="cn-m14-263">The user can be navigated to a Website, which 
+infects your system with malware or ransomware. It could also be that a 
+keylogger is downloaded on the recipient’s system.</li>
+
+<li id="cn-m14-264">Alternatively, malware is directly downloaded onto the recipient’s system.</li>
+
+</ul>
+
+<p id="cn-m14-265">As a user, you should have reason to suspect whether 
+an embedded link is malicious or not. If the Email is from a known 
+person, there is no reason for you to suspect. However, you can still 
+hover over the embedded link and verify the URL, whether it is the same 
+as the embedded link. The rule of clicking the embedded link is that 
+click only if you are expecting it.</p>
+
+<h3 id="cn-m14-266"><b>Impersonation</b></h3>
+
+<p id="cn-m14-267">Impersonation is the act of pretending to be someone 
+else. In a cybersecurity context, impersonation is using a fake 
+identity. The impersonator is an attacker, who shows a fake identity to 
+the victim. If the attacker is wrongly identified as a trustworthy 
+entity, then the victim is likely to disclose confidential information. 
+This information could be passwords, information related to financial 
+transactions, etc. This information can be used by the impersonator to 
+perform a harmful activity.</p>
+
+<h3 id="cn-m14-268"><b>Headers</b></h3>
+
+<p id="cn-m14-269">Each Email has a header that contains loads of 
+information. It contains not only the To and From Email address, but 
+also the information regarding the full hop trail that the message has 
+taken to reach the recipient’s mailbox.</p>
+
+<p id="cn-m14-270">This kind of information can be good at tracking down
+ an Email source in the case of a security incident. The Email header 
+will always contain the true source IP address from where the Email 
+originated.</p>
+
+<p id="cn-m14-271">In Microsoft Outlook, you can open an Email, click 
+File, and then click Properties. The Internet headers section contains 
+the details of the Email To and From along with the complete hop trail 
+on the Properties dialogue box.</p>
+
+<p id="cn-m14-272"></p><figure><img class="cn-img" id="cn-image-m14-c-23" src="SecuritysMonitoringActivities_files/image-m14-c-23.jpg" alt="Figure 3.2 Diagram of Email Properties"><figcaption>Figure 3.2 Diagram of Email Properties: Showing the Properties dialog box of an Email received by a recipient.</figcaption></figure><p></p>
+
+<p id="cn-m14-273">Here is the complete information in the Internet header. It contains various parts, such as:</p>
+
+<ul id="cn-m14-274">
+
+<li id="cn-m14-274">Received from</li>
+
+<li id="cn-m14-275">Cipher</li>
+
+<li id="cn-m14-276">Authentication result</li>
+
+<li id="cn-m14-277">Designated sender</li>
+
+<li id="cn-m14-278">SPF information</li>
+
+<li id="cn-m14-279">DKIM information</li>
+
+<li id="cn-m14-280">TLS version</li>
+
+<li id="cn-m14-281">Checksum information</li>
+
+<li id="cn-m14-282">Content-Type</li>
+
+</ul>
+
+<pre id="cn-m14-283"><code>Received: from DB3EUR04HT099.eop-eur04.prod.protection.outlook.com
+
+ (2603:1096:203:b0::26) by HK2PR01MB3107.apcprd01.prod.exchangelabs.com with
+
+ HTTPS via HK0PR03CA0110.APCPRD03.PROD.OUTLOOK.COM; Mon, 15 Jun 2020 19:22:44
+
+ +0000
+
+Received: from DB3EUR04FT022.eop-eur04.prod.protection.outlook.com
+
+ (2a01:111:e400:7e0c::4b) by
+
+ DB3EUR04HT099.eop-eur04.prod.protection.outlook.com (2a01:111:e400:7e0c::341)
+
+ with Microsoft SMTP Server (version=TLS1_2,
+
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3088.18; Mon, 15 Jun
+
+ 2020 19:22:42 +0000
+
+Authentication-Results: spf=pass (sender IP is 136.147.188.21)
+
+ smtp.mailfrom=bounce.email.sans.org; outlook.com; dkim=pass (signature was
+
+ verified) header.d=email.sans.org;outlook.com; dmarc=pass action=none
+
+ header.from=email.sans.org;compauth=pass reason=100
+
+Received-SPF: Pass (protection.outlook.com: domain of bounce.email.sans.org
+
+ designates 136.147.188.21 as permitted sender)
+
+ receiver=protection.outlook.com; client-ip=136.147.188.21;
+
+ helo=mta.email.sans.org;
+
+Received: from mta.email.sans.org (136.147.188.21) by
+
+ DB3EUR04FT022.mail.protection.outlook.com (10.152.25.29) with Microsoft SMTP
+
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+
+ 15.20.3088.18 via Frontend Transport; Mon, 15 Jun 2020 19:22:42 +0000
+
+X-IncomingTopHeaderMarker:
+
+ OriginalChecksum:E46A35B2F7427BA5491793CFBE8D79B8F50F446F9B87A93D92CA877FD53EF949;UpperCasedChecksum:61C129EB1C0EA2DE67483216B13EDB4344FDFD0FAE7F9E568D681278D448E23F;SizeAsReceived:1338;Count:14
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=email.sans.org;
+
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:
+
+ X-CSA-Complaints:Message-ID:Content-Type; i=sans@email.sans.org;
+
+ bh=6nhiLTlO7qf6QBmKj4EQWhi5oW6Pkg8p8p+KSmXVHHY=;
+
+ b=CvA3cvhkTHPsp4IVuSdyO94UhHYWJeVsw/2ma+iv7BJz3oyDk+NVkefPogxs3r4FVLZ+uvvBSAXa
+
+   7WElyW7As9m4a3pa9ceGNFeF5Iy39HC68H5oZlIw2bKXtJ/i197Mmp6SljIofHdvfCzoGCxOLWCK
+
+   FJDX7H2PmEYNGQrzANM=
+
+Received: by mta.email.sans.org id hsv5842fmd49 for &lt;roger@outlook.com&gt;; Mon, 15 Jun 2020 19:22:41 +0000 (envelope-from &lt;bounce-11678_HTML-130569308-613405-7329836-86@bounce.email.sans.org&gt;)
+
+From: "SANS Institute" &lt;sans@email.sans.org&gt;
+
+To: &lt;roger@outlook.com&gt;
+
+Subject: Advance Your Career with SANS Training Now
+
+Date: Mon, 15 Jun 2020 13:22:41 -0600
+
+List-Unsubscribe: &lt;mailto:leave-fce4157173630c122d502d29-fe2c157375610274761478-fecc127176600478-fe891373776d0c7e73-ff911c76@leave.email.sans.org&gt;
+
+MIME-Version: 1.0
+
+Reply-To: "SANS Institute" &lt;reply-fecc127176600478-11678_HTML-130569308-7329836-86@email.sans.org&gt;
+
+List-ID: &lt;7329836.xt.local&gt;
+
+X-CSA-Complaints: whitelistcomplaints@eco.de
+
+x-job: 7329836_613405
+
+Message-ID: &lt;d26e6bb1-025b-48c7-8a21-032759ddf380@atl1s07mta826.xt.local&gt;
+
+Content-Type: multipart/alternative;
+
+&nbsp;&nbsp;boundary="hY0SppgbddiZ=_?:"
+
+X-IncomingHeaderCount: 14
+
+Return-Path:
+
+ bounce-11678_HTML-130569308-613405-7329836-86@bounce.email.sans.org
+
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Jun 2020 19:22:42.5308
+
+ (UTC)
+
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+
+X-MS-Exchange-Organization-Network-Message-Id:
+
+ 479a8298-0547-4b9d-ebd3-08d8116179c3
+
+X-EOPAttributedMessage: 0
+
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+
+X-Forefront-Antispam-Report:
+
+ CIP:136.147.188.21;CTRY:US;LANG:en;SCL:0;SRV:;IPV:NLI;SFV:NSPM;H:mta.email.sans.org;PTR:mta.email.sans.org;CAT:NONE;SFTY:;SFS:;DIR:INB;SFP:;
+
+X-MS-PublicTrafficType: Email
+
+X-MS-Exchange-Organization-AuthSource:
+
+ DB3EUR04FT022.eop-eur04.prod.protection.outlook.com
+
+X-MS-Exchange-Organization-AuthAs: Anonymous
+
+X-MS-UserLastLogonTime: 6/15/2020 6:43:02 PM
+
+X-MS-Office365-Filtering-Correlation-Id: 479a8298-0547-4b9d-ebd3-08d8116179c3
+
+X-MS-TrafficTypeDiagnostic: DB3EUR04HT099:
+
+X-MS-Exchange-EOPDirect: true
+
+X-Sender-IP: 136.147.188.21
+
+X-SID-PRA: SANS@EMAIL.SANS.ORG
+
+X-SID-Result: PASS
+
+X-MS-Exchange-Organization-PCL: 2
+
+X-MS-Exchange-Organization-SCL: 0
+
+X-Microsoft-Antispam: BCL:1;
+
+X-OriginatorOrg: outlook.com
+
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Jun 2020 19:22:42.1649
+
+ (UTC)
+
+X-MS-Exchange-CrossTenant-Network-Message-Id: 479a8298-0547-4b9d-ebd3-08d8116179c3
+
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+
+ 00000000-0000-0000-0000-000000000000
+
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB3EUR04HT099
+
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0566154
+
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3088.028
+
+X-Message-Info:
+
+&nbsp;&nbsp;5vMbyqxGkddTa1myMG/yj8UWvPHEfJV/p16tBxx7rtQrXh2tFq4sujzfdjU3OIj6vHBlLdwwzF7zR5EZiM5SnaF1TsjVKEBRklLYp1JzGOOZfMfJhcQLeCDgJlwy488JDJbxj8WQ58VbOKp74FeHXrlZyEYp5zePcnHiaQcQhPljGAvj47620f0xktLlQYDoxjvFpEBcxrcal7BCVfR7qw==
+
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+
+X-Microsoft-Antispam-Mailbox-Delivery:
+
+&nbsp;&nbsp;abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000282)(90000002)(90026001)(9000001)(5061607266)(5061608174)(4900115)(98391011)(4920090)(6515079)(4950130)(4990090);
+
+X-Microsoft-Antispam-Message-Info:
+
+&nbsp;&nbsp;=?us-ascii?Q?9zvqUPmgq+UnwdAtAIkraaDLRgVkwwcvT1shZURWB4cY1g4ui1kvEgEYJPqt?=
+
+ =?us-ascii?Q?XiAnuUpzJCqL0hKJ7rNBQg+flK5jPDj9D4R5CE5MrNeVpdRZes4ruwWvvTvK?=
+
+ =?us-ascii?Q?9vFVVnlYU9+mXQfNHWXWmEZ6M+kSxzHRugFgOzWma4f97xrHDLmGvj19H7Is?=
+
+ =?us-ascii?Q?D/ro0nOaiTF+pFQA4U+NPYvo2jbl0TItr3iSVYpBT2qmC7vZGs9W9GG18aH/?=
+
+ =?us-ascii?Q?HUVZi9ACmqZ/BZS+sS0JsEb+Hs0ytU9NARTb+b87Y4R6ynrL1Svsu8f2CJd8?=
+
+ =?us-ascii?Q?VLwv9xG0XMmrP7f7tFKtZMzsPqpfaNTVV2js5f5uyCGTaKtj8xG3aYDJdTjt?=
+
+ =?us-ascii?Q?x8Gq8ipw/FVcfam7Z8oSKrQ3CfZOSAVW/TKgSib/PmXvkneNGVRz7/8UZRfa?=
+
+ =?us-ascii?Q?y3b4uCHnoHxzOh0YvB/4C7qgJwQhoap4wUE+Sk7pbSgxL7jeI/CnRcUS8g0S?=
+
+ =?us-ascii?Q?MqK7TqourCBi4Gxi8WX77pVKylzt9Z31jY99hj/NY5vcPMmbwSNqYOJJmjUo?=
+
+ =?us-ascii?Q?ZAnD8e9c+2/JMqTlkZ1N21bmTaZJxKvaUU9JiXWhwg7NkjNViZ7dPq7Y1xrm?=
+
+ =?us-ascii?Q?KEqy5JQdNCeoY23YBIwreFQsjoaK7BM9Sh0sswA0a5EIaIZaxttw/ybeLYFl?=
+
+ =?us-ascii?Q?l1PC+v6VLXKnoZ68hsl6MHJ/apu11cmlULhhv7JXCwhViAT3i065DwO/Ta4L?=
+
+ =?us-ascii?Q?UnWsW5v90q7cVs5kV2+DYe81MJ6lKX7wL3svKB5m1rMWB1slIsl+pmFN6dnY?=
+
+ =?us-ascii?Q?bbLyvFOBGUli3Q8vgNB2Y2oBznD+VMnIkXORWglvRbqHy5wwuzVB/QOcrEUn?=
+
+ =?us-ascii?Q?qNkj5qBkHE5FR0s76ILIeO25ptRLymWw7bPHI87ochDWS9QtUCyIug1Z3iqc?=
+
+ =?us-ascii?Q?1FX7PWAdfTnayDAVGOqlScIkxYH7VkJDZJaR0KYSD3emebGwAI1d6fhYvbmj?=
+
+ =?us-ascii?Q?ROP2bpGAsTmPayxglhPNUpxds28U8HKf3BVsIeDbauiHG5BlAc/WJps8LzjO?=
+
+ =?us-ascii?Q?HPzW8DH53hupdTnqbQTvrL05HrFtlN+HkwWESoVznECq0iE=3D?=
+
+</code></pre>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+< <a href="https://github.com/SeanOhAileasa" id="Network">Home</a> | <a href="https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Cybersecurity Analyst (CySA+) Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-394"><b>Exercise 3 - Network</b></h2>
+
+<p id="cn-m14-395">Malware is a piece of code that has been programmed 
+into a form of executable or code that has been embedded within 
+legitimate software. The code or application is programmed to do 
+something. When assembled, it is converted into binary format.</p>
+
+<p id="cn-m14-396">When you reverse engineer it, it is converted to code
+ mnemonics, which can be further evaluated to understand how the 
+software is programmed to work.</p>
+
+<p id="cn-m14-397">In this exercise, we will discuss different aspects of network monitoring activities.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-399">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m14-400">
+
+<li id="cn-m14-400">Malware Reverse Engineering</li>
+
+<li id="cn-m14-401">Memory</li>
+
+<li id="cn-m14-402">System and Application Behavior</li>
+
+<li id="cn-m14-403">File Systems</li>
+
+<li id="cn-m14-404">User and Entity Behavior Analytics (UEBA)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-406">You will be using the following devices in this lab. Please power these on now.</p>
+
+<p id="cn-m14-407"><img class="cn-img" id="cn-image-m14-c-24" src="SecuritysMonitoringActivities_files/image-m14-c-24.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m14-408">
+
+<li id="cn-m14-408"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Server)</li>
+
+<li id="cn-m14-409"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m14-410"><b>PLABALIENVAULT </b>- (Alien Vault Linux Security Management Platform)</li>
+
+</ul>
+
+<h3 id="cn-m14-411"><b>Task 1 - Malware Reverse Engineering</b></h3>
+
+<p id="cn-m14-412">There are different methods to reverse engineer software or malware. They fall into different categories, which are:</p>
+
+<ul id="cn-m14-413">
+
+<li id="cn-m14-413"><b>Disassemblers</b>: It can reverse engineer the 
+software into assembly code. It can also convert the binary code into 
+native code. One example is IDA Pro.</li>
+
+<li id="cn-m14-414"><b>Debuggers</b>: It can manipulate the software execution to understand what it is designed to do. Examples are x64dbg, Windbg, and GDB.</li>
+
+</ul>
+
+<p id="cn-m14-415"></p><figure><img class="cn-img" id="cn-image-m14-c-25" src="SecuritysMonitoringActivities_files/image-m14-c-25.jpg" alt="Figure 4.1 Screenshot of PLABWIN10"><figcaption>Figure 4.1 Screenshot of PLABWIN10: Screenshot of the IDA tool disassembling an executable.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-417"><b>Memory</b></h3>
+
+<p id="cn-m14-418">As a usual practice, attackers generally will leave 
+no trace of their existence. However, forensic investigators will 
+attempt to investigate the memory dump, which can contain much 
+information, such as:</p>
+
+<ul id="cn-m14-419">
+
+<li id="cn-m14-419">Running processes</li>
+
+<li id="cn-m14-420">Running executables</li>
+
+<li id="cn-m14-421">Open ports</li>
+
+<li id="cn-m14-422">Communicating IP addresses</li>
+
+<li id="cn-m14-423">Open files</li>
+
+<li id="cn-m14-424">Running system activities</li>
+
+</ul>
+
+<p id="cn-m14-425">When software or malware is executed, it is first 
+loaded into memory, which helps forensic investigators identify attacks 
+that have been conducted.</p>
+
+<p id="cn-m14-426">Physical memory also contains a lot of information, such as:</p>
+
+<ul id="cn-m14-427">
+
+<li id="cn-m14-427">Decrypted software and applications: If malware is hidden in legitimate software, then it needs to be decrypted first.</li>
+
+<li id="cn-m14-428">User credentials: Any user credentials used can also be stored in physical memory.</li>
+
+<li id="cn-m14-429">Entered content: Any information copied into the clipboard or entered into a form field will be stored in physical memory.</li>
+
+</ul>
+
+<p id="cn-m14-430">All this information from memory can be utilized to 
+trace an attack. However, memory forensics is not something that a 
+beginner or novice should handle. Rather, it needs to be handled by 
+properly trained forensics investigators who are specialized in memory 
+forensics.</p>
+
+<h3 id="cn-m14-431"><b>System and Application Behavior</b></h3>
+
+<p id="cn-m14-432">Each system and application works with a certain type
+ of behavior. This behavior can either be good, which means that as per 
+the rules and defined policies, i.e., it can function as intended. 
+Contrary to this, behavior can also be anomalous, which can be driven by
+ malware or certain compromised services.</p>
+
+<h4 id="cn-m14-433"><b><i>Known-good Behavior</i></b></h4>
+
+<p id="cn-m14-434">Several tools are now focusing on known-good 
+behaviour, rather than unknown-behavior. Rather than focusing on 
+unknown-behavior, which can be malicious, it is easy to focus on the 
+known-good behavior. For example, in a firewall, you can choose to allow
+ only known-good applications and services.</p>
+
+<h4 id="cn-m14-435"><b><i>Anomalous Behavior</i></b></h4>
+
+<p id="cn-m14-436">In simple plain English, anomalous behavior is a type
+ of behavior that deviates from the defined guidelines and policies. The
+ anomalous behavior can be determined by using certain specialized 
+tools, such as <b>User and Entity Behavior Analytics </b>(<b>UEBA</b>) tools.</p>
+
+<p id="cn-m14-437">If there is a deviation from the baseline set by the UEBA tool, it can be considered anomalous. Some examples are:</p>
+
+<ul id="cn-m14-438">
+
+<li id="cn-m14-438">Attempting to access folders on which the user does not have permissions</li>
+
+<li id="cn-m14-439">Unusual login timings and locations</li>
+
+<li id="cn-m14-440">A single user login logged in several systems</li>
+
+<li id="cn-m14-441">Sending a large amount of data to a remote system</li>
+
+</ul>
+
+<h4 id="cn-m14-442"><b><i>Exploit Techniques</i></b></h4>
+
+<p id="cn-m14-443">Vulnerabilities can exist in an operating system, 
+application, or firmware. Depending on where they exist, exploits can be
+ designed accordingly. Exploits are never generic and are designed to 
+target a specific vulnerability. There are applications available that 
+serve as a platform to run exploits. Metasploit includes several 
+exploits that are designed to exploit a specific vulnerability.</p>
+
+<p id="cn-m14-444"></p><figure><img class="cn-img" id="cn-image-m14-c-26" src="SecuritysMonitoringActivities_files/image-m14-c-26.jpg" alt="Figure 4.2 Screenshot of PLABKALI01"><figcaption>Figure 4.2 Screenshot of PLABKALI01: Showing the exploits in the Metasploit framework.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-445"><b>File System</b></h3>
+
+<p id="cn-m14-446">After you retrieve and secure evidence, you’re ready 
+to copy evidence media and analyze data. The first step when performing 
+forensics is to keep and preserve evidence, and then conduct analysis 
+only on a copy of the data.</p>
+
+<p id="cn-m14-447">Files that are deleted are still kept on disk until a
+ new file is saved to the same physical location which would overwrite 
+em. As such, if needed those files can still be retrieved.</p>
+
+<p id="cn-m14-448">The next step is analyzing data and searching for 
+information related to the complaint. Data analysis can be the most 
+time-consuming task, even when you know exactly what to look for. The 
+method for locating evidentiary artifacts is to search for specific 
+known data values. Data values can be unique words or nonprintable 
+characters, such as hexadecimal codes.</p>
+
+<p id="cn-m14-449">There are also printable character codes that can’t 
+be generated from a keyboard, such as the copyright (©) or registered 
+trademark (®) symbols. Many digital forensics programs can search for 
+character strings (letters and numbers) and hexadecimal values, such as 
+A9 for the copyright symbol or AE for the registered trademark symbol. 
+All these searchable data values are referred to as “keywords.” With 
+Autopsy, you can search for keywords of interest in the case.</p>
+
+<h3 id="cn-m14-450"><b>User and Entity Behavior Analytics (UEBA)</b></h3>
+
+<p id="cn-m14-451"><b>User and Entity Behavior Analytics </b>(<b>UEBA</b>)
+ uses machine learning and deep learning to track abnormal and malicious
+ user behavior. It also evaluates the behavior of the network devices 
+and systems on a network.</p>
+
+<p id="cn-m14-452">When you use a traditional security tool, it will work based on one of the following:</p>
+
+<ul id="cn-m14-453">
+
+<li id="cn-m14-453">Rules or pre-defined conditions</li>
+
+<li id="cn-m14-454">Attack patterns</li>
+
+<li id="cn-m14-455">Signatures or updates</li>
+
+</ul>
+
+<p id="cn-m14-456">UBEA, on the other hand, does not work with the 
+traditional methods. It uses baselining as the key method. In 
+baselining, a model behavior is determined in the network environment. 
+You can use UBEA to determine the model behavior of various systems and 
+network devices, such as servers and routers.</p>
+
+<p id="cn-m14-457">Once model behavior is established, any deviation from it can be determined as anomalous and a security threat.</p>
+
+<span class="atom-code hidden">dc2a295a-ab17-4b52-8e1c-80389d10a470</span>
+
+<span class="atom-code hidden">86b3caf2-2504-4e20-a81b-2fcb2368c8d2</span>
+
+<span class="cn-alert" id="cn-m14-462">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-463"><b>Review</b></h2>
+
+<p id="cn-m14-464">Well done, you have completed the <b>Security Monitoring Activities </b>Practice Lab.</p>
+
+<span class="atom-code hidden">2abaca70-efa1-4fe5-94fb-ad1777bfc242</span>
+
+<span class="atom-code hidden">728738b2-679c-4093-963c-898988cb071a</span>
+
+<span class="atom-code hidden">a9e16a4f-46f1-4eca-b165-48f713056ff2</span>
+
+<span class="atom-code hidden">4a9f3a99-bb6d-4014-acad-b2f170fdcff7</span>
+
+<span class="atom-code hidden">1b0ee800-158c-4c1e-87f5-349edd3a4836</span>
+
+<span class="atom-code hidden">b1384ada-bd67-4870-91b3-9ab0e7c904ba</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m14-474">You completed the following exercises:</p>
+
+<ul id="cn-m14-475">
+
+<li id="cn-m14-475">Exercise 1 - Security information and event management (SIEM) review</li>
+
+<li id="cn-m14-476">Exercise 2 - Email analysis</li>
+
+<li id="cn-m14-477">Exercise 3 - Network</li>
+
+</ul>
+
+<p id="cn-m14-478">You should now be able to:</p>
+
+<ul id="cn-m14-479">
+
+<li id="cn-m14-479">Write Rules using SIEM</li>
+
+<li id="cn-m14-480">Understand the SIEM Dashboard</li>
+
+</ul>
+
+<p id="cn-m14-481">You should now have further knowledge of:</p>
+
+<ul id="cn-m14-482">
+
+<li id="cn-m14-482">Known-Bad Internet protocol (IP)</li>
+
+<li id="cn-m14-483">Domain Keys Identified Mail (DKIM)</li>
+
+<li id="cn-m14-484">Domain-Based Message Authentication, Reporting, and Conformance (DMARC)</li>
+
+<li id="cn-m14-485">Sender Policy Framework (SPF)</li>
+
+<li id="cn-m14-486">Phishing</li>
+
+<li id="cn-m14-487">Digital Signature</li>
+
+<li id="cn-m14-488">E-mail Signature Block</li>
+
+<li id="cn-m14-489">Embedded Links</li>
+
+<li id="cn-m14-490">Impersonation</li>
+
+<li id="cn-m14-491">Headers</li>
+
+<li id="cn-m14-492">Malicious Payload</li>
+
+<li id="cn-m14-493">Heuristics</li>
+
+<li id="cn-m14-494">Endpoint</li>
+
+<li id="cn-m14-495">Malware Reverse Engineering</li>
+
+<li id="cn-m14-496">Memory</li>
+
+<li id="cn-m14-497">System and Application Behavior</li>
+
+<li id="cn-m14-498">File Systems</li>
+
+<li id="cn-m14-499">User and Entity Behavior Analytics (UEBA)</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m14-503">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
