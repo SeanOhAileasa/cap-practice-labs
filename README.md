@@ -41,7 +41,7 @@ Recommend viewing using the ``nbviewer`` links below (click on the associated ``
 
 ###### ``Threat Data``
 
-- [Threat Data](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/threat-data/ThreatData.html#ThreatData) &#x274C; <br/>
+- [Threat Data](https://htmlpreview.github.io/?https://github.com/SeanOhAileasa/cap-practice-labs/blob/main/rc/threat-data/ThreatData.html#ThreatData) &#x1F513; <br/>
 
 ###### ``Types of Scanning``
 
